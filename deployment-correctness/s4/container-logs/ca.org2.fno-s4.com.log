@@ -1,0 +1,37 @@
+2026-09-21T19:44:23.129910044Z 2026/09/21 19:44:23 [INFO] Created default configuration file at /etc/hyperledger/fabric-ca-server/fabric-ca-server-config.yaml
+2026-09-21T19:44:23.148640348Z 2026/09/21 19:44:23 [INFO] Starting server in home directory: /etc/hyperledger/fabric-ca-server
+2026-09-21T19:44:23.148659450Z 2026/09/21 19:44:23 [INFO] Server Version: v1.5.8
+2026-09-21T19:44:23.148661043Z 2026/09/21 19:44:23 [INFO] Server Levels: &{Identity:2 Affiliation:1 Certificate:1 Credential:1 RAInfo:1 Nonce:1}
+2026-09-21T19:44:23.148813499Z 2026/09/21 19:44:23 [WARNING] &{69 The specified CA certificate file /etc/hyperledger/fabric-ca-server/ca-cert.pem does not exist}
+2026-09-21T19:44:23.148820499Z 2026/09/21 19:44:23 [INFO] generating key: &{A:ecdsa S:256}
+2026-09-21T19:44:23.149037022Z 2026/09/21 19:44:23 [INFO] encoded CSR
+2026-09-21T19:44:23.149534477Z 2026/09/21 19:44:23 [INFO] signed certificate with serial number 208357059758100393997816220898749616398958040343
+2026-09-21T19:44:23.149592996Z 2026/09/21 19:44:23 [INFO] The CA key and certificate were generated for CA ca.org2.fno-s4.com
+2026-09-21T19:44:23.149597967Z 2026/09/21 19:44:23 [INFO] The key was stored by BCCSP provider 'SW'
+2026-09-21T19:44:23.149599854Z 2026/09/21 19:44:23 [INFO] The certificate is at: /etc/hyperledger/fabric-ca-server/ca-cert.pem
+2026-09-21T19:44:23.343704852Z 2026/09/21 19:44:23 [INFO] Initialized sqlite3 database at /etc/hyperledger/fabric-ca-server/fabric-ca-server.db
+2026-09-21T19:44:23.359360525Z 2026/09/21 19:44:23 [INFO] The issuer key was successfully stored. The public key is at: /etc/hyperledger/fabric-ca-server/IssuerPublicKey, secret key is at: /etc/hyperledger/fabric-ca-server/msp/keystore/IssuerSecretKey
+2026-09-21T19:44:23.361351229Z 2026/09/21 19:44:23 [INFO] Idemix issuer revocation public and secret keys were generated for CA 'ca.org2.fno-s4.com'
+2026-09-21T19:44:23.361451244Z 2026/09/21 19:44:23 [INFO] The revocation key was successfully stored. The public key is at: /etc/hyperledger/fabric-ca-server/IssuerRevocationPublicKey, private key is at: /etc/hyperledger/fabric-ca-server/msp/keystore/IssuerRevocationPrivateKey
+2026-09-21T19:44:23.378493545Z 2026/09/21 19:44:23 [INFO] Home directory for default CA: /etc/hyperledger/fabric-ca-server
+2026-09-21T19:44:23.378753836Z 2026/09/21 19:44:23 [INFO] Operation Server Listening on 127.0.0.1:9443
+2026-09-21T19:44:23.378953387Z 2026/09/21 19:44:23 [INFO] generating key: &{A:ecdsa S:256}
+2026-09-21T19:44:23.379134248Z 2026/09/21 19:44:23 [INFO] encoded CSR
+2026-09-21T19:44:23.379475228Z 2026/09/21 19:44:23 [INFO] signed certificate with serial number 65318246344313193146172891424656622610800083922
+2026-09-21T19:44:23.391385204Z 2026/09/21 19:44:23 [INFO] Listening on https://0.0.0.0:7054
+2026-09-21T19:44:31.216075610Z 2026/09/21 19:44:31 [INFO] signed certificate with serial number 118365085533234010943953060545699356935170236563
+2026-09-21T19:44:31.240620717Z 2026/09/21 19:44:31 [INFO] [::1]:56632 POST /enroll 201 0 "OK"
+2026-09-21T19:44:31.810109501Z 2026/09/21 19:44:31 [INFO] [::1]:56638 GET /identities?ca=ca.org2.fno-s4.com 200 0 "OK"
+2026-09-21T19:44:31.975540105Z 2026/09/21 19:44:31 [INFO] [::1]:56642 POST /register 201 0 "OK"
+2026-09-21T19:44:32.063767270Z 2026/09/21 19:44:32 [INFO] [::1]:56658 GET /identities?ca=ca.org2.fno-s4.com 200 0 "OK"
+2026-09-21T19:44:32.230344559Z 2026/09/21 19:44:32 [INFO] [::1]:56670 POST /register 201 0 "OK"
+2026-09-21T19:44:32.320660782Z 2026/09/21 19:44:32 [INFO] [::1]:56672 GET /identities?ca=ca.org2.fno-s4.com 200 0 "OK"
+2026-09-21T19:44:32.483797208Z 2026/09/21 19:44:32 [INFO] [::1]:56686 POST /register 201 0 "OK"
+2026-09-21T19:44:32.728696325Z 2026/09/21 19:44:32 [INFO] signed certificate with serial number 216201303906136463705507324423274910347447676970
+2026-09-21T19:44:32.755309215Z 2026/09/21 19:44:32 [INFO] [::1]:56700 POST /enroll 201 0 "OK"
+2026-09-21T19:44:33.440834706Z 2026/09/21 19:44:33 [INFO] signed certificate with serial number 166813512932254718635407620109477224753477892235
+2026-09-21T19:44:33.464592697Z 2026/09/21 19:44:33 [INFO] [::1]:45480 POST /enroll 201 0 "OK"
+2026-09-21T19:44:34.141635712Z 2026/09/21 19:44:34 [INFO] signed certificate with serial number 367070888524477366849880880240380718771391701779
+2026-09-21T19:44:34.167097519Z 2026/09/21 19:44:34 [INFO] [::1]:45490 POST /enroll 201 0 "OK"
+2026-09-21T19:44:34.835166681Z 2026/09/21 19:44:34 [INFO] signed certificate with serial number 647938945449611546056755611204133456976668046793
+2026-09-21T19:44:34.863557248Z 2026/09/21 19:44:34 [INFO] [::1]:45506 POST /enroll 201 0 "OK"

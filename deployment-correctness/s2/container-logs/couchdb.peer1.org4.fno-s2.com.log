@@ -1,0 +1,123 @@
+2026-09-21T18:45:04.852105426Z [info] 2026-09-21T18:45:04.851961Z nonode@nohost <0.218.0> -------- Preflight check: Checking For Monsters
+2026-09-21T18:45:04.852135010Z 
+2026-09-21T18:45:04.853031522Z [info] 2026-09-21T18:45:04.852925Z nonode@nohost <0.218.0> -------- Preflight check: Asserting Admin Account
+2026-09-21T18:45:04.853043117Z 
+2026-09-21T18:45:04.854735170Z [info] 2026-09-21T18:45:04.854650Z nonode@nohost <0.218.0> -------- Apache CouchDB 3.5.2 is starting.
+2026-09-21T18:45:04.854740718Z 
+2026-09-21T18:45:04.854771128Z [info] 2026-09-21T18:45:04.854686Z nonode@nohost <0.219.0> -------- Starting couch_sup
+2026-09-21T18:45:04.892060406Z [info] 2026-09-21T18:45:04.891901Z nonode@nohost <0.218.0> -------- Apache CouchDB has started. Time to relax.
+2026-09-21T18:45:04.892085220Z 
+2026-09-21T18:45:04.895229530Z [info] 2026-09-21T18:45:04.895111Z nonode@nohost <0.312.0> -------- rexi_server : started servers
+2026-09-21T18:45:04.896229173Z [info] 2026-09-21T18:45:04.896102Z nonode@nohost <0.316.0> -------- rexi_buffer : started servers
+2026-09-21T18:45:04.914213171Z [info] 2026-09-21T18:45:04.914088Z nonode@nohost <0.325.0> -------- open_result error {not_found,no_db_file} for _nodes
+2026-09-21T18:45:04.914232983Z [warning] 2026-09-21T18:45:04.914090Z nonode@nohost <0.324.0> -------- creating missing database: _nodes
+2026-09-21T18:45:04.963062300Z [warning] 2026-09-21T18:45:04.962910Z nonode@nohost <0.337.0> -------- creating missing database: _dbs
+2026-09-21T18:45:04.963079122Z [info] 2026-09-21T18:45:04.962916Z nonode@nohost <0.340.0> -------- open_result error {not_found,no_db_file} for _dbs
+2026-09-21T18:45:04.983259915Z [notice] 2026-09-21T18:45:04.983104Z nonode@nohost <0.118.0> -------- config: [admins] admin set to '****' for reason nil
+2026-09-21T18:45:04.986966441Z [notice] 2026-09-21T18:45:04.986834Z nonode@nohost <0.360.0> -------- mem3_reshard start init()
+2026-09-21T18:45:04.986984704Z [notice] 2026-09-21T18:45:04.986868Z nonode@nohost <0.361.0> -------- mem3_reshard db monitor <0.361.0> starting
+2026-09-21T18:45:04.987994879Z [notice] 2026-09-21T18:45:04.987882Z nonode@nohost <0.360.0> -------- mem3_reshard starting reloading jobs
+2026-09-21T18:45:04.988020389Z [notice] 2026-09-21T18:45:04.987918Z nonode@nohost <0.360.0> -------- mem3_reshard finished reloading jobs
+2026-09-21T18:45:05.001852079Z [info] 2026-09-21T18:45:05.001673Z nonode@nohost <0.367.0> -------- Apache CouchDB has started. Time to relax.
+2026-09-21T18:45:05.001877520Z 
+2026-09-21T18:45:05.001879683Z [info] 2026-09-21T18:45:05.001716Z nonode@nohost <0.367.0> -------- Apache CouchDB has started on http://any:5984/
+2026-09-21T18:45:05.003072264Z [notice] 2026-09-21T18:45:05.002927Z nonode@nohost <0.407.0> -------- chttpd_auth_cache changes listener died because the _users database does not exist. Create the database to silence this notice.
+2026-09-21T18:45:05.003176491Z [error] 2026-09-21T18:45:05.003022Z nonode@nohost emulator -------- Error in process <0.408.0> with exit value:
+2026-09-21T18:45:05.003199080Z {database_does_not_exist,[{mem3_shards,load_from_db,[<<"_users">>],[{file,"src/mem3_shards.erl"},{line,463}]},{mem3_shards,load_opts_from_disk,1,[{file,"src/mem3_shards.erl"},{line,436}]},{mem3,props,1,[{file,"src/mem3.erl"},{line,122}]},{mem3_shards,for_docid,3,[{file,"src/mem3_shards.erl"},{line,89}]},{fabric_doc_open,go,3,[{file,"src/fabric_doc_open.erl"},{line,38}]},{chttpd_auth_cache,ensure_auth_ddoc_exists,2,[{file,"src/chttpd_auth_cache.erl"},{line,210}]},{chttpd_auth_cache,listen_for_changes,1,[{file,"src/chttpd_auth_cache.erl"},{line,156}]}]}
+2026-09-21T18:45:05.003204357Z 
+2026-09-21T18:45:05.003285662Z [error] 2026-09-21T18:45:05.003064Z nonode@nohost emulator -------- Error in process <0.408.0> with exit value:
+2026-09-21T18:45:05.003290127Z {database_does_not_exist,[{mem3_shards,load_from_db,[<<"_users">>],[{file,"src/mem3_shards.erl"},{line,463}]},{mem3_shards,load_opts_from_disk,1,[{file,"src/mem3_shards.erl"},{line,436}]},{mem3,props,1,[{file,"src/mem3.erl"},{line,122}]},{mem3_shards,for_docid,3,[{file,"src/mem3_shards.erl"},{line,89}]},{fabric_doc_open,go,3,[{file,"src/fabric_doc_open.erl"},{line,38}]},{chttpd_auth_cache,ensure_auth_ddoc_exists,2,[{file,"src/chttpd_auth_cache.erl"},{line,210}]},{chttpd_auth_cache,listen_for_changes,1,[{file,"src/chttpd_auth_cache.erl"},{line,156}]}]}
+2026-09-21T18:45:05.003294469Z 
+2026-09-21T18:45:05.039287910Z [info] 2026-09-21T18:45:05.039141Z nonode@nohost <0.427.0> -------- couch_replicator_utils : loaded 150 os ca certificates
+2026-09-21T18:45:05.050249465Z [notice] 2026-09-21T18:45:05.050098Z nonode@nohost <0.450.0> -------- Missing system database _users
+2026-09-21T18:45:09.643471406Z [notice] 2026-09-21T18:45:09.643332Z nonode@nohost <0.118.0> -------- config: [couchdb] uuid set to ae060f6b8261f02673c5c87a29ac85d6 for reason nil
+2026-09-21T18:45:09.648736007Z [notice] 2026-09-21T18:45:09.648613Z nonode@nohost <0.579.0> 933408dc5c localhost:5984 127.0.0.1 admin GET / 200 ok 126
+2026-09-21T18:45:10.003487310Z [notice] 2026-09-21T18:45:10.003333Z nonode@nohost <0.407.0> -------- chttpd_auth_cache changes listener died because the _users database does not exist. Create the database to silence this notice.
+2026-09-21T18:45:10.003563343Z [error] 2026-09-21T18:45:10.003414Z nonode@nohost emulator -------- Error in process <0.613.0> with exit value:
+2026-09-21T18:45:10.003571220Z {database_does_not_exist,[{mem3_shards,load_from_db,[<<"_users">>],[{file,"src/mem3_shards.erl"},{line,463}]},{mem3_shards,load_opts_from_disk,1,[{file,"src/mem3_shards.erl"},{line,436}]},{mem3,props,1,[{file,"src/mem3.erl"},{line,122}]},{mem3_shards,for_docid,3,[{file,"src/mem3_shards.erl"},{line,89}]},{fabric_doc_open,go,3,[{file,"src/fabric_doc_open.erl"},{line,38}]},{chttpd_auth_cache,ensure_auth_ddoc_exists,2,[{file,"src/chttpd_auth_cache.erl"},{line,210}]},{chttpd_auth_cache,listen_for_changes,1,[{file,"src/chttpd_auth_cache.erl"},{line,156}]}]}
+2026-09-21T18:45:10.003574445Z 
+2026-09-21T18:45:10.003663838Z [error] 2026-09-21T18:45:10.003483Z nonode@nohost emulator -------- Error in process <0.613.0> with exit value:
+2026-09-21T18:45:10.003670733Z {database_does_not_exist,[{mem3_shards,load_from_db,[<<"_users">>],[{file,"src/mem3_shards.erl"},{line,463}]},{mem3_shards,load_opts_from_disk,1,[{file,"src/mem3_shards.erl"},{line,436}]},{mem3,props,1,[{file,"src/mem3.erl"},{line,122}]},{mem3_shards,for_docid,3,[{file,"src/mem3_shards.erl"},{line,89}]},{fabric_doc_open,go,3,[{file,"src/fabric_doc_open.erl"},{line,38}]},{chttpd_auth_cache,ensure_auth_ddoc_exists,2,[{file,"src/chttpd_auth_cache.erl"},{line,210}]},{chttpd_auth_cache,listen_for_changes,1,[{file,"src/chttpd_auth_cache.erl"},{line,156}]}]}
+2026-09-21T18:45:10.003683218Z 
+2026-09-21T18:45:10.047311406Z [notice] 2026-09-21T18:45:10.047131Z nonode@nohost <0.435.0> -------- Started replicator db changes listener <0.614.0>
+2026-09-21T18:45:10.797010950Z [notice] 2026-09-21T18:45:10.796876Z nonode@nohost <0.580.0> d76febd25c couchdb.peer1.org4.fno-s2.com:5984 172.19.0.28 admin GET / 200 ok 0
+2026-09-21T18:45:10.799085423Z [notice] 2026-09-21T18:45:10.798915Z nonode@nohost <0.580.0> 304d0c0308 couchdb.peer1.org4.fno-s2.com:5984 172.19.0.28 admin GET /_users 404 ok 2
+2026-09-21T18:45:10.805686969Z [error] 2026-09-21T18:45:10.805522Z nonode@nohost <0.580.0> c878261074 Request to create N=3 DB but only 1 node(s)
+2026-09-21T18:45:10.844732708Z [notice] 2026-09-21T18:45:10.843822Z nonode@nohost <0.580.0> c878261074 couchdb.peer1.org4.fno-s2.com:5984 172.19.0.28 admin PUT /_users 201 ok 45
+2026-09-21T18:45:10.852683737Z [notice] 2026-09-21T18:45:10.852154Z nonode@nohost <0.580.0> 42f270c927 couchdb.peer1.org4.fno-s2.com:5984 172.19.0.28 admin GET /_replicator 404 ok 8
+2026-09-21T18:45:10.853151950Z [error] 2026-09-21T18:45:10.852901Z nonode@nohost <0.580.0> dd7372e322 Request to create N=3 DB but only 1 node(s)
+2026-09-21T18:45:10.915093761Z [notice] 2026-09-21T18:45:10.914943Z nonode@nohost <0.580.0> dd7372e322 couchdb.peer1.org4.fno-s2.com:5984 172.19.0.28 admin PUT /_replicator 201 ok 63
+2026-09-21T18:45:10.935950382Z [notice] 2026-09-21T18:45:10.935791Z nonode@nohost <0.581.0> 0e073ff345 couchdb.peer1.org4.fno-s2.com:5984 172.19.0.28 admin PUT /_replicator/_security 200 ok 20
+2026-09-21T18:45:10.943624425Z [notice] 2026-09-21T18:45:10.943465Z nonode@nohost <0.580.0> bee950f45d couchdb.peer1.org4.fno-s2.com:5984 172.19.0.28 admin GET /_all_dbs 200 ok 7
+2026-09-21T18:45:10.944207697Z [notice] 2026-09-21T18:45:10.944092Z nonode@nohost <0.580.0> 65eff10a4d couchdb.peer1.org4.fno-s2.com:5984 172.19.0.28 admin GET /fabric__internal 404 ok 1
+2026-09-21T18:45:10.944786301Z [error] 2026-09-21T18:45:10.944687Z nonode@nohost <0.580.0> dfeced0fe5 Request to create N=3 DB but only 1 node(s)
+2026-09-21T18:45:10.987170950Z [notice] 2026-09-21T18:45:10.986951Z nonode@nohost <0.580.0> dfeced0fe5 couchdb.peer1.org4.fno-s2.com:5984 172.19.0.28 admin PUT /fabric__internal 201 ok 43
+2026-09-21T18:45:11.000703877Z [notice] 2026-09-21T18:45:11.000518Z nonode@nohost <0.581.0> 56350dbe08 couchdb.peer1.org4.fno-s2.com:5984 172.19.0.28 admin PUT /fabric__internal/_security 200 ok 13
+2026-09-21T18:45:11.001470937Z [notice] 2026-09-21T18:45:11.001323Z nonode@nohost <0.580.0> 5ea6d76712 couchdb.peer1.org4.fno-s2.com:5984 172.19.0.28 admin GET /fabric__internal/dataformatVersion?attachments=true 404 ok 1
+2026-09-21T18:45:11.018154265Z [notice] 2026-09-21T18:45:11.017955Z nonode@nohost <0.580.0> c8822f81f8 couchdb.peer1.org4.fno-s2.com:5984 172.19.0.28 admin PUT /fabric__internal/dataformatVersion 201 ok 16
+2026-09-21T18:45:14.696708242Z [notice] 2026-09-21T18:45:14.696581Z nonode@nohost <0.758.0> a405430e4f localhost:5984 127.0.0.1 admin GET / 200 ok 0
+2026-09-21T18:45:19.737087005Z [notice] 2026-09-21T18:45:19.736949Z nonode@nohost <0.892.0> cc49637ad3 localhost:5984 127.0.0.1 admin GET / 200 ok 1
+2026-09-21T18:45:19.895445274Z [info] 2026-09-21T18:45:19.895268Z nonode@nohost <0.312.0> -------- rexi_server : cluster stable
+2026-09-21T18:45:19.896317850Z [info] 2026-09-21T18:45:19.896242Z nonode@nohost <0.316.0> -------- rexi_buffer : cluster stable
+2026-09-21T18:45:24.780724596Z [notice] 2026-09-21T18:45:24.780604Z nonode@nohost <0.959.0> fd9e07db38 localhost:5984 127.0.0.1 admin GET / 200 ok 1
+2026-09-21T18:45:29.821874361Z [notice] 2026-09-21T18:45:29.821751Z nonode@nohost <0.1057.0> de7307be3a localhost:5984 127.0.0.1 admin GET / 200 ok 0
+2026-09-21T18:45:32.031150234Z [notice] 2026-09-21T18:45:32.030993Z nonode@nohost <0.580.0> c1450352c6 couchdb.peer1.org4.fno-s2.com:5984 172.19.0.28 admin GET /defaultchannel_ 404 ok 1
+2026-09-21T18:45:32.031893671Z [error] 2026-09-21T18:45:32.031784Z nonode@nohost <0.580.0> d21826c7be Request to create N=3 DB but only 1 node(s)
+2026-09-21T18:45:32.066048540Z [notice] 2026-09-21T18:45:32.065881Z nonode@nohost <0.580.0> d21826c7be couchdb.peer1.org4.fno-s2.com:5984 172.19.0.28 admin PUT /defaultchannel_ 201 ok 35
+2026-09-21T18:45:32.081433275Z [notice] 2026-09-21T18:45:32.081288Z nonode@nohost <0.581.0> e1012faeaa couchdb.peer1.org4.fno-s2.com:5984 172.19.0.28 admin PUT /defaultchannel_/_security 200 ok 15
+2026-09-21T18:45:32.082121647Z [notice] 2026-09-21T18:45:32.082029Z nonode@nohost <0.580.0> 8de0a88dc4 couchdb.peer1.org4.fno-s2.com:5984 172.19.0.28 admin GET /defaultchannel_/statedb_savepoint?attachments=true 404 ok 1
+2026-09-21T18:45:32.082779735Z [notice] 2026-09-21T18:45:32.082659Z nonode@nohost <0.580.0> faef01f5f9 couchdb.peer1.org4.fno-s2.com:5984 172.19.0.28 admin GET /defaultchannel_/channel_metadata?attachments=true 404 ok 0
+2026-09-21T18:45:32.095710188Z [notice] 2026-09-21T18:45:32.095561Z nonode@nohost <0.580.0> 6609d1e1a0 couchdb.peer1.org4.fno-s2.com:5984 172.19.0.28 admin PUT /defaultchannel_/channel_metadata 201 ok 13
+2026-09-21T18:45:32.096498947Z [notice] 2026-09-21T18:45:32.096397Z nonode@nohost <0.580.0> d39f4b0592 couchdb.peer1.org4.fno-s2.com:5984 172.19.0.28 admin GET /defaultchannel_/channel_metadata?attachments=true 200 ok 1
+2026-09-21T18:45:32.110306197Z [notice] 2026-09-21T18:45:32.110175Z nonode@nohost <0.580.0> 7c1c5bae35 couchdb.peer1.org4.fno-s2.com:5984 172.19.0.28 admin PUT /defaultchannel_/channel_metadata 201 ok 14
+2026-09-21T18:45:32.110896471Z [notice] 2026-09-21T18:45:32.110809Z nonode@nohost <0.580.0> 25d17e474c couchdb.peer1.org4.fno-s2.com:5984 172.19.0.28 admin GET /defaultchannel__lifecycle 404 ok 0
+2026-09-21T18:45:32.111412324Z [error] 2026-09-21T18:45:32.111322Z nonode@nohost <0.580.0> f7bbcd465e Request to create N=3 DB but only 1 node(s)
+2026-09-21T18:45:32.144226432Z [notice] 2026-09-21T18:45:32.144029Z nonode@nohost <0.580.0> f7bbcd465e couchdb.peer1.org4.fno-s2.com:5984 172.19.0.28 admin PUT /defaultchannel__lifecycle 201 ok 33
+2026-09-21T18:45:32.159496462Z [notice] 2026-09-21T18:45:32.159355Z nonode@nohost <0.581.0> b54c6be7e2 couchdb.peer1.org4.fno-s2.com:5984 172.19.0.28 admin PUT /defaultchannel__lifecycle/_security 200 ok 15
+2026-09-21T18:45:32.160539981Z [notice] 2026-09-21T18:45:32.160439Z nonode@nohost <0.580.0> 1f5a59f87f couchdb.peer1.org4.fno-s2.com:5984 172.19.0.28 admin GET /defaultchannel__lifecycle/_all_docs?attachments=true&endkey=%22namespaces%2Fmetadata%2F%7F%22&include_docs=true&inclusive_end=false&limit=1001&startkey=%22namespaces%2Fmetadata%2F%22 200 ok 1
+2026-09-21T18:45:32.192758075Z [notice] 2026-09-21T18:45:32.192572Z nonode@nohost <0.580.0> 553aefbc91 couchdb.peer1.org4.fno-s2.com:5984 172.19.0.28 admin GET /defaultchannel_/channel_metadata?attachments=true 200 ok 1
+2026-09-21T18:45:32.204472974Z [notice] 2026-09-21T18:45:32.204310Z nonode@nohost <0.580.0> 121f5e88a9 couchdb.peer1.org4.fno-s2.com:5984 172.19.0.28 admin PUT /defaultchannel_/channel_metadata 201 ok 12
+2026-09-21T18:45:32.205268565Z [notice] 2026-09-21T18:45:32.205178Z nonode@nohost <0.580.0> 53ba60c782 couchdb.peer1.org4.fno-s2.com:5984 172.19.0.28 admin GET /defaultchannel_ 200 ok 1
+2026-09-21T18:45:32.223053488Z [notice] 2026-09-21T18:45:32.222907Z nonode@nohost <0.580.0> d5da512c79 couchdb.peer1.org4.fno-s2.com:5984 172.19.0.28 admin PUT /defaultchannel_/_security 200 ok 17
+2026-09-21T18:45:32.224873560Z [notice] 2026-09-21T18:45:32.224771Z nonode@nohost <0.580.0> 0c875135b4 couchdb.peer1.org4.fno-s2.com:5984 172.19.0.28 admin POST /defaultchannel_/_all_docs?include_docs=true 200 ok 2
+2026-09-21T18:45:32.239238091Z [notice] 2026-09-21T18:45:32.239050Z nonode@nohost <0.580.0> 38e23f837a couchdb.peer1.org4.fno-s2.com:5984 172.19.0.28 admin POST /defaultchannel_/_bulk_docs 201 ok 14
+2026-09-21T18:45:32.240016376Z [notice] 2026-09-21T18:45:32.239912Z nonode@nohost <0.580.0> cc5a24a47b couchdb.peer1.org4.fno-s2.com:5984 172.19.0.28 admin GET /defaultchannel_/statedb_savepoint?attachments=true 404 ok 1
+2026-09-21T18:45:32.252647165Z [notice] 2026-09-21T18:45:32.252494Z nonode@nohost <0.580.0> e59c6ddd79 couchdb.peer1.org4.fno-s2.com:5984 172.19.0.28 admin PUT /defaultchannel_/statedb_savepoint 201 ok 12
+2026-09-21T18:45:32.266487703Z [notice] 2026-09-21T18:45:32.266369Z nonode@nohost <0.580.0> c1b1d6a6f6 couchdb.peer1.org4.fno-s2.com:5984 172.19.0.28 admin GET /defaultchannel_/CHANNEL_CONFIG_ENV_BYTES?attachments=true 200 ok 2
+2026-09-21T18:45:34.858435294Z [notice] 2026-09-21T18:45:34.858331Z nonode@nohost <0.1324.0> c9aecb7b5e localhost:5984 127.0.0.1 admin GET / 200 ok 1
+2026-09-21T18:45:39.897657484Z [notice] 2026-09-21T18:45:39.897498Z nonode@nohost <0.1422.0> e34b4a4ddd localhost:5984 127.0.0.1 admin GET / 200 ok 1
+2026-09-21T18:45:44.938737543Z [notice] 2026-09-21T18:45:44.938610Z nonode@nohost <0.1491.0> 1d5b10a059 localhost:5984 127.0.0.1 admin GET / 200 ok 1
+2026-09-21T18:45:49.979108303Z [notice] 2026-09-21T18:45:49.978954Z nonode@nohost <0.1598.0> ce1a906047 localhost:5984 127.0.0.1 admin GET / 200 ok 1
+2026-09-21T18:45:55.015933811Z [notice] 2026-09-21T18:45:55.015807Z nonode@nohost <0.1665.0> 02e4b598a8 localhost:5984 127.0.0.1 admin GET / 200 ok 0
+2026-09-21T18:46:00.056681727Z [notice] 2026-09-21T18:46:00.056560Z nonode@nohost <0.1763.0> ac548c39ec localhost:5984 127.0.0.1 admin GET / 200 ok 0
+2026-09-21T18:46:05.093840478Z [notice] 2026-09-21T18:46:05.093701Z nonode@nohost <0.1856.0> 5097afbf05 localhost:5984 127.0.0.1 admin GET / 200 ok 1
+2026-09-21T18:46:10.133426482Z [notice] 2026-09-21T18:46:10.133283Z nonode@nohost <0.1928.0> 72488595a1 localhost:5984 127.0.0.1 admin GET / 200 ok 1
+2026-09-21T18:46:15.179296678Z [notice] 2026-09-21T18:46:15.179167Z nonode@nohost <0.2021.0> cfdf4915d5 localhost:5984 127.0.0.1 admin GET / 200 ok 1
+2026-09-21T18:46:20.222973988Z [notice] 2026-09-21T18:46:20.222842Z nonode@nohost <0.2102.0> ba1a978a50 localhost:5984 127.0.0.1 admin GET / 200 ok 1
+2026-09-21T18:46:25.306946494Z [notice] 2026-09-21T18:46:25.306823Z nonode@nohost <0.2195.0> 15efa8b116 localhost:5984 127.0.0.1 admin GET / 200 ok 1
+2026-09-21T18:46:30.375472547Z [notice] 2026-09-21T18:46:30.375348Z nonode@nohost <0.2267.0> 1b391d82e2 localhost:5984 127.0.0.1 admin GET / 200 ok 0
+2026-09-21T18:46:35.413600187Z [notice] 2026-09-21T18:46:35.413472Z nonode@nohost <0.2360.0> 30fd48cc6d localhost:5984 127.0.0.1 admin GET / 200 ok 1
+2026-09-21T18:46:40.452313733Z [notice] 2026-09-21T18:46:40.452172Z nonode@nohost <0.2432.0> 98826cec13 localhost:5984 127.0.0.1 admin GET / 200 ok 1
+2026-09-21T18:46:45.491119229Z [notice] 2026-09-21T18:46:45.490962Z nonode@nohost <0.2530.0> f1a941dc1c localhost:5984 127.0.0.1 admin GET / 200 ok 1
+2026-09-21T18:46:50.532177775Z [notice] 2026-09-21T18:46:50.532058Z nonode@nohost <0.2602.0> 24fde727dd localhost:5984 127.0.0.1 admin GET / 200 ok 1
+2026-09-21T18:46:55.569821858Z [notice] 2026-09-21T18:46:55.569698Z nonode@nohost <0.2695.0> c88941bbaa localhost:5984 127.0.0.1 admin GET / 200 ok 0
+2026-09-21T18:47:00.608387785Z [notice] 2026-09-21T18:47:00.608274Z nonode@nohost <0.2767.0> 35e55c0176 localhost:5984 127.0.0.1 admin GET / 200 ok 0
+2026-09-21T18:47:05.644583032Z [notice] 2026-09-21T18:47:05.644447Z nonode@nohost <0.2860.0> 4ba74c3381 localhost:5984 127.0.0.1 admin GET / 200 ok 0
+2026-09-21T18:47:10.680639688Z [notice] 2026-09-21T18:47:10.680535Z nonode@nohost <0.2933.0> 566c2e03ba localhost:5984 127.0.0.1 admin GET / 200 ok 1
+2026-09-21T18:47:15.722466068Z [notice] 2026-09-21T18:47:15.722353Z nonode@nohost <0.3026.0> 563547ea77 localhost:5984 127.0.0.1 admin GET / 200 ok 1
+2026-09-21T18:47:20.761956887Z [notice] 2026-09-21T18:47:20.761811Z nonode@nohost <0.3102.0> 5f5597f850 localhost:5984 127.0.0.1 admin GET / 200 ok 1
+2026-09-21T18:47:25.799275864Z [notice] 2026-09-21T18:47:25.799140Z nonode@nohost <0.3195.0> 09a1d86994 localhost:5984 127.0.0.1 admin GET / 200 ok 1
+2026-09-21T18:47:30.838235303Z [notice] 2026-09-21T18:47:30.838115Z nonode@nohost <0.3268.0> d1b2218cfc localhost:5984 127.0.0.1 admin GET / 200 ok 1
+2026-09-21T18:47:35.875263679Z [notice] 2026-09-21T18:47:35.875144Z nonode@nohost <0.3360.0> edc4398b85 localhost:5984 127.0.0.1 admin GET / 200 ok 1
+2026-09-21T18:47:40.916129770Z [notice] 2026-09-21T18:47:40.915943Z nonode@nohost <0.3432.0> 322a868fe2 localhost:5984 127.0.0.1 admin GET / 200 ok 0
+2026-09-21T18:47:45.957015603Z [notice] 2026-09-21T18:47:45.956864Z nonode@nohost <0.3525.0> 3882bc978c localhost:5984 127.0.0.1 admin GET / 200 ok 0
+2026-09-21T18:47:50.997504368Z [notice] 2026-09-21T18:47:50.997396Z nonode@nohost <0.3597.0> 670e80b4c1 localhost:5984 127.0.0.1 admin GET / 200 ok 1
+2026-09-21T18:47:56.041870900Z [notice] 2026-09-21T18:47:56.041719Z nonode@nohost <0.3690.0> 6fa0b39c50 localhost:5984 127.0.0.1 admin GET / 200 ok 1
+2026-09-21T18:48:01.081519364Z [notice] 2026-09-21T18:48:01.080585Z nonode@nohost <0.3762.0> 8e991c7584 localhost:5984 127.0.0.1 admin GET / 200 ok 1
+2026-09-21T18:48:06.123798507Z [notice] 2026-09-21T18:48:06.123690Z nonode@nohost <0.3855.0> e56352db80 localhost:5984 127.0.0.1 admin GET / 200 ok 0
+2026-09-21T18:48:11.165786215Z [notice] 2026-09-21T18:48:11.165661Z nonode@nohost <0.3949.0> be4f6c8030 localhost:5984 127.0.0.1 admin GET / 200 ok 0
+2026-09-21T18:48:16.211115621Z [notice] 2026-09-21T18:48:16.210976Z nonode@nohost <0.4027.0> 40343d23e4 localhost:5984 127.0.0.1 admin GET / 200 ok 1
+2026-09-21T18:48:21.249935214Z [notice] 2026-09-21T18:48:21.249790Z nonode@nohost <0.4118.0> 8633892b26 localhost:5984 127.0.0.1 admin GET / 200 ok 0
+2026-09-21T18:48:26.285769524Z [notice] 2026-09-21T18:48:26.285636Z nonode@nohost <0.4196.0> 6588b5f780 localhost:5984 127.0.0.1 admin GET / 200 ok 1
+2026-09-21T18:48:31.325580211Z [notice] 2026-09-21T18:48:31.325430Z nonode@nohost <0.4283.0> 957323f449 localhost:5984 127.0.0.1 admin GET / 200 ok 1
+2026-09-21T18:48:36.392414222Z [notice] 2026-09-21T18:48:36.392293Z nonode@nohost <0.4361.0> f0f1cff998 localhost:5984 127.0.0.1 admin GET / 200 ok 1

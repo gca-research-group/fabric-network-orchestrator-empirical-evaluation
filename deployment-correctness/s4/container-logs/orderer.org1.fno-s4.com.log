@@ -1,0 +1,146 @@
+2026-09-21T19:44:36.601159965Z [34m2026-09-21 19:44:36.601 UTC 0001 INFO[0m [localconfig] [34;1mcompleteInitialization[0m -> Kafka.Version unset, setting to 0.10.2.0
+2026-09-21T19:44:36.601231252Z [34m2026-09-21 19:44:36.601 UTC 0002 INFO[0m [orderer.common.server] [34;1mprettyPrintStruct[0m -> Orderer config values:
+2026-09-21T19:44:36.601238570Z 	General.ListenAddress = "0.0.0.0"
+2026-09-21T19:44:36.601240229Z 	General.ListenPort = 7050
+2026-09-21T19:44:36.601241408Z 	General.TLS.Enabled = true
+2026-09-21T19:44:36.601242550Z 	General.TLS.PrivateKey = "/var/hyperledger/orderer/tls/server.key"
+2026-09-21T19:44:36.601243852Z 	General.TLS.Certificate = "/var/hyperledger/orderer/tls/server.crt"
+2026-09-21T19:44:36.601245089Z 	General.TLS.RootCAs = [/var/hyperledger/orderer/tls/ca.crt]
+2026-09-21T19:44:36.601246269Z 	General.TLS.ClientAuthRequired = false
+2026-09-21T19:44:36.601247431Z 	General.TLS.ClientRootCAs = []
+2026-09-21T19:44:36.601248540Z 	General.TLS.TLSHandshakeTimeShift = 0s
+2026-09-21T19:44:36.601249656Z 	General.Cluster.ListenAddress = ""
+2026-09-21T19:44:36.601250801Z 	General.Cluster.ListenPort = 0
+2026-09-21T19:44:36.601251906Z 	General.Cluster.ServerCertificate = ""
+2026-09-21T19:44:36.601253029Z 	General.Cluster.ServerPrivateKey = ""
+2026-09-21T19:44:36.601254157Z 	General.Cluster.ClientCertificate = ""
+2026-09-21T19:44:36.601255279Z 	General.Cluster.ClientPrivateKey = ""
+2026-09-21T19:44:36.601256404Z 	General.Cluster.RootCAs = []
+2026-09-21T19:44:36.601257501Z 	General.Cluster.DialTimeout = 5s
+2026-09-21T19:44:36.601258603Z 	General.Cluster.RPCTimeout = 7s
+2026-09-21T19:44:36.601259720Z 	General.Cluster.ReplicationBufferSize = 20971520
+2026-09-21T19:44:36.601260869Z 	General.Cluster.ReplicationPullTimeout = 5s
+2026-09-21T19:44:36.601262022Z 	General.Cluster.ReplicationRetryTimeout = 5s
+2026-09-21T19:44:36.601263491Z 	General.Cluster.ReplicationBackgroundRefreshInterval = 5m0s
+2026-09-21T19:44:36.601264706Z 	General.Cluster.ReplicationMaxRetries = 12
+2026-09-21T19:44:36.601265837Z 	General.Cluster.SendBufferSize = 10
+2026-09-21T19:44:36.601266957Z 	General.Cluster.CertExpirationWarningThreshold = 168h0m0s
+2026-09-21T19:44:36.601268118Z 	General.Cluster.TLSHandshakeTimeShift = 0s
+2026-09-21T19:44:36.601269229Z 	General.Keepalive.ServerMinInterval = 1m0s
+2026-09-21T19:44:36.601270333Z 	General.Keepalive.ServerInterval = 2h0m0s
+2026-09-21T19:44:36.601271428Z 	General.Keepalive.ServerTimeout = 20s
+2026-09-21T19:44:36.601272556Z 	General.ConnectionTimeout = 0s
+2026-09-21T19:44:36.601273652Z 	General.GenesisMethod = ""
+2026-09-21T19:44:36.601274779Z 	General.GenesisFile = ""
+2026-09-21T19:44:36.601282447Z 	General.BootstrapMethod = "none"
+2026-09-21T19:44:36.601283782Z 	General.BootstrapFile = "/etc/hyperledger/fabric/genesisblock"
+2026-09-21T19:44:36.601285055Z 	General.Profile.Enabled = false
+2026-09-21T19:44:36.601286211Z 	General.Profile.Address = "0.0.0.0:6060"
+2026-09-21T19:44:36.601287406Z 	General.LocalMSPDir = "/var/hyperledger/orderer/msp"
+2026-09-21T19:44:36.601288643Z 	General.LocalMSPID = "Org1OrdererMSP"
+2026-09-21T19:44:36.601289801Z 	General.BCCSP.Default = "SW"
+2026-09-21T19:44:36.601290971Z 	General.BCCSP.SW.Security = 256
+2026-09-21T19:44:36.601292120Z 	General.BCCSP.SW.Hash = "SHA2"
+2026-09-21T19:44:36.601293357Z 	General.BCCSP.SW.FileKeystore.KeyStorePath = ""
+2026-09-21T19:44:36.601294506Z 	General.Authentication.TimeWindow = 15m0s
+2026-09-21T19:44:36.601295620Z 	General.Authentication.NoExpirationChecks = false
+2026-09-21T19:44:36.601296745Z 	General.MaxRecvMsgSize = 104857600
+2026-09-21T19:44:36.601298907Z 	General.MaxSendMsgSize = 104857600
+2026-09-21T19:44:36.601301414Z 	FileLedger.Location = "/var/hyperledger/production/orderer"
+2026-09-21T19:44:36.601303513Z 	FileLedger.Prefix = ""
+2026-09-21T19:44:36.601305202Z 	Kafka.Retry.ShortInterval = 5s
+2026-09-21T19:44:36.601306354Z 	Kafka.Retry.ShortTotal = 10m0s
+2026-09-21T19:44:36.601307475Z 	Kafka.Retry.LongInterval = 5m0s
+2026-09-21T19:44:36.601308618Z 	Kafka.Retry.LongTotal = 12h0m0s
+2026-09-21T19:44:36.601309738Z 	Kafka.Retry.NetworkTimeouts.DialTimeout = 10s
+2026-09-21T19:44:36.601310873Z 	Kafka.Retry.NetworkTimeouts.ReadTimeout = 10s
+2026-09-21T19:44:36.601312005Z 	Kafka.Retry.NetworkTimeouts.WriteTimeout = 10s
+2026-09-21T19:44:36.601313152Z 	Kafka.Retry.Metadata.RetryMax = 3
+2026-09-21T19:44:36.601314330Z 	Kafka.Retry.Metadata.RetryBackoff = 250ms
+2026-09-21T19:44:36.601315458Z 	Kafka.Retry.Producer.RetryMax = 3
+2026-09-21T19:44:36.601316626Z 	Kafka.Retry.Producer.RetryBackoff = 100ms
+2026-09-21T19:44:36.601317770Z 	Kafka.Retry.Consumer.RetryBackoff = 2s
+2026-09-21T19:44:36.601318990Z 	Kafka.Verbose = false
+2026-09-21T19:44:36.601320140Z 	Kafka.Version = 0.10.2.0
+2026-09-21T19:44:36.601321258Z 	Kafka.TLS.Enabled = false
+2026-09-21T19:44:36.601322364Z 	Kafka.TLS.PrivateKey = ""
+2026-09-21T19:44:36.601323474Z 	Kafka.TLS.Certificate = ""
+2026-09-21T19:44:36.601324588Z 	Kafka.TLS.RootCAs = []
+2026-09-21T19:44:36.601325691Z 	Kafka.TLS.ClientAuthRequired = false
+2026-09-21T19:44:36.601326816Z 	Kafka.TLS.ClientRootCAs = []
+2026-09-21T19:44:36.601329661Z 	Kafka.TLS.TLSHandshakeTimeShift = 0s
+2026-09-21T19:44:36.601330883Z 	Kafka.SASLPlain.Enabled = false
+2026-09-21T19:44:36.601332031Z 	Kafka.SASLPlain.User = ""
+2026-09-21T19:44:36.601333151Z 	Kafka.SASLPlain.Password = ""
+2026-09-21T19:44:36.601334278Z 	Kafka.Topic.ReplicationFactor = 3
+2026-09-21T19:44:36.601335379Z 	Debug.BroadcastTraceDir = ""
+2026-09-21T19:44:36.601336485Z 	Debug.DeliverTraceDir = ""
+2026-09-21T19:44:36.601337687Z 	Consensus = map[SnapDir:/var/hyperledger/production/orderer/etcdraft/snapshot WALDir:/var/hyperledger/production/orderer/etcdraft/wal]
+2026-09-21T19:44:36.601338986Z 	Operations.ListenAddress = "127.0.0.1:8443"
+2026-09-21T19:44:36.601340159Z 	Operations.TLS.Enabled = false
+2026-09-21T19:44:36.601341260Z 	Operations.TLS.PrivateKey = ""
+2026-09-21T19:44:36.601342387Z 	Operations.TLS.Certificate = ""
+2026-09-21T19:44:36.601343491Z 	Operations.TLS.RootCAs = []
+2026-09-21T19:44:36.601344626Z 	Operations.TLS.ClientAuthRequired = false
+2026-09-21T19:44:36.601345773Z 	Operations.TLS.ClientRootCAs = []
+2026-09-21T19:44:36.601346903Z 	Operations.TLS.TLSHandshakeTimeShift = 0s
+2026-09-21T19:44:36.601348026Z 	Metrics.Provider = "disabled"
+2026-09-21T19:44:36.601349213Z 	Metrics.Statsd.Network = "udp"
+2026-09-21T19:44:36.601350407Z 	Metrics.Statsd.Address = "127.0.0.1:8125"
+2026-09-21T19:44:36.601351588Z 	Metrics.Statsd.WriteInterval = 30s
+2026-09-21T19:44:36.601352702Z 	Metrics.Statsd.Prefix = ""
+2026-09-21T19:44:36.601353832Z 	ChannelParticipation.Enabled = true
+2026-09-21T19:44:36.601354930Z 	ChannelParticipation.MaxRequestBodySize = 1048576
+2026-09-21T19:44:36.601356052Z 	Admin.ListenAddress = "0.0.0.0:7053"
+2026-09-21T19:44:36.601357227Z 	Admin.TLS.Enabled = true
+2026-09-21T19:44:36.601358356Z 	Admin.TLS.PrivateKey = "/var/hyperledger/orderer/tls/server.key"
+2026-09-21T19:44:36.601359596Z 	Admin.TLS.Certificate = "/var/hyperledger/orderer/tls/server.crt"
+2026-09-21T19:44:36.601360805Z 	Admin.TLS.RootCAs = []
+2026-09-21T19:44:36.601362824Z 	Admin.TLS.ClientAuthRequired = true
+2026-09-21T19:44:36.601364042Z 	Admin.TLS.ClientRootCAs = [/var/hyperledger/orderer/tls/ca.crt]
+2026-09-21T19:44:36.601365295Z 	Admin.TLS.TLSHandshakeTimeShift = 0s
+2026-09-21T19:44:36.602165368Z [34m2026-09-21 19:44:36.602 UTC 0003 INFO[0m [orderer.common.server] [34;1minitializeServerConfig[0m -> Starting orderer with TLS enabled
+2026-09-21T19:44:36.631345075Z [34m2026-09-21 19:44:36.631 UTC 0004 INFO[0m [blkstorage] [34;1mNewProvider[0m -> Creating new file ledger directory at /var/hyperledger/production/orderer/chains
+2026-09-21T19:44:36.642557284Z [34m2026-09-21 19:44:36.642 UTC 0005 INFO[0m [orderer.commmon.multichannel] [34;1mInitJoinBlockFileRepo[0m -> Channel Participation API enabled, registrar initializing with file repo /var/hyperledger/production/orderer/pendingops
+2026-09-21T19:44:36.653510249Z [34m2026-09-21 19:44:36.653 UTC 0006 INFO[0m [orderer.common.server] [34;1mMain[0m -> Starting without a system channel
+2026-09-21T19:44:36.653524138Z [34m2026-09-21 19:44:36.653 UTC 0007 INFO[0m [orderer.common.server] [34;1mMain[0m -> Setting up cluster
+2026-09-21T19:44:36.653526279Z [34m2026-09-21 19:44:36.653 UTC 0008 INFO[0m [orderer.common.server] [34;1mreuseListener[0m -> Cluster listener is not configured, defaulting to use the general listener on port 7050
+2026-09-21T19:44:36.653644600Z [34m2026-09-21 19:44:36.653 UTC 0009 INFO[0m [certmonitor] [34;1mtrackCertExpiration[0m -> The enrollment certificate will expire on 2027-09-21 19:44:00 +0000 UTC
+2026-09-21T19:44:36.653660396Z [34m2026-09-21 19:44:36.653 UTC 000a INFO[0m [certmonitor] [34;1mtrackCertExpiration[0m -> The server TLS certificate will expire on 2027-09-21 19:45:00 +0000 UTC
+2026-09-21T19:44:36.653676445Z [34m2026-09-21 19:44:36.653 UTC 000b INFO[0m [certmonitor] [34;1mtrackCertExpiration[0m -> The client TLS certificate will expire on 2027-09-21 19:45:00 +0000 UTC
+2026-09-21T19:44:36.653699392Z [34m2026-09-21 19:44:36.653 UTC 000c INFO[0m [orderer.commmon.multichannel] [34;1mInitJoinBlockFileRepo[0m -> Channel Participation API enabled, registrar initializing with file repo /var/hyperledger/production/orderer/pendingops
+2026-09-21T19:44:36.658763675Z [34m2026-09-21 19:44:36.658 UTC 000d INFO[0m [orderer.commmon.multichannel] [34;1mstartChannels[0m -> Registrar initializing without a system channel, number of application channels: 0, with 0 consensus.Chain(s) and 0 follower.Chain(s)
+2026-09-21T19:44:36.659131869Z [34m2026-09-21 19:44:36.659 UTC 000e INFO[0m [orderer.common.server] [34;1mMain[0m -> Starting orderer:
+2026-09-21T19:44:36.659142705Z  Version: 2.4.7
+2026-09-21T19:44:36.659144828Z  Commit SHA: df9c661
+2026-09-21T19:44:36.659146687Z  Go version: go1.18.7
+2026-09-21T19:44:36.659148552Z  OS/Arch: linux/amd64
+2026-09-21T19:44:36.659215983Z [34m2026-09-21 19:44:36.659 UTC 000f INFO[0m [orderer.common.server] [34;1mMain[0m -> Beginning to serve requests
+2026-09-21T19:44:49.379857935Z [34m2026-09-21 19:44:49.379 UTC 0010 INFO[0m [blkstorage] [34;1mnewBlockfileMgr[0m -> Getting block information from block storage
+2026-09-21T19:44:49.438986205Z [34m2026-09-21 19:44:49.438 UTC 0011 INFO[0m [orderer.consensus.etcdraft] [34;1mHandleChain[0m -> EvictionSuspicion not set, defaulting to 10m0s
+2026-09-21T19:44:49.439009621Z [34m2026-09-21 19:44:49.438 UTC 0012 INFO[0m [orderer.consensus.etcdraft] [34;1mHandleChain[0m -> Without system channel: after eviction Registrar.SwitchToFollower will be called
+2026-09-21T19:44:49.439097895Z [34m2026-09-21 19:44:49.439 UTC 0013 INFO[0m [orderer.consensus.etcdraft] [34;1mcreateOrReadWAL[0m -> No WAL data found, creating new WAL at path '/var/hyperledger/production/orderer/etcdraft/wal/defaultchannel' channel=defaultchannel node=1
+2026-09-21T19:44:49.464030809Z [34m2026-09-21 19:44:49.463 UTC 0014 INFO[0m [orderer.commmon.multichannel] [34;1mcreateAsMember[0m -> Joining channel: {defaultchannel  consenter active 1}
+2026-09-21T19:44:49.470468635Z [34m2026-09-21 19:44:49.470 UTC 0015 INFO[0m [orderer.consensus.etcdraft] [34;1mStart[0m -> Starting Raft node channel=defaultchannel node=1
+2026-09-21T19:44:49.470479060Z [34m2026-09-21 19:44:49.470 UTC 0016 INFO[0m [orderer.common.cluster] [34;1mConfigure[0m -> Entering, channel: defaultchannel, nodes: []
+2026-09-21T19:44:49.470492224Z [34m2026-09-21 19:44:49.470 UTC 0017 INFO[0m [orderer.common.cluster] [34;1mConfigure[0m -> Exiting
+2026-09-21T19:44:49.470501423Z [34m2026-09-21 19:44:49.470 UTC 0018 INFO[0m [orderer.consensus.etcdraft] [34;1mstart[0m -> Starting raft node as part of a new channel channel=defaultchannel node=1
+2026-09-21T19:44:49.470521658Z [34m2026-09-21 19:44:49.470 UTC 0019 INFO[0m [orderer.consensus.etcdraft] [34;1mbecomeFollower[0m -> 1 became follower at term 0 channel=defaultchannel node=1
+2026-09-21T19:44:49.470530521Z [34m2026-09-21 19:44:49.470 UTC 001a INFO[0m [orderer.consensus.etcdraft] [34;1mnewRaft[0m -> newRaft 1 [peers: [], term: 0, commit: 0, applied: 0, lastindex: 0, lastterm: 0] channel=defaultchannel node=1
+2026-09-21T19:44:49.470535595Z [34m2026-09-21 19:44:49.470 UTC 001b INFO[0m [orderer.consensus.etcdraft] [34;1mbecomeFollower[0m -> 1 became follower at term 1 channel=defaultchannel node=1
+2026-09-21T19:44:49.470624486Z [34m2026-09-21 19:44:49.470 UTC 001c INFO[0m [orderer.consensus.etcdraft] [34;1mrun[0m -> This node is picked to start campaign channel=defaultchannel node=1
+2026-09-21T19:44:49.477235481Z [34m2026-09-21 19:44:49.477 UTC 001d INFO[0m [orderer.consensus.etcdraft] [34;1mapply[0m -> Applied config change to add node 1, current nodes in channel: [1] channel=defaultchannel node=1
+2026-09-21T19:44:49.559910226Z [33m2026-09-21 19:44:49.559 UTC 001e WARN[0m [common.deliver] [33;1mdeliverBlocks[0m -> [channel: defaultchannel] Rejecting deliver request for 172.21.0.5:34864 because of consenter error
+2026-09-21T19:44:49.559930646Z [34m2026-09-21 19:44:49.559 UTC 001f INFO[0m [comm.grpc.server] [34;1m1[0m -> streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Deliver grpc.peer_address=172.21.0.5:34864 grpc.code=OK grpc.call_duration=345.802µs
+2026-09-21T19:44:50.470886247Z [34m2026-09-21 19:44:50.470 UTC 0020 INFO[0m [orderer.consensus.etcdraft] [34;1mStep[0m -> 1 is starting a new election at term 1 channel=defaultchannel node=1
+2026-09-21T19:44:50.470909481Z [34m2026-09-21 19:44:50.470 UTC 0021 INFO[0m [orderer.consensus.etcdraft] [34;1mbecomePreCandidate[0m -> 1 became pre-candidate at term 1 channel=defaultchannel node=1
+2026-09-21T19:44:50.470911406Z [34m2026-09-21 19:44:50.470 UTC 0022 INFO[0m [orderer.consensus.etcdraft] [34;1mpoll[0m -> 1 received MsgPreVoteResp from 1 at term 1 channel=defaultchannel node=1
+2026-09-21T19:44:50.470925455Z [34m2026-09-21 19:44:50.470 UTC 0023 INFO[0m [orderer.consensus.etcdraft] [34;1mbecomeCandidate[0m -> 1 became candidate at term 2 channel=defaultchannel node=1
+2026-09-21T19:44:50.470927082Z [34m2026-09-21 19:44:50.470 UTC 0024 INFO[0m [orderer.consensus.etcdraft] [34;1mpoll[0m -> 1 received MsgVoteResp from 1 at term 2 channel=defaultchannel node=1
+2026-09-21T19:44:50.470928537Z [34m2026-09-21 19:44:50.470 UTC 0025 INFO[0m [orderer.consensus.etcdraft] [34;1mbecomeLeader[0m -> 1 became leader at term 2 channel=defaultchannel node=1
+2026-09-21T19:44:50.470930035Z [34m2026-09-21 19:44:50.470 UTC 0026 INFO[0m [orderer.consensus.etcdraft] [34;1mrun[0m -> raft.node: 1 elected leader 1 at term 2 channel=defaultchannel node=1
+2026-09-21T19:44:50.474877260Z [34m2026-09-21 19:44:50.474 UTC 0027 INFO[0m [orderer.consensus.etcdraft] [34;1mrun[0m -> Leader 1 is present, quit campaign channel=defaultchannel node=1
+2026-09-21T19:44:50.474887009Z [34m2026-09-21 19:44:50.474 UTC 0028 INFO[0m [orderer.consensus.etcdraft] [34;1mrun[0m -> Raft leader changed: 0 -> 1 channel=defaultchannel node=1
+2026-09-21T19:44:50.474888852Z [34m2026-09-21 19:44:50.474 UTC 0029 INFO[0m [orderer.consensus.etcdraft] [34;1mrun[0m -> Start accepting requests as Raft leader at block [0] channel=defaultchannel node=1
+2026-09-21T19:44:54.649285920Z [33m2026-09-21 19:44:54.649 UTC 002a WARN[0m [common.deliver] [33;1mHandle[0m -> Error reading from 172.21.0.5:40916: rpc error: code = Canceled desc = context canceled
+2026-09-21T19:44:54.649307018Z [34m2026-09-21 19:44:54.649 UTC 002b INFO[0m [comm.grpc.server] [34;1m1[0m -> streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Deliver grpc.peer_address=172.21.0.5:40916 error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=2.772289ms

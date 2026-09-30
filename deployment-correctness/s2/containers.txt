@@ -1,0 +1,32 @@
+NAMES                           IMAGE                               STATUS
+peer1.org5.fno-s2.com           hyperledger/fabric-peer:2.5.15      Up 50 seconds
+couchdb.peer1.org5.fno-s2.com   couchdb:latest                      Up 55 seconds (healthy)
+peer0.org5.fno-s2.com           hyperledger/fabric-peer:2.5.15      Up 56 seconds
+couchdb.peer0.org5.fno-s2.com   couchdb:latest                      Up About a minute (healthy)
+peer1.org4.fno-s2.com           hyperledger/fabric-peer:2.5.15      Up About a minute
+couchdb.peer1.org4.fno-s2.com   couchdb:latest                      Up About a minute (healthy)
+peer0.org4.fno-s2.com           hyperledger/fabric-peer:2.5.15      Up About a minute
+couchdb.peer0.org4.fno-s2.com   couchdb:latest                      Up About a minute (healthy)
+peer1.org3.fno-s2.com           hyperledger/fabric-peer:2.5.15      Up About a minute
+couchdb.peer1.org3.fno-s2.com   couchdb:latest                      Up About a minute (healthy)
+peer0.org3.fno-s2.com           hyperledger/fabric-peer:2.5.15      Up About a minute
+couchdb.peer0.org3.fno-s2.com   couchdb:latest                      Up About a minute (healthy)
+peer1.org2.fno-s2.com           hyperledger/fabric-peer:2.5.15      Up About a minute
+couchdb.peer1.org2.fno-s2.com   couchdb:latest                      Up About a minute (healthy)
+peer0.org2.fno-s2.com           hyperledger/fabric-peer:2.5.15      Up About a minute
+couchdb.peer0.org2.fno-s2.com   couchdb:latest                      Up About a minute (healthy)
+peer1.org1.fno-s2.com           hyperledger/fabric-peer:2.5.15      Up About a minute
+couchdb.peer1.org1.fno-s2.com   couchdb:latest                      Up About a minute (healthy)
+peer0.org1.fno-s2.com           hyperledger/fabric-peer:2.5.15      Up About a minute
+couchdb.peer0.org1.fno-s2.com   couchdb:latest                      Up About a minute (healthy)
+orderer.org1.fno-s2.com         hyperledger/fabric-orderer:2.5.15   Up About a minute
+tools.org5.fno-s2.com           hyperledger/fabric-tools:2.5.15     Up About a minute
+tools.org4.fno-s2.com           hyperledger/fabric-tools:2.5.15     Up About a minute
+tools.org3.fno-s2.com           hyperledger/fabric-tools:2.5.15     Up About a minute
+tools.org2.fno-s2.com           hyperledger/fabric-tools:2.5.15     Up About a minute
+tools.org1.fno-s2.com           hyperledger/fabric-tools:2.5.15     Up About a minute
+ca.org5.fno-s2.com              hyperledger/fabric-ca:latest        Up 2 minutes
+ca.org4.fno-s2.com              hyperledger/fabric-ca:latest        Up 2 minutes
+ca.org3.fno-s2.com              hyperledger/fabric-ca:latest        Up 2 minutes
+ca.org2.fno-s2.com              hyperledger/fabric-ca:latest        Up 2 minutes
+ca.org1.fno-s2.com              hyperledger/fabric-ca:latest        Up 2 minutes

@@ -1,0 +1,10 @@
+========== Command ==========
+peer chaincode query \
+  -C defaultchannel \
+  -n PrivateAgreement \
+  -c '{"Args":["ReadPrivateAgreement","agreement1"]}' \
+  --peerAddresses peer0.org1.fno-s5.com:7051 \
+  --tlsRootCertFiles /opt/gopath/src/github.com/hyperledger/fabric/org1.fno-s5.com/peerOrganizations/org1.fno-s5.com/peers/peer0.org1.fno-s5.com/tls/ca.crt
+
+========== Output ==========
+{"id":"agreement1","partyA":"Org1","partyB":"Org2","secretKey":"secret-123"}

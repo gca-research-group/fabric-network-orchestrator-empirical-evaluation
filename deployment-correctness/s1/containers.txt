@@ -1,0 +1,10 @@
+NAMES                           IMAGE                               STATUS
+peer0.org2.fno-s1.com           hyperledger/fabric-peer:2.5.15      Up 17 seconds
+couchdb.peer0.org2.fno-s1.com   couchdb:latest                      Up 22 seconds (healthy)
+peer0.org1.fno-s1.com           hyperledger/fabric-peer:2.5.15      Up 23 seconds
+couchdb.peer0.org1.fno-s1.com   couchdb:latest                      Up 29 seconds (healthy)
+orderer.org1.fno-s1.com         hyperledger/fabric-orderer:2.5.15   Up 29 seconds
+tools.org2.fno-s1.com           hyperledger/fabric-tools:2.5.15     Up 30 seconds
+tools.org1.fno-s1.com           hyperledger/fabric-tools:2.5.15     Up 30 seconds
+ca.org2.fno-s1.com              hyperledger/fabric-ca:latest        Up 43 seconds
+ca.org1.fno-s1.com              hyperledger/fabric-ca:latest        Up 43 seconds

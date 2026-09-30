@@ -1,0 +1,18 @@
+========== Command ==========
+peer chaincode invoke \
+  -o orderer.org1.fno-s5.com:7050 \
+  --tls \
+  --cafile /opt/gopath/src/github.com/hyperledger/fabric/org1.fno-s5.com/ordererOrganizations/org1.fno-s5.com/orderers/orderer.org1.fno-s5.com/tls/ca.crt \
+  --ordererTLSHostnameOverride orderer.org1.fno-s5.com \
+  -C defaultchannel \
+  -n Product \
+  -c '{"Args":["CreateProduct","product1","Notebook","14-inch notebook","1299.90"]}' \
+  --peerAddresses peer0.org1.fno-s5.com:7051 \
+  --tlsRootCertFiles /opt/gopath/src/github.com/hyperledger/fabric/org1.fno-s5.com/peerOrganizations/org1.fno-s5.com/peers/peer0.org1.fno-s5.com/tls/ca.crt \
+  --peerAddresses peer0.org2.fno-s5.com:7051 \
+  --tlsRootCertFiles /opt/gopath/src/github.com/hyperledger/fabric/org2.fno-s5.com/peerOrganizations/org2.fno-s5.com/peers/peer0.org2.fno-s5.com/tls/ca.crt \
+  --peerAddresses peer0.org3.fno-s5.com:7051 \
+  --tlsRootCertFiles /opt/gopath/src/github.com/hyperledger/fabric/org3.fno-s5.com/peerOrganizations/org3.fno-s5.com/peers/peer0.org3.fno-s5.com/tls/ca.crt
+
+========== Output ========== 
+2026-09-21 20:01:27.991 UTC 0001 INFO [chaincodeCmd] chaincodeInvokeOrQuery -> Chaincode invoke successful. result: status:200

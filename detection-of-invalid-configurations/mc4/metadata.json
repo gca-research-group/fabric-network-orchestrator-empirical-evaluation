@@ -1,0 +1,30 @@
+{
+  "generation": {
+    "parameters": {
+      "seed": ".\\output\\mutation-tests\\seed.yaml",
+      "mutationCount": 4,
+      "output": ".\\output\\mutation-tests\\mc4",
+      "progressInterval": 25000
+    },
+    "startedAt": "2026-09-09T18:13:26.5610785Z",
+    "finishedAt": "2026-09-09T18:13:26.9229108Z",
+    "durationSeconds": 0.3618334,
+    "status": "succeeded",
+    "total": 297978,
+    "mutationOperatorsUsed": 1191912
+  },
+  "validation": {
+    "parameters": {
+      "output": ".\\output\\mutation-tests\\mc4",
+      "progressInterval": 25000
+    },
+    "startedAt": "2026-09-09T18:13:41.5467318Z",
+    "finishedAt": "2026-09-09T18:14:53.9764022Z",
+    "durationSeconds": 72.4298587,
+    "status": "succeeded",
+    "total": 297978,
+    "passed": 297978,
+    "partial": 0,
+    "failed": 0
+  }
+}

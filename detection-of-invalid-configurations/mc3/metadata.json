@@ -1,0 +1,30 @@
+{
+  "generation": {
+    "parameters": {
+      "seed": ".\\output\\mutation-tests\\seed.yaml",
+      "mutationCount": 3,
+      "output": ".\\output\\mutation-tests\\mc3",
+      "progressInterval": 25000
+    },
+    "startedAt": "2026-09-09T18:12:41.911356Z",
+    "finishedAt": "2026-09-09T18:12:41.9441141Z",
+    "durationSeconds": 0.0327582,
+    "status": "succeeded",
+    "total": 25309,
+    "mutationOperatorsUsed": 75927
+  },
+  "validation": {
+    "parameters": {
+      "output": ".\\output\\mutation-tests\\mc3",
+      "progressInterval": 25000
+    },
+    "startedAt": "2026-09-09T18:12:54.6175581Z",
+    "finishedAt": "2026-09-09T18:13:00.9135469Z",
+    "durationSeconds": 6.2960083000000004,
+    "status": "succeeded",
+    "total": 25309,
+    "passed": 25309,
+    "partial": 0,
+    "failed": 0
+  }
+}

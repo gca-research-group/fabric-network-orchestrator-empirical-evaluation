@@ -1,0 +1,427 @@
+2026-09-21T19:50:23.205037234Z [34m2026-09-21 19:50:23.204 UTC 0001 INFO[0m [nodeCmd] [34;1mserve[0m -> Starting peer:
+2026-09-21T19:50:23.205066598Z  Version: v2.5.15
+2026-09-21T19:50:23.205068536Z  Commit SHA: 83c7930
+2026-09-21T19:50:23.205069760Z  Go version: go1.26.0
+2026-09-21T19:50:23.205070981Z  OS/Arch: linux/amd64
+2026-09-21T19:50:23.205072125Z  Chaincode:
+2026-09-21T19:50:23.205073267Z   Base Docker Label: org.hyperledger.fabric
+2026-09-21T19:50:23.205074455Z   Docker Namespace: hyperledger
+2026-09-21T19:50:23.206795433Z [34m2026-09-21 19:50:23.206 UTC 0002 INFO[0m [nodeCmd] [34;1mserve[0m -> Peer config with combined core.yaml settings and environment variable overrides:
+2026-09-21T19:50:23.206808791Z chaincode:
+2026-09-21T19:50:23.206810175Z   builder: $(DOCKER_NS)/fabric-ccenv:$(TWO_DIGIT_VERSION)
+2026-09-21T19:50:23.206811421Z   executetimeout: 30s
+2026-09-21T19:50:23.206812500Z   externalbuilders:
+2026-09-21T19:50:23.206813636Z   - name: ccaas_builder
+2026-09-21T19:50:23.206814772Z     path: /opt/hyperledger/ccaas_builder
+2026-09-21T19:50:23.206815870Z     propagateEnvironment:
+2026-09-21T19:50:23.206816949Z     - CHAINCODE_AS_A_SERVICE_BUILDER_CONFIG
+2026-09-21T19:50:23.206818066Z   golang:
+2026-09-21T19:50:23.206819162Z     dynamiclink: false
+2026-09-21T19:50:23.206820270Z     runtime: $(DOCKER_NS)/fabric-baseos:$(TWO_DIGIT_VERSION)
+2026-09-21T19:50:23.206821400Z   installtimeout: 300s
+2026-09-21T19:50:23.206822470Z   java:
+2026-09-21T19:50:23.206823555Z     runtime: $(DOCKER_NS)/fabric-javaenv:$(TWO_DIGIT_VERSION)
+2026-09-21T19:50:23.206824710Z   keepalive: 0
+2026-09-21T19:50:23.206825810Z   logging:
+2026-09-21T19:50:23.206826898Z     format: '%{color}%{time:2006-01-02 15:04:05.000 MST} [%{module}] %{shortfunc}
+2026-09-21T19:50:23.206828145Z       -> %{level:.4s} %{id:03x}%{color:reset} %{message}'
+2026-09-21T19:50:23.206829324Z     level: info
+2026-09-21T19:50:23.206830373Z     shim: warning
+2026-09-21T19:50:23.206831422Z   mode: net
+2026-09-21T19:50:23.206832478Z   node:
+2026-09-21T19:50:23.206833583Z     runtime: $(DOCKER_NS)/fabric-nodeenv:$(TWO_DIGIT_VERSION)
+2026-09-21T19:50:23.206834713Z   pull: false
+2026-09-21T19:50:23.206835778Z   startuptimeout: 300s
+2026-09-21T19:50:23.206836837Z   system:
+2026-09-21T19:50:23.206837877Z     _lifecycle: enable
+2026-09-21T19:50:23.206838929Z     cscc: enable
+2026-09-21T19:50:23.206839997Z     lscc: enable
+2026-09-21T19:50:23.206841033Z     qscc: enable
+2026-09-21T19:50:23.206842326Z ledger:
+2026-09-21T19:50:23.206851260Z   history:
+2026-09-21T19:50:23.206852478Z     enablehistorydatabase: true
+2026-09-21T19:50:23.206853640Z   pvtdatastore:
+2026-09-21T19:50:23.206854779Z     collelgprocdbbatchesinterval: 1000
+2026-09-21T19:50:23.206855910Z     collelgprocmaxdbbatchsize: 5000
+2026-09-21T19:50:23.206857047Z     deprioritizeddatareconcilerinterval: 60m
+2026-09-21T19:50:23.206858161Z     purgedkeyauditlogging: true
+2026-09-21T19:50:23.206859275Z     purgeinterval: 100
+2026-09-21T19:50:23.206860361Z   snapshots:
+2026-09-21T19:50:23.206861428Z     rootdir: /var/hyperledger/production/snapshots
+2026-09-21T19:50:23.206862574Z   state:
+2026-09-21T19:50:23.206863658Z     couchdbconfig:
+2026-09-21T19:50:23.206864767Z       cachesize: 64
+2026-09-21T19:50:23.206865860Z       couchdbaddress: couchdb.peer0.org2.fno-s5.com:5984
+2026-09-21T19:50:23.206867022Z       createglobalchangesdb: false
+2026-09-21T19:50:23.206868127Z       internalquerylimit: 1000
+2026-09-21T19:50:23.206869214Z       maxbatchupdatesize: 1000
+2026-09-21T19:50:23.206870291Z       maxretries: 3
+2026-09-21T19:50:23.206871366Z       maxretriesonstartup: 10
+2026-09-21T19:50:23.206872459Z       password: adminpw
+2026-09-21T19:50:23.206873521Z       requesttimeout: 35s
+2026-09-21T19:50:23.206874587Z       username: admin
+2026-09-21T19:50:23.206875650Z     statedatabase: CouchDB
+2026-09-21T19:50:23.206876777Z     totalquerylimit: 100000
+2026-09-21T19:50:23.206877848Z logging_level: ""
+2026-09-21T19:50:23.206879029Z metrics:
+2026-09-21T19:50:23.206880060Z   provider: disabled
+2026-09-21T19:50:23.206881151Z   statsd:
+2026-09-21T19:50:23.206882193Z     address: 127.0.0.1:8125
+2026-09-21T19:50:23.206883300Z     network: udp
+2026-09-21T19:50:23.206884373Z     writeinterval: 10s
+2026-09-21T19:50:23.206885449Z operations:
+2026-09-21T19:50:23.206886491Z   listenaddress: 127.0.0.1:9443
+2026-09-21T19:50:23.206887573Z   tls:
+2026-09-21T19:50:23.206888641Z     clientauthrequired: false
+2026-09-21T19:50:23.206889757Z     clientrootcas:
+2026-09-21T19:50:23.206890829Z       files: []
+2026-09-21T19:50:23.206891902Z     enabled: false
+2026-09-21T19:50:23.206892966Z peer:
+2026-09-21T19:50:23.206894030Z   address: peer0.org2.fno-s5.com:7051
+2026-09-21T19:50:23.206895168Z   addressautodetect: false
+2026-09-21T19:50:23.206897588Z   authentication:
+2026-09-21T19:50:23.206899152Z     timewindow: 15m
+2026-09-21T19:50:23.206900328Z   bccsp:
+2026-09-21T19:50:23.206902983Z     default: SW
+2026-09-21T19:50:23.206904129Z     sw:
+2026-09-21T19:50:23.206905242Z       hash: SHA2
+2026-09-21T19:50:23.206906337Z       security: 256
+2026-09-21T19:50:23.206907410Z   client:
+2026-09-21T19:50:23.206908504Z     conntimeout: 3s
+2026-09-21T19:50:23.206909566Z   deliveryclient:
+2026-09-21T19:50:23.206910634Z     blockgossipenabled: true
+2026-09-21T19:50:23.206911726Z     conntimeout: 3s
+2026-09-21T19:50:23.206912804Z     reconnectbackoffthreshold: 3600s
+2026-09-21T19:50:23.206913927Z     reconnecttotaltimethreshold: 3600s
+2026-09-21T19:50:23.206915031Z   discovery:
+2026-09-21T19:50:23.206916098Z     authcacheenabled: true
+2026-09-21T19:50:23.206917165Z     authcachemaxsize: 1000
+2026-09-21T19:50:23.206918269Z     authcachepurgeretentionratio: 0.75
+2026-09-21T19:50:23.206919377Z     enabled: true
+2026-09-21T19:50:23.206920456Z     orgmembersallowedaccess: false
+2026-09-21T19:50:23.206921576Z   filesystempath: /var/hyperledger/production
+2026-09-21T19:50:23.206922689Z   gateway:
+2026-09-21T19:50:23.206923753Z     broadcasttimeout: 30s
+2026-09-21T19:50:23.206924833Z     dialtimeout: 2m
+2026-09-21T19:50:23.206925901Z     enabled: true
+2026-09-21T19:50:23.206927004Z     endorsementtimeout: 30s
+2026-09-21T19:50:23.206928107Z   gossip:
+2026-09-21T19:50:23.206929175Z     aliveexpirationtimeout: 25s
+2026-09-21T19:50:23.206930260Z     alivetimeinterval: 5s
+2026-09-21T19:50:23.206931394Z     bootstrap: peer0.org2.fno-s5.com:7051
+2026-09-21T19:50:23.206932488Z     conntimeout: 2s
+2026-09-21T19:50:23.206933547Z     dialtimeout: 3s
+2026-09-21T19:50:23.206934599Z     digestwaittime: 1s
+2026-09-21T19:50:23.206935678Z     election:
+2026-09-21T19:50:23.206936736Z       leaderalivethreshold: 10s
+2026-09-21T19:50:23.206937839Z       leaderelectionduration: 5s
+2026-09-21T19:50:23.206938954Z       membershipsampleinterval: 1s
+2026-09-21T19:50:23.206940031Z       startupgraceperiod: 15s
+2026-09-21T19:50:23.206941122Z     externalendpoint: peer0.org2.fno-s5.com:7051
+2026-09-21T19:50:23.206942232Z     maxblockcounttostore: 10
+2026-09-21T19:50:23.206943300Z     maxconnectionattempts: 120
+2026-09-21T19:50:23.206944428Z     maxpropagationburstlatency: 10ms
+2026-09-21T19:50:23.206945513Z     maxpropagationburstsize: 10
+2026-09-21T19:50:23.206946606Z     membershiptrackerinterval: 5s
+2026-09-21T19:50:23.206947697Z     msgexpirationfactor: 20
+2026-09-21T19:50:23.206948793Z     orgleader: "false"
+2026-09-21T19:50:23.206951266Z     propagateiterations: 1
+2026-09-21T19:50:23.206952441Z     propagatepeernum: 3
+2026-09-21T19:50:23.206953537Z     publishcertperiod: 10s
+2026-09-21T19:50:23.206954648Z     publishstateinfointerval: 4s
+2026-09-21T19:50:23.206955747Z     pullinterval: 4s
+2026-09-21T19:50:23.206956814Z     pullpeernum: 3
+2026-09-21T19:50:23.206957873Z     pvtdata:
+2026-09-21T19:50:23.206958932Z       btlpullmargin: 10
+2026-09-21T19:50:23.206960033Z       implicitcollectiondisseminationpolicy:
+2026-09-21T19:50:23.206961153Z         maxpeercount: 1
+2026-09-21T19:50:23.206962225Z         requiredpeercount: 0
+2026-09-21T19:50:23.206963303Z       pullretrythreshold: 60s
+2026-09-21T19:50:23.206964381Z       pushacktimeout: 3s
+2026-09-21T19:50:23.206965450Z       reconcilebatchsize: 10
+2026-09-21T19:50:23.206966551Z       reconcilesleepinterval: 1m
+2026-09-21T19:50:23.206967648Z       reconciliationenabled: true
+2026-09-21T19:50:23.206968746Z       skippullinginvalidtransactionsduringcommit: false
+2026-09-21T19:50:23.206969893Z       transientstoremaxblockretention: 1000
+2026-09-21T19:50:23.206970990Z     reconnectinterval: 25s
+2026-09-21T19:50:23.206972087Z     recvbuffsize: 20
+2026-09-21T19:50:23.206973169Z     requeststateinfointerval: 4s
+2026-09-21T19:50:23.206974254Z     requestwaittime: 1500ms
+2026-09-21T19:50:23.206975330Z     responsewaittime: 2s
+2026-09-21T19:50:23.206976405Z     sendbuffsize: 200
+2026-09-21T19:50:23.206977493Z     skipblockverification: false
+2026-09-21T19:50:23.206978659Z     state:
+2026-09-21T19:50:23.206979698Z       batchsize: 10
+2026-09-21T19:50:23.206980772Z       blockbuffersize: 20
+2026-09-21T19:50:23.206981879Z       checkinterval: 10s
+2026-09-21T19:50:23.206982948Z       enabled: "true"
+2026-09-21T19:50:23.206984062Z       maxretries: 3
+2026-09-21T19:50:23.206985141Z       responsetimeout: 3s
+2026-09-21T19:50:23.206986219Z     useleaderelection: "true"
+2026-09-21T19:50:23.206987617Z   handlers:
+2026-09-21T19:50:23.206988799Z     authfilters:
+2026-09-21T19:50:23.206989881Z     - name: DefaultAuth
+2026-09-21T19:50:23.206990969Z     - name: ExpirationCheck
+2026-09-21T19:50:23.206992064Z     decorators:
+2026-09-21T19:50:23.206993127Z     - name: DefaultDecorator
+2026-09-21T19:50:23.206994220Z     endorsers:
+2026-09-21T19:50:23.206995292Z       escc:
+2026-09-21T19:50:23.206996370Z         name: DefaultEndorsement
+2026-09-21T19:50:23.206998771Z     validators:
+2026-09-21T19:50:23.206999920Z       vscc:
+2026-09-21T19:50:23.207001018Z         name: DefaultValidation
+2026-09-21T19:50:23.207002100Z   id: peer0.org2.fno-s5.com
+2026-09-21T19:50:23.207009048Z   keepalive:
+2026-09-21T19:50:23.207011079Z     client:
+2026-09-21T19:50:23.207012219Z       interval: 60s
+2026-09-21T19:50:23.207013315Z       timeout: 20s
+2026-09-21T19:50:23.207014387Z     deliveryclient:
+2026-09-21T19:50:23.207015454Z       interval: 60s
+2026-09-21T19:50:23.207016547Z       timeout: 20s
+2026-09-21T19:50:23.207017619Z     interval: 7200s
+2026-09-21T19:50:23.207018707Z     mininterval: 60s
+2026-09-21T19:50:23.207019814Z     timeout: 20s
+2026-09-21T19:50:23.207020909Z   limits:
+2026-09-21T19:50:23.207021968Z     concurrency:
+2026-09-21T19:50:23.207023041Z       deliverservice: 2500
+2026-09-21T19:50:23.207024121Z       endorserservice: 2500
+2026-09-21T19:50:23.207025217Z       gatewayservice: 500
+2026-09-21T19:50:23.207026298Z   listenaddress: 0.0.0.0:7051
+2026-09-21T19:50:23.207027380Z   localmspid: Org2MSP
+2026-09-21T19:50:23.207028471Z   localmsptype: bccsp
+2026-09-21T19:50:23.207029543Z   maxrecvmsgsize: 104857600
+2026-09-21T19:50:23.207030633Z   maxsendmsgsize: 104857600
+2026-09-21T19:50:23.207031747Z   mspconfigpath: /etc/hyperledger/fabric/msp
+2026-09-21T19:50:23.207032868Z   networkid: dev
+2026-09-21T19:50:23.207033937Z   profile:
+2026-09-21T19:50:23.207035006Z     enabled: "true"
+2026-09-21T19:50:23.207036131Z     listenaddress: 0.0.0.0:6060
+2026-09-21T19:50:23.207037239Z   tls:
+2026-09-21T19:50:23.207038295Z     cert:
+2026-09-21T19:50:23.207039360Z       file: /etc/hyperledger/fabric/tls/server.crt
+2026-09-21T19:50:23.207040474Z     clientauthrequired: "false"
+2026-09-21T19:50:23.207041627Z     clientcert:
+2026-09-21T19:50:23.207042724Z       file: /etc/hyperledger/fabric/tls/server.crt
+2026-09-21T19:50:23.207043865Z     clientkey:
+2026-09-21T19:50:23.207045098Z       file: /etc/hyperledger/fabric/tls/server.key
+2026-09-21T19:50:23.207046212Z     clientrootcas:
+2026-09-21T19:50:23.207047623Z       files:
+2026-09-21T19:50:23.207049544Z       - tls/ca.crt
+2026-09-21T19:50:23.207051244Z     enabled: "true"
+2026-09-21T19:50:23.207053023Z     key:
+2026-09-21T19:50:23.207054515Z       file: /etc/hyperledger/fabric/tls/server.key
+2026-09-21T19:50:23.207056270Z     rootcert:
+2026-09-21T19:50:23.207061160Z       file: /etc/hyperledger/fabric/tls/ca.crt
+2026-09-21T19:50:23.207063031Z vm:
+2026-09-21T19:50:23.207064135Z   docker:
+2026-09-21T19:50:23.207065208Z     attachstdout: false
+2026-09-21T19:50:23.207066301Z     hostconfig:
+2026-09-21T19:50:23.207067357Z       logconfig:
+2026-09-21T19:50:23.207068432Z         config:
+2026-09-21T19:50:23.207069487Z           max-file: "5"
+2026-09-21T19:50:23.207070611Z           max-size: 50m
+2026-09-21T19:50:23.207071696Z         type: json-file
+2026-09-21T19:50:23.207072782Z       memory: 2147483648
+2026-09-21T19:50:23.207073849Z       networkmode: fno-s5
+2026-09-21T19:50:23.207074927Z     tls:
+2026-09-21T19:50:23.207075971Z       ca:
+2026-09-21T19:50:23.207077019Z         file: docker/ca.crt
+2026-09-21T19:50:23.207078107Z       cert:
+2026-09-21T19:50:23.207079173Z         file: docker/tls.crt
+2026-09-21T19:50:23.207080265Z       enabled: false
+2026-09-21T19:50:23.207081337Z       key:
+2026-09-21T19:50:23.207083250Z         file: docker/tls.key
+2026-09-21T19:50:23.207085236Z   endpoint: unix:///host/var/run/docker.sock
+2026-09-21T19:50:23.207088761Z [34m2026-09-21 19:50:23.206 UTC 0003 INFO[0m [peer] [34;1mgetLocalAddress[0m -> Auto-detected peer address: 172.22.0.12:7051
+2026-09-21T19:50:23.207091446Z [34m2026-09-21 19:50:23.206 UTC 0004 INFO[0m [peer] [34;1mgetLocalAddress[0m -> Returning peer0.org2.fno-s5.com:7051
+2026-09-21T19:50:23.207708177Z [34m2026-09-21 19:50:23.207 UTC 0005 INFO[0m [nodeCmd] [34;1minitGrpcSemaphores[0m -> concurrency limit for endorser service is 2500
+2026-09-21T19:50:23.207715606Z [34m2026-09-21 19:50:23.207 UTC 0006 INFO[0m [nodeCmd] [34;1minitGrpcSemaphores[0m -> concurrency limit for deliver service is 2500
+2026-09-21T19:50:23.207717259Z [34m2026-09-21 19:50:23.207 UTC 0007 INFO[0m [nodeCmd] [34;1minitGrpcSemaphores[0m -> concurrency limit for gateway service is 500
+2026-09-21T19:50:23.207718726Z [34m2026-09-21 19:50:23.207 UTC 0008 INFO[0m [nodeCmd] [34;1mserve[0m -> Starting peer with TLS enabled
+2026-09-21T19:50:23.267704887Z [34m2026-09-21 19:50:23.267 UTC 0009 INFO[0m [certmonitor] [34;1mtrackCertExpiration[0m -> The enrollment certificate will expire on 2027-09-21 19:50:00 +0000 UTC
+2026-09-21T19:50:23.267723713Z [34m2026-09-21 19:50:23.267 UTC 000a INFO[0m [certmonitor] [34;1mtrackCertExpiration[0m -> The server TLS certificate will expire on 2027-09-21 19:50:00 +0000 UTC
+2026-09-21T19:50:23.267975050Z [34m2026-09-21 19:50:23.267 UTC 000b INFO[0m [ledgermgmt] [34;1mNewLedgerMgr[0m -> Initializing LedgerMgr
+2026-09-21T19:50:23.546315262Z [34m2026-09-21 19:50:23.546 UTC 000c INFO[0m [leveldbhelper] [34;1mopenDBAndCheckFormat[0m -> DB is empty Setting db format as 2.0
+2026-09-21T19:50:23.565206713Z [34m2026-09-21 19:50:23.565 UTC 000d INFO[0m [blkstorage] [34;1mNewProvider[0m -> Creating new file ledger directory at /var/hyperledger/production/ledgersData/chains/chains
+2026-09-21T19:50:23.691376816Z [34m2026-09-21 19:50:23.691 UTC 000e INFO[0m [leveldbhelper] [34;1mopenDBAndCheckFormat[0m -> DB is empty Setting db format as 2.5
+2026-09-21T19:50:23.766555861Z [34m2026-09-21 19:50:23.766 UTC 000f INFO[0m [leveldbhelper] [34;1mopenDBAndCheckFormat[0m -> DB is empty Setting db format as 2.0
+2026-09-21T19:50:23.905127696Z [34m2026-09-21 19:50:23.905 UTC 0010 INFO[0m [couchdb] [34;1mcreateDatabaseIfNotExist[0m -> Created state database _users
+2026-09-21T19:50:23.944938792Z [34m2026-09-21 19:50:23.944 UTC 0011 INFO[0m [couchdb] [34;1mcreateDatabaseIfNotExist[0m -> Created state database _replicator
+2026-09-21T19:50:24.001167452Z [34m2026-09-21 19:50:24.001 UTC 0012 INFO[0m [couchdb] [34;1mcreateDatabaseIfNotExist[0m -> Created state database fabric__internal
+2026-09-21T19:50:24.064041394Z [34m2026-09-21 19:50:24.063 UTC 0013 INFO[0m [ledgermgmt] [34;1mNewLedgerMgr[0m -> Initialized LedgerMgr
+2026-09-21T19:50:24.064491130Z [34m2026-09-21 19:50:24.064 UTC 0014 INFO[0m [gossip.service] [34;1mNew[0m -> Initialize gossip with endpoint peer0.org2.fno-s5.com:7051
+2026-09-21T19:50:24.065191920Z [34m2026-09-21 19:50:24.065 UTC 0015 INFO[0m [gossip.gossip] [34;1mNew[0m -> Creating gossip service with self membership of Endpoint: peer0.org2.fno-s5.com:7051, InternalEndpoint: peer0.org2.fno-s5.com:7051, PKI-ID: 96febb81fb8cb176a66441a3ca86a234e1abef0e7840cc4d4084026da3fa148c, Metadata: 
+2026-09-21T19:50:24.065377062Z [34m2026-09-21 19:50:24.065 UTC 0016 INFO[0m [lifecycle] [34;1mInitializeLocalChaincodes[0m -> Initialized lifecycle cache with 0 already installed chaincodes
+2026-09-21T19:50:24.065489429Z [34m2026-09-21 19:50:24.065 UTC 0017 INFO[0m [gossip.gossip] [34;1mstart[0m -> Gossip instance peer0.org2.fno-s5.com:7051 started
+2026-09-21T19:50:24.065633124Z [34m2026-09-21 19:50:24.065 UTC 0018 INFO[0m [nodeCmd] [34;1mcomputeChaincodeEndpoint[0m -> Entering computeChaincodeEndpoint with peerHostname: peer0.org2.fno-s5.com
+2026-09-21T19:50:24.065639542Z [34m2026-09-21 19:50:24.065 UTC 0019 INFO[0m [nodeCmd] [34;1mcomputeChaincodeEndpoint[0m -> Exit with ccEndpoint: peer0.org2.fno-s5.com:7052
+2026-09-21T19:50:24.065649772Z [33m2026-09-21 19:50:24.065 UTC 001a WARN[0m [nodeCmd] [33;1mcreateChaincodeServer[0m -> peer.chaincodeListenAddress is not set, using peer0.org2.fno-s5.com:7052
+2026-09-21T19:50:24.066661041Z [34m2026-09-21 19:50:24.066 UTC 001b INFO[0m [sccapi] [34;1mDeploySysCC[0m -> deploying system chaincode 'lscc'
+2026-09-21T19:50:24.066745080Z [34m2026-09-21 19:50:24.066 UTC 001c INFO[0m [sccapi] [34;1mDeploySysCC[0m -> deploying system chaincode 'cscc'
+2026-09-21T19:50:24.066818143Z [34m2026-09-21 19:50:24.066 UTC 001d INFO[0m [sccapi] [34;1mDeploySysCC[0m -> deploying system chaincode 'qscc'
+2026-09-21T19:50:24.066867574Z [34m2026-09-21 19:50:24.066 UTC 001e INFO[0m [sccapi] [34;1mDeploySysCC[0m -> deploying system chaincode '_lifecycle'
+2026-09-21T19:50:24.066914484Z [34m2026-09-21 19:50:24.066 UTC 001f INFO[0m [nodeCmd] [34;1mserve[0m -> Deployed system chaincodes
+2026-09-21T19:50:24.067020515Z [34m2026-09-21 19:50:24.066 UTC 0020 INFO[0m [discovery] [34;1mNewService[0m -> Created with config TLS: true, authCacheMaxSize: 1000, authCachePurgeRatio: 0.750000
+2026-09-21T19:50:24.067031609Z [34m2026-09-21 19:50:24.066 UTC 0021 INFO[0m [nodeCmd] [34;1mserve[0m -> Discovery service activated
+2026-09-21T19:50:24.067057605Z [34m2026-09-21 19:50:24.067 UTC 0022 INFO[0m [nodeCmd] [34;1mserve[0m -> Starting peer with Gateway enabled
+2026-09-21T19:50:24.067095750Z [34m2026-09-21 19:50:24.067 UTC 0023 INFO[0m [nodeCmd] [34;1mserve[0m -> Starting peer with ID=[peer0.org2.fno-s5.com], network ID=[dev], address=[peer0.org2.fno-s5.com:7051]
+2026-09-21T19:50:24.067159979Z [34m2026-09-21 19:50:24.067 UTC 0024 INFO[0m [nodeCmd] [34;1mfunc7[0m -> Starting profiling server with listenAddress = 0.0.0.0:6060
+2026-09-21T19:50:24.067234786Z [34m2026-09-21 19:50:24.067 UTC 0025 INFO[0m [nodeCmd] [34;1mserve[0m -> Started peer with ID=[peer0.org2.fno-s5.com], network ID=[dev], address=[peer0.org2.fno-s5.com:7051]
+2026-09-21T19:50:24.067275304Z [34m2026-09-21 19:50:24.067 UTC 0026 INFO[0m [kvledger] [34;1mLoadPreResetHeight[0m -> Loading prereset height from path [/var/hyperledger/production/ledgersData/chains]
+2026-09-21T19:50:24.067284721Z [34m2026-09-21 19:50:24.067 UTC 0027 INFO[0m [blkstorage] [34;1mpreResetHtFiles[0m -> No active channels passed
+2026-09-21T19:50:35.471539491Z [34m2026-09-21 19:50:35.471 UTC 0028 INFO[0m [comm.grpc.server] [34;1m1[0m -> unary call completed grpc.service=gossip.Gossip grpc.method=Ping grpc.request_deadline=2026-09-21T19:50:37.471Z grpc.peer_address=172.22.0.10:49746 grpc.peer_subject="CN=peer0,OU=peer,O=Hyperledger,ST=North Carolina,C=US" grpc.code=OK grpc.call_duration=62.217µs
+2026-09-21T19:50:35.472395307Z [33m2026-09-21 19:50:35.472 UTC 0029 WARN[0m [gossip.comm] [33;1mauthenticateRemotePeer[0m -> Identity store rejected 172.22.0.10:49746 : failed classifying identity: Unable to extract msp.Identity from peer Identity: Peer Identity {"CN":"peer0","Issuer-CN":"ca.org1.fno-s5.com","Issuer-L-ST-C":"[]-[]-[US]","Issuer-OU":["Fabric"],"L-ST-C":"[]-[]-[US]","MSP":"Org1MSP","OU":["peer"]} cannot be validated. No MSP found able to do that.
+2026-09-21T19:50:35.472413029Z [31m2026-09-21 19:50:35.472 UTC 002a ERRO[0m [gossip.comm] [31;1mGossipStream[0m -> Authentication failed: failed classifying identity: Unable to extract msp.Identity from peer Identity: Peer Identity {"CN":"peer0","Issuer-CN":"ca.org1.fno-s5.com","Issuer-L-ST-C":"[]-[]-[US]","Issuer-OU":["Fabric"],"L-ST-C":"[]-[]-[US]","MSP":"Org1MSP","OU":["peer"]} cannot be validated. No MSP found able to do that.
+2026-09-21T19:50:35.472430733Z [34m2026-09-21 19:50:35.472 UTC 002b INFO[0m [comm.grpc.server] [34;1m1[0m -> streaming call completed grpc.service=gossip.Gossip grpc.method=GossipStream grpc.request_deadline=2026-09-21T19:50:45.471Z grpc.peer_address=172.22.0.10:49746 grpc.peer_subject="CN=peer0,OU=peer,O=Hyperledger,ST=North Carolina,C=US" error="failed classifying identity: Unable to extract msp.Identity from peer Identity: Peer Identity {\"CN\":\"peer0\",\"Issuer-CN\":\"ca.org1.fno-s5.com\",\"Issuer-L-ST-C\":\"[]-[]-[US]\",\"Issuer-OU\":[\"Fabric\"],\"L-ST-C\":\"[]-[]-[US]\",\"MSP\":\"Org1MSP\",\"OU\":[\"peer\"]} cannot be validated. No MSP found able to do that." grpc.code=Unknown grpc.call_duration=480.89µs
+2026-09-21T19:50:35.476798043Z [34m2026-09-21 19:50:35.476 UTC 002c INFO[0m [comm.grpc.server] [34;1m1[0m -> unary call completed grpc.service=gossip.Gossip grpc.method=Ping grpc.request_deadline=2026-09-21T19:50:37.476Z grpc.peer_address=172.22.0.10:49762 grpc.peer_subject="CN=peer0,OU=peer,O=Hyperledger,ST=North Carolina,C=US" grpc.code=OK grpc.call_duration=51.155µs
+2026-09-21T19:50:35.477414379Z [33m2026-09-21 19:50:35.477 UTC 002d WARN[0m [gossip.comm] [33;1mauthenticateRemotePeer[0m -> Identity store rejected 172.22.0.10:49762 : failed classifying identity: Unable to extract msp.Identity from peer Identity: Peer Identity {"CN":"peer0","Issuer-CN":"ca.org1.fno-s5.com","Issuer-L-ST-C":"[]-[]-[US]","Issuer-OU":["Fabric"],"L-ST-C":"[]-[]-[US]","MSP":"Org1MSP","OU":["peer"]} cannot be validated. No MSP found able to do that.
+2026-09-21T19:50:35.477431957Z [31m2026-09-21 19:50:35.477 UTC 002e ERRO[0m [gossip.comm] [31;1mGossipStream[0m -> Authentication failed: failed classifying identity: Unable to extract msp.Identity from peer Identity: Peer Identity {"CN":"peer0","Issuer-CN":"ca.org1.fno-s5.com","Issuer-L-ST-C":"[]-[]-[US]","Issuer-OU":["Fabric"],"L-ST-C":"[]-[]-[US]","MSP":"Org1MSP","OU":["peer"]} cannot be validated. No MSP found able to do that.
+2026-09-21T19:50:35.477435518Z [34m2026-09-21 19:50:35.477 UTC 002f INFO[0m [comm.grpc.server] [34;1m1[0m -> streaming call completed grpc.service=gossip.Gossip grpc.method=GossipStream grpc.peer_address=172.22.0.10:49762 grpc.peer_subject="CN=peer0,OU=peer,O=Hyperledger,ST=North Carolina,C=US" error="failed classifying identity: Unable to extract msp.Identity from peer Identity: Peer Identity {\"CN\":\"peer0\",\"Issuer-CN\":\"ca.org1.fno-s5.com\",\"Issuer-L-ST-C\":\"[]-[]-[US]\",\"Issuer-OU\":[\"Fabric\"],\"L-ST-C\":\"[]-[]-[US]\",\"MSP\":\"Org1MSP\",\"OU\":[\"peer\"]} cannot be validated. No MSP found able to do that." grpc.code=Unknown grpc.call_duration=417.291µs
+2026-09-21T19:50:35.553396772Z [34m2026-09-21 19:50:35.553 UTC 0030 INFO[0m [endorser] [34;1mcallChaincode[0m -> finished chaincode: cscc duration: 0ms channel= txID=2bf5efdf
+2026-09-21T19:50:35.553436489Z [34m2026-09-21 19:50:35.553 UTC 0031 INFO[0m [comm.grpc.server] [34;1m1[0m -> unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=172.22.0.6:36852 grpc.code=OK grpc.call_duration=1.024789ms
+2026-09-21T19:50:35.638676059Z [34m2026-09-21 19:50:35.638 UTC 0032 INFO[0m [ledgermgmt] [34;1mCreateLedger[0m -> Creating ledger [defaultchannel] with genesis block
+2026-09-21T19:50:35.651732222Z [34m2026-09-21 19:50:35.651 UTC 0033 INFO[0m [blkstorage] [34;1mnewBlockfileMgr[0m -> Getting block information from block storage
+2026-09-21T19:50:35.698508701Z [34m2026-09-21 19:50:35.698 UTC 0034 INFO[0m [couchdb] [34;1mcreateDatabaseIfNotExist[0m -> Created state database defaultchannel_
+2026-09-21T19:50:35.775063917Z [34m2026-09-21 19:50:35.774 UTC 0035 INFO[0m [couchdb] [34;1mcreateDatabaseIfNotExist[0m -> Created state database defaultchannel__lifecycle
+2026-09-21T19:50:35.884611438Z [34m2026-09-21 19:50:35.884 UTC 0036 INFO[0m [kvledger] [34;1mcommit[0m -> [defaultchannel] Committed block [0] with 1 transaction(s) in 86ms (state_validation=0ms block_and_pvtdata_commit=18ms state_commit=62ms) commitHash=[]
+2026-09-21T19:50:35.884622615Z [34m2026-09-21 19:50:35.884 UTC 0037 INFO[0m [kvledger] [34;1mupdateLedgerStatus[0m -> Updating ledger [defaultchannel] status to [ACTIVE]
+2026-09-21T19:50:35.890226357Z [34m2026-09-21 19:50:35.890 UTC 0038 INFO[0m [ledgermgmt] [34;1mCreateLedger[0m -> Created ledger [defaultchannel] with genesis block
+2026-09-21T19:50:35.895426603Z [33m2026-09-21 19:50:35.895 UTC 0039 WARN[0m [peer.orderers] [33;1mUpdate[0m -> Config defines both orderer org specific endpoints and global endpoints, global endpoints will be ignored channel=defaultchannel
+2026-09-21T19:50:35.895591350Z [34m2026-09-21 19:50:35.895 UTC 003a INFO[0m [gossip.gossip] [34;1mJoinChan[0m -> Joining gossip network of channel defaultchannel with 3 organizations
+2026-09-21T19:50:35.895594013Z [34m2026-09-21 19:50:35.895 UTC 003b INFO[0m [gossip.gossip] [34;1mlearnAnchorPeers[0m -> Learning about the configured anchor peers of Org2MSP for channel defaultchannel: [{peer0.org2.fno-s5.com 7051}]
+2026-09-21T19:50:35.895622952Z [34m2026-09-21 19:50:35.895 UTC 003c INFO[0m [gossip.gossip] [34;1mlearnAnchorPeers[0m -> Anchor peer for channel defaultchannel with same endpoint, skipping connecting to myself
+2026-09-21T19:50:35.895629387Z [34m2026-09-21 19:50:35.895 UTC 003d INFO[0m [gossip.gossip] [34;1mlearnAnchorPeers[0m -> Learning about the configured anchor peers of Org3MSP for channel defaultchannel: [{peer0.org3.fno-s5.com 7051}]
+2026-09-21T19:50:35.895651642Z [34m2026-09-21 19:50:35.895 UTC 003e INFO[0m [gossip.gossip] [34;1mlearnAnchorPeers[0m -> Learning about the configured anchor peers of Org1MSP for channel defaultchannel: [{peer0.org1.fno-s5.com 7051}]
+2026-09-21T19:50:35.895799252Z [34m2026-09-21 19:50:35.895 UTC 003f INFO[0m [gateway] [34;1mconfigUpdate[0m -> Updating orderer config channel=defaultchannel
+2026-09-21T19:50:35.896014801Z [34m2026-09-21 19:50:35.895 UTC 0040 INFO[0m [gossip.state] [34;1mNewGossipStateProvider[0m -> Updating metadata information for channel defaultchannel, current ledger sequence is at = 0, next expected block is = 1
+2026-09-21T19:50:35.896206004Z [34m2026-09-21 19:50:35.896 UTC 0041 INFO[0m [endorser] [34;1mcallChaincode[0m -> finished chaincode: cscc duration: 260ms channel= txID=6a49b323
+2026-09-21T19:50:35.896211870Z [34m2026-09-21 19:50:35.896 UTC 0042 INFO[0m [comm.grpc.server] [34;1m1[0m -> unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=172.22.0.6:36868 grpc.code=OK grpc.call_duration=261.107452ms
+2026-09-21T19:50:35.904084680Z [33m2026-09-21 19:50:35.903 UTC 0043 WARN[0m [gossip.comm] [33;1mfunc1[0m -> peer0.org3.fno-s5.com:7051, PKIid:2e40fd9cd932be57e5e05073896d2a4809109f1c1639ece008b02422c2150c10 isn't responsive: EOF
+2026-09-21T19:50:36.341238547Z [34m2026-09-21 19:50:36.341 UTC 0044 INFO[0m [comm.grpc.server] [34;1m1[0m -> unary call completed grpc.service=gossip.Gossip grpc.method=Ping grpc.request_deadline=2026-09-21T19:50:38.341Z grpc.peer_address=172.22.0.14:36414 grpc.peer_subject="CN=peer0,OU=peer,O=Hyperledger,ST=North Carolina,C=US" grpc.code=OK grpc.call_duration=40.139µs
+2026-09-21T19:50:36.343708448Z [34m2026-09-21 19:50:36.342 UTC 0045 INFO[0m [gossip.comm] [34;1mGossipStream[0m -> Peer 2e40fd9cd932be57e5e05073896d2a4809109f1c1639ece008b02422c2150c10 (172.22.0.14:36414) probed us
+2026-09-21T19:50:36.343719537Z [34m2026-09-21 19:50:36.342 UTC 0046 INFO[0m [comm.grpc.server] [34;1m1[0m -> streaming call completed grpc.service=gossip.Gossip grpc.method=GossipStream grpc.request_deadline=2026-09-21T19:50:46.341Z grpc.peer_address=172.22.0.14:36414 grpc.peer_subject="CN=peer0,OU=peer,O=Hyperledger,ST=North Carolina,C=US" grpc.code=OK grpc.call_duration=883.676µs
+2026-09-21T19:50:36.345914025Z [34m2026-09-21 19:50:36.345 UTC 0047 INFO[0m [comm.grpc.server] [34;1m1[0m -> unary call completed grpc.service=gossip.Gossip grpc.method=Ping grpc.request_deadline=2026-09-21T19:50:38.345Z grpc.peer_address=172.22.0.14:36422 grpc.peer_subject="CN=peer0,OU=peer,O=Hyperledger,ST=North Carolina,C=US" grpc.code=OK grpc.call_duration=64.739µs
+2026-09-21T19:50:40.896246711Z [34m2026-09-21 19:50:40.896 UTC 0048 INFO[0m [gossip.channel] [34;1mreportMembershipChanges[0m -> [[defaultchannel] Membership view has changed. peers went online:  [[peer0.org1.fno-s5.com:7051 ] [peer0.org3.fno-s5.com:7051 ]] , current view:  [[peer0.org1.fno-s5.com:7051 ] [peer0.org3.fno-s5.com:7051 ]]]
+2026-09-21T19:50:41.898616172Z [34m2026-09-21 19:50:41.898 UTC 0049 INFO[0m [gossip.election] [34;1mbeLeader[0m -> 96febb81fb8cb176a66441a3ca86a234e1abef0e7840cc4d4084026da3fa148c : Becoming a leader
+2026-09-21T19:50:41.898646102Z [34m2026-09-21 19:50:41.898 UTC 004a INFO[0m [gossip.service] [34;1mfunc2[0m -> Elected as a leader, starting delivery service for channel defaultchannel
+2026-09-21T19:50:41.898649596Z [34m2026-09-21 19:50:41.898 UTC 004b INFO[0m [deliveryClient] [34;1mStartDeliverForChannel[0m -> This peer will retrieve blocks from ordering service and disseminate to other peers in the organization channel=defaultchannel
+2026-09-21T19:50:41.901900232Z [34m2026-09-21 19:50:41.901 UTC 004c INFO[0m [peer.blocksprovider] [34;1mDeliverBlocks[0m -> Pulling next blocks from ordering service channel=defaultchannel orderer-address=orderer.org1.fno-s5.com:7050 nextBlock=1
+2026-09-21T19:51:55.170036481Z [34m2026-09-21 19:51:55.169 UTC 004d INFO[0m [endorser] [34;1mcallChaincode[0m -> finished chaincode: _lifecycle duration: 0ms channel= txID=c2b98c2e
+2026-09-21T19:51:55.170062620Z [34m2026-09-21 19:51:55.169 UTC 004e INFO[0m [comm.grpc.server] [34;1m1[0m -> unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=172.22.0.6:58954 grpc.code=OK grpc.call_duration=601.57µs
+2026-09-21T19:51:55.269211782Z [34m2026-09-21 19:51:55.269 UTC 004f INFO[0m [chaincode.externalbuilder.ccaas_builder] [34;1mwaitForExit[0m -> ::Detect command=detect
+2026-09-21T19:51:55.269230627Z [34m2026-09-21 19:51:55.269 UTC 0050 INFO[0m [chaincode.externalbuilder.ccaas_builder] [34;1mwaitForExit[0m -> ::Error: chaincode type not supported: golang command=detect
+2026-09-21T19:52:17.173304992Z [34m2026-09-21 19:52:17.173 UTC 0051 INFO[0m [lifecycle] [34;1mInstallChaincode[0m -> Successfully installed chaincode with package ID 'Asset_1.0:e42eab27569206576831580717efa5e5725b52f044d63d02299e6d97dbffe3d4'
+2026-09-21T19:52:17.173400883Z [34m2026-09-21 19:52:17.173 UTC 0052 INFO[0m [endorser] [34;1mcallChaincode[0m -> finished chaincode: _lifecycle duration: 21918ms channel= txID=4feff690
+2026-09-21T19:52:17.173440407Z [34m2026-09-21 19:52:17.173 UTC 0053 INFO[0m [comm.grpc.server] [34;1m1[0m -> unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=172.22.0.6:58974 grpc.code=OK grpc.call_duration=21.918311635s
+2026-09-21T19:52:17.347109085Z [34m2026-09-21 19:52:17.347 UTC 0054 INFO[0m [endorser] [34;1mcallChaincode[0m -> finished chaincode: _lifecycle duration: 0ms channel= txID=e8de6e48
+2026-09-21T19:52:17.347133964Z [34m2026-09-21 19:52:17.347 UTC 0055 INFO[0m [comm.grpc.server] [34;1m1[0m -> unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=172.22.0.6:54486 grpc.code=OK grpc.call_duration=521.224µs
+2026-09-21T19:52:17.438189256Z [34m2026-09-21 19:52:17.438 UTC 0056 INFO[0m [chaincode.externalbuilder.ccaas_builder] [34;1mwaitForExit[0m -> ::Detect command=detect
+2026-09-21T19:52:17.438216955Z [34m2026-09-21 19:52:17.438 UTC 0057 INFO[0m [chaincode.externalbuilder.ccaas_builder] [34;1mwaitForExit[0m -> ::Error: chaincode type not supported: golang command=detect
+2026-09-21T19:52:39.485145849Z [34m2026-09-21 19:52:39.485 UTC 0058 INFO[0m [lifecycle] [34;1mInstallChaincode[0m -> Successfully installed chaincode with package ID 'Product_1.0:5bff15b134683d008675688809dafbeb21e3e291eb3aaf599596c25d42c5c5fa'
+2026-09-21T19:52:39.485229902Z [34m2026-09-21 19:52:39.485 UTC 0059 INFO[0m [endorser] [34;1mcallChaincode[0m -> finished chaincode: _lifecycle duration: 22049ms channel= txID=3776d0bc
+2026-09-21T19:52:39.485251255Z [34m2026-09-21 19:52:39.485 UTC 005a INFO[0m [comm.grpc.server] [34;1m1[0m -> unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=172.22.0.6:54506 grpc.code=OK grpc.call_duration=22.049402523s
+2026-09-21T19:52:39.656081704Z [34m2026-09-21 19:52:39.655 UTC 005b INFO[0m [endorser] [34;1mcallChaincode[0m -> finished chaincode: _lifecycle duration: 0ms channel= txID=52ed18bd
+2026-09-21T19:52:39.656105932Z [34m2026-09-21 19:52:39.656 UTC 005c INFO[0m [comm.grpc.server] [34;1m1[0m -> unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=172.22.0.6:39304 grpc.code=OK grpc.call_duration=480.388µs
+2026-09-21T19:52:39.746424558Z [34m2026-09-21 19:52:39.746 UTC 005d INFO[0m [chaincode.externalbuilder.ccaas_builder] [34;1mwaitForExit[0m -> ::Detect command=detect
+2026-09-21T19:52:39.746516386Z [34m2026-09-21 19:52:39.746 UTC 005e INFO[0m [chaincode.externalbuilder.ccaas_builder] [34;1mwaitForExit[0m -> ::Error: chaincode type not supported: golang command=detect
+2026-09-21T19:53:02.848277405Z [34m2026-09-21 19:53:02.848 UTC 005f INFO[0m [lifecycle] [34;1mInstallChaincode[0m -> Successfully installed chaincode with package ID 'PrivateAgreement_2.0:17ee324770730da89de75f2b5b1f61ed8d2ce4a1400dfcbcb933cea0cfbb5a9a'
+2026-09-21T19:53:02.848402171Z [34m2026-09-21 19:53:02.848 UTC 0060 INFO[0m [endorser] [34;1mcallChaincode[0m -> finished chaincode: _lifecycle duration: 23104ms channel= txID=8e2f4b65
+2026-09-21T19:53:02.848415655Z [34m2026-09-21 19:53:02.848 UTC 0061 INFO[0m [comm.grpc.server] [34;1m1[0m -> unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=172.22.0.6:39326 grpc.code=OK grpc.call_duration=23.104484625s
+2026-09-21T19:54:13.279357980Z [34m2026-09-21 19:54:13.279 UTC 0062 INFO[0m [gossip.privdata] [34;1mStoreBlock[0m -> Received block [1] from buffer channel=defaultchannel
+2026-09-21T19:54:13.280777200Z [34m2026-09-21 19:54:13.280 UTC 0063 INFO[0m [committer.txvalidator] [34;1mValidate[0m -> [defaultchannel] Validated block [1] in 1ms
+2026-09-21T19:54:13.378566548Z [34m2026-09-21 19:54:13.378 UTC 0064 INFO[0m [couchdb] [34;1mcreateDatabaseIfNotExist[0m -> Created state database defaultchannel_lscc
+2026-09-21T19:54:13.483118271Z [34m2026-09-21 19:54:13.482 UTC 0065 INFO[0m [couchdb] [34;1mcreateDatabaseIfNotExist[0m -> Created state database defaultchannel__lifecycle$$h_implicit_org_$org1$m$s$p
+2026-09-21T19:54:13.600956140Z [34m2026-09-21 19:54:13.600 UTC 0066 INFO[0m [kvledger] [34;1mcommit[0m -> [defaultchannel] Committed block [1] with 1 transaction(s) in 319ms (state_validation=229ms block_and_pvtdata_commit=32ms state_commit=46ms) commitHash=[29aaa729d2a6326e9679e786b24057992d48290dce405a5b7497f2d6ff822008]
+2026-09-21T19:54:15.883686520Z [34m2026-09-21 19:54:15.883 UTC 0067 INFO[0m [gossip.privdata] [34;1mStoreBlock[0m -> Received block [2] from buffer channel=defaultchannel
+2026-09-21T19:54:15.884074556Z [34m2026-09-21 19:54:15.884 UTC 0068 INFO[0m [committer.txvalidator] [34;1mValidate[0m -> [defaultchannel] Validated block [2] in 0ms
+2026-09-21T19:54:15.994412022Z [34m2026-09-21 19:54:15.994 UTC 0069 INFO[0m [kvledger] [34;1mcommit[0m -> [defaultchannel] Committed block [2] with 1 transaction(s) in 109ms (state_validation=2ms block_and_pvtdata_commit=38ms state_commit=57ms) commitHash=[a2123a98a758b87e0c58e340fa9aaf8e5f85251bbf4699a4610aecd95ff890b9]
+2026-09-21T19:54:18.465521147Z [34m2026-09-21 19:54:18.465 UTC 006a INFO[0m [gossip.privdata] [34;1mStoreBlock[0m -> Received block [3] from buffer channel=defaultchannel
+2026-09-21T19:54:18.465972954Z [34m2026-09-21 19:54:18.465 UTC 006b INFO[0m [committer.txvalidator] [34;1mValidate[0m -> [defaultchannel] Validated block [3] in 0ms
+2026-09-21T19:54:18.571274242Z [34m2026-09-21 19:54:18.571 UTC 006c INFO[0m [kvledger] [34;1mcommit[0m -> [defaultchannel] Committed block [3] with 1 transaction(s) in 105ms (state_validation=1ms block_and_pvtdata_commit=33ms state_commit=57ms) commitHash=[19679aeb35b6fc9b587f8bed1e40cbd27441143a33be23d7f139f605c2406efc]
+2026-09-21T19:54:18.707260097Z [34m2026-09-21 19:54:18.707 UTC 006d INFO[0m [couchdb] [34;1mcreateDatabaseIfNotExist[0m -> Created state database defaultchannel__lifecycle$$p_implicit_org_$org2$m$s$p
+2026-09-21T19:54:18.769346461Z [34m2026-09-21 19:54:18.769 UTC 006e INFO[0m [couchdb] [34;1mcreateDatabaseIfNotExist[0m -> Created state database defaultchannel__lifecycle$$h_implicit_org_$org2$m$s$p
+2026-09-21T19:54:18.784047753Z [34m2026-09-21 19:54:18.783 UTC 006f INFO[0m [lifecycle] [34;1mQueryApprovedChaincodeDefinition[0m -> Attempting to fetch approved definition (name: 'Asset', sequence: '0') on channel 'defaultchannel'
+2026-09-21T19:54:18.785321730Z [34m2026-09-21 19:54:18.785 UTC 0070 INFO[0m [endorser] [34;1mcallChaincode[0m -> finished chaincode: _lifecycle duration: 124ms channel=defaultchannel txID=f6147957
+2026-09-21T19:54:18.785396464Z [34m2026-09-21 19:54:18.785 UTC 0071 INFO[0m [comm.grpc.server] [34;1m1[0m -> unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=172.22.0.6:46342 grpc.code=OK grpc.call_duration=124.903448ms
+2026-09-21T19:54:18.875741537Z [34m2026-09-21 19:54:18.875 UTC 0072 INFO[0m [lifecycle] [34;1mQueryApprovedChaincodeDefinition[0m -> Attempting to fetch approved definition (name: 'Asset', sequence: '0') on channel 'defaultchannel'
+2026-09-21T19:54:18.876937116Z [34m2026-09-21 19:54:18.876 UTC 0073 INFO[0m [endorser] [34;1mcallChaincode[0m -> finished chaincode: _lifecycle duration: 3ms channel=defaultchannel txID=a6989537
+2026-09-21T19:54:18.876981886Z [34m2026-09-21 19:54:18.876 UTC 0074 INFO[0m [comm.grpc.server] [34;1m1[0m -> unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=172.22.0.6:46358 grpc.code=OK grpc.call_duration=3.963866ms
+2026-09-21T19:54:19.136369919Z [34m2026-09-21 19:54:19.136 UTC 0075 INFO[0m [lifecycle] [34;1mApproveChaincodeDefinitionForOrg[0m -> Successfully endorsed chaincode approval with name 'Asset', package ID 'Asset_1.0:e42eab27569206576831580717efa5e5725b52f044d63d02299e6d97dbffe3d4', on channel 'defaultchannel' with definition {sequence: 1, endorsement info: (version: '1.0', plugin: 'escc', init required: false), validation info: (plugin: 'vscc', policy: '12202f4368616e6e656c2f4170706c69636174696f6e2f456e646f7273656d656e74'), collections: ()}
+2026-09-21T19:54:19.136398888Z [34m2026-09-21 19:54:19.136 UTC 0076 INFO[0m [endorser] [34;1mcallChaincode[0m -> finished chaincode: _lifecycle duration: 6ms channel=defaultchannel txID=92962d94
+2026-09-21T19:54:19.144281774Z [34m2026-09-21 19:54:19.144 UTC 0077 INFO[0m [comm.grpc.server] [34;1m1[0m -> unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=172.22.0.6:46390 grpc.code=OK grpc.call_duration=14.327877ms
+2026-09-21T19:54:21.166493453Z [34m2026-09-21 19:54:21.166 UTC 0078 INFO[0m [gossip.privdata] [34;1mStoreBlock[0m -> Received block [4] from buffer channel=defaultchannel
+2026-09-21T19:54:21.167264778Z [34m2026-09-21 19:54:21.167 UTC 0079 INFO[0m [committer.txvalidator] [34;1mValidate[0m -> [defaultchannel] Validated block [4] in 0ms
+2026-09-21T19:54:21.167366598Z [34m2026-09-21 19:54:21.167 UTC 007a INFO[0m [gossip.privdata] [34;1mRetrievePvtdata[0m -> Successfully fetched (or marked to reconcile later) all 1 eligible collection private write sets for block [4] (0 from local cache, 1 from transient store, 0 from other peers) channel=defaultchannel
+2026-09-21T19:54:21.273040528Z [34m2026-09-21 19:54:21.272 UTC 007b INFO[0m [kvledger] [34;1mcommit[0m -> [defaultchannel] Committed block [4] with 1 transaction(s) in 105ms (state_validation=1ms block_and_pvtdata_commit=33ms state_commit=57ms) commitHash=[b294dcae908d7f574b6c9926e10455673dbb104d02fe5cce2b5fb34e28864714]
+2026-09-21T19:54:21.274893354Z [34m2026-09-21 19:54:21.274 UTC 007c INFO[0m [comm.grpc.server] [34;1m1[0m -> streaming call completed grpc.service=protos.Deliver grpc.method=DeliverFiltered grpc.request_deadline=2026-09-21T19:54:49.144Z grpc.peer_address=172.22.0.6:46394 error="context finished before block retrieved: context canceled" grpc.code=Unknown grpc.call_duration=2.129787296s
+2026-09-21T19:54:21.361757854Z [34m2026-09-21 19:54:21.361 UTC 007d INFO[0m [lifecycle] [34;1mQueryApprovedChaincodeDefinition[0m -> Attempting to fetch approved definition (name: 'Product', sequence: '0') on channel 'defaultchannel'
+2026-09-21T19:54:21.363122523Z [34m2026-09-21 19:54:21.363 UTC 007e INFO[0m [endorser] [34;1mcallChaincode[0m -> finished chaincode: _lifecycle duration: 3ms channel=defaultchannel txID=f1e18991
+2026-09-21T19:54:21.363184100Z [34m2026-09-21 19:54:21.363 UTC 007f INFO[0m [comm.grpc.server] [34;1m1[0m -> unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=172.22.0.6:46404 grpc.code=OK grpc.call_duration=4.163161ms
+2026-09-21T19:54:21.452188899Z [34m2026-09-21 19:54:21.452 UTC 0080 INFO[0m [lifecycle] [34;1mQueryApprovedChaincodeDefinition[0m -> Attempting to fetch approved definition (name: 'Product', sequence: '0') on channel 'defaultchannel'
+2026-09-21T19:54:21.453514288Z [34m2026-09-21 19:54:21.453 UTC 0081 INFO[0m [endorser] [34;1mcallChaincode[0m -> finished chaincode: _lifecycle duration: 3ms channel=defaultchannel txID=04e67f01
+2026-09-21T19:54:21.453552262Z [34m2026-09-21 19:54:21.453 UTC 0082 INFO[0m [comm.grpc.server] [34;1m1[0m -> unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=172.22.0.6:46416 grpc.code=OK grpc.call_duration=4.317039ms
+2026-09-21T19:54:21.720766589Z [34m2026-09-21 19:54:21.720 UTC 0083 INFO[0m [lifecycle] [34;1mApproveChaincodeDefinitionForOrg[0m -> Successfully endorsed chaincode approval with name 'Product', package ID 'Product_1.0:5bff15b134683d008675688809dafbeb21e3e291eb3aaf599596c25d42c5c5fa', on channel 'defaultchannel' with definition {sequence: 1, endorsement info: (version: '1.0', plugin: 'escc', init required: false), validation info: (plugin: 'vscc', policy: '0a3f1210120e08031202080012020801120208021a0d120b0a074f7267314d535010031a0d120b0a074f7267324d535010031a0d120b0a074f7267334d53501003'), collections: ()}
+2026-09-21T19:54:21.720795520Z [34m2026-09-21 19:54:21.720 UTC 0084 INFO[0m [endorser] [34;1mcallChaincode[0m -> finished chaincode: _lifecycle duration: 6ms channel=defaultchannel txID=a0239cf6
+2026-09-21T19:54:21.728680407Z [34m2026-09-21 19:54:21.728 UTC 0085 INFO[0m [comm.grpc.server] [34;1m1[0m -> unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=172.22.0.6:46442 grpc.code=OK grpc.call_duration=14.444684ms
+2026-09-21T19:54:23.751642367Z [34m2026-09-21 19:54:23.751 UTC 0086 INFO[0m [gossip.privdata] [34;1mStoreBlock[0m -> Received block [5] from buffer channel=defaultchannel
+2026-09-21T19:54:23.752058251Z [34m2026-09-21 19:54:23.751 UTC 0087 INFO[0m [committer.txvalidator] [34;1mValidate[0m -> [defaultchannel] Validated block [5] in 0ms
+2026-09-21T19:54:23.752169092Z [34m2026-09-21 19:54:23.752 UTC 0088 INFO[0m [gossip.privdata] [34;1mRetrievePvtdata[0m -> Successfully fetched (or marked to reconcile later) all 1 eligible collection private write sets for block [5] (0 from local cache, 1 from transient store, 0 from other peers) channel=defaultchannel
+2026-09-21T19:54:23.854832173Z [34m2026-09-21 19:54:23.854 UTC 0089 INFO[0m [kvledger] [34;1mcommit[0m -> [defaultchannel] Committed block [5] with 1 transaction(s) in 102ms (state_validation=2ms block_and_pvtdata_commit=31ms state_commit=56ms) commitHash=[270667a9e2ebccbbd76009cfe3d4548f0a49d98fd8b6226110cde76af0854c8c]
+2026-09-21T19:54:23.856399186Z [34m2026-09-21 19:54:23.856 UTC 008a INFO[0m [comm.grpc.server] [34;1m1[0m -> streaming call completed grpc.service=protos.Deliver grpc.method=DeliverFiltered grpc.request_deadline=2026-09-21T19:54:51.729Z grpc.peer_address=172.22.0.6:46446 error="context finished before block retrieved: context canceled" grpc.code=Unknown grpc.call_duration=2.126933389s
+2026-09-21T19:54:23.940531995Z [34m2026-09-21 19:54:23.940 UTC 008b INFO[0m [lifecycle] [34;1mQueryApprovedChaincodeDefinition[0m -> Attempting to fetch approved definition (name: 'PrivateAgreement', sequence: '0') on channel 'defaultchannel'
+2026-09-21T19:54:23.941787831Z [34m2026-09-21 19:54:23.941 UTC 008c INFO[0m [endorser] [34;1mcallChaincode[0m -> finished chaincode: _lifecycle duration: 3ms channel=defaultchannel txID=d6d9b7c1
+2026-09-21T19:54:23.941826257Z [34m2026-09-21 19:54:23.941 UTC 008d INFO[0m [comm.grpc.server] [34;1m1[0m -> unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=172.22.0.6:44918 grpc.code=OK grpc.call_duration=4.190153ms
+2026-09-21T19:54:24.030085164Z [34m2026-09-21 19:54:24.030 UTC 008e INFO[0m [lifecycle] [34;1mQueryApprovedChaincodeDefinition[0m -> Attempting to fetch approved definition (name: 'PrivateAgreement', sequence: '0') on channel 'defaultchannel'
+2026-09-21T19:54:24.031287503Z [34m2026-09-21 19:54:24.031 UTC 008f INFO[0m [endorser] [34;1mcallChaincode[0m -> finished chaincode: _lifecycle duration: 3ms channel=defaultchannel txID=e04cf53f
+2026-09-21T19:54:24.031334718Z [34m2026-09-21 19:54:24.031 UTC 0090 INFO[0m [comm.grpc.server] [34;1m1[0m -> unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=172.22.0.6:44942 grpc.code=OK grpc.call_duration=4.133301ms
+2026-09-21T19:54:24.300404551Z [34m2026-09-21 19:54:24.300 UTC 0091 INFO[0m [lifecycle] [34;1mApproveChaincodeDefinitionForOrg[0m -> Successfully endorsed chaincode approval with name 'PrivateAgreement', package ID 'PrivateAgreement_2.0:17ee324770730da89de75f2b5b1f61ed8d2ce4a1400dfcbcb933cea0cfbb5a9a', on channel 'defaultchannel' with definition {sequence: 1, endorsement info: (version: '2.0', plugin: 'escc', init required: false), validation info: (plugin: 'vscc', policy: '121f4368616e6e656c2f4170706c69636174696f6e2f456e646f7273656d656e74'), collections: (config:<static_collection_config:<name:"collectionAgreements" member_orgs_policy:<signature_policy:<rule:<n_out_of:<n:1 rules:<signed_by:0 > rules:<signed_by:1 > rules:<signed_by:2 > > > identities:<principal:"\n\007Org1MSP" > identities:<principal:"\n\007Org2MSP" > identities:<principal:"\n\007Org3MSP" > > > required_peer_count:1 maximum_peer_count:2 member_only_read:true > > )}
+2026-09-21T19:54:24.300439377Z [34m2026-09-21 19:54:24.300 UTC 0092 INFO[0m [endorser] [34;1mcallChaincode[0m -> finished chaincode: _lifecycle duration: 6ms channel=defaultchannel txID=24454697
+2026-09-21T19:54:24.308452621Z [34m2026-09-21 19:54:24.308 UTC 0093 INFO[0m [comm.grpc.server] [34;1m1[0m -> unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=172.22.0.6:44974 grpc.code=OK grpc.call_duration=14.627045ms
+2026-09-21T19:54:26.329641001Z [34m2026-09-21 19:54:26.329 UTC 0094 INFO[0m [gossip.privdata] [34;1mStoreBlock[0m -> Received block [6] from buffer channel=defaultchannel
+2026-09-21T19:54:26.330033843Z [34m2026-09-21 19:54:26.329 UTC 0095 INFO[0m [committer.txvalidator] [34;1mValidate[0m -> [defaultchannel] Validated block [6] in 0ms
+2026-09-21T19:54:26.330120411Z [34m2026-09-21 19:54:26.330 UTC 0096 INFO[0m [gossip.privdata] [34;1mRetrievePvtdata[0m -> Successfully fetched (or marked to reconcile later) all 1 eligible collection private write sets for block [6] (0 from local cache, 1 from transient store, 0 from other peers) channel=defaultchannel
+2026-09-21T19:54:26.424778329Z [34m2026-09-21 19:54:26.424 UTC 0097 INFO[0m [kvledger] [34;1mcommit[0m -> [defaultchannel] Committed block [6] with 1 transaction(s) in 94ms (state_validation=2ms block_and_pvtdata_commit=25ms state_commit=55ms) commitHash=[65991ebc19910db2af8cefe0aa7d5fbaa8ecb51e877ab4038f45890d2f993995]
+2026-09-21T19:54:26.426659442Z [34m2026-09-21 19:54:26.426 UTC 0098 INFO[0m [comm.grpc.server] [34;1m1[0m -> streaming call completed grpc.service=protos.Deliver grpc.method=DeliverFiltered grpc.request_deadline=2026-09-21T19:54:54.308Z grpc.peer_address=172.22.0.6:44978 error="context finished before block retrieved: context canceled" grpc.code=Unknown grpc.call_duration=2.117507914s
+2026-09-21T19:54:29.118798341Z [34m2026-09-21 19:54:29.118 UTC 0099 INFO[0m [gossip.privdata] [34;1mStoreBlock[0m -> Received block [7] from buffer channel=defaultchannel
+2026-09-21T19:54:29.119564994Z [34m2026-09-21 19:54:29.119 UTC 009a INFO[0m [committer.txvalidator] [34;1mValidate[0m -> [defaultchannel] Validated block [7] in 0ms
+2026-09-21T19:54:29.218571637Z [34m2026-09-21 19:54:29.218 UTC 009b INFO[0m [couchdb] [34;1mcreateDatabaseIfNotExist[0m -> Created state database defaultchannel__lifecycle$$h_implicit_org_$org3$m$s$p
+2026-09-21T19:54:29.337505060Z [34m2026-09-21 19:54:29.337 UTC 009c INFO[0m [kvledger] [34;1mcommit[0m -> [defaultchannel] Committed block [7] with 1 transaction(s) in 217ms (state_validation=126ms block_and_pvtdata_commit=35ms state_commit=45ms) commitHash=[1c89e0da3dae4c6c8bd02427fdffb12fc66062c55773f35a0158df2bc7856ec7]
+2026-09-21T19:54:31.703948911Z [34m2026-09-21 19:54:31.703 UTC 009d INFO[0m [gossip.privdata] [34;1mStoreBlock[0m -> Received block [8] from buffer channel=defaultchannel
+2026-09-21T19:54:31.704446303Z [34m2026-09-21 19:54:31.704 UTC 009e INFO[0m [committer.txvalidator] [34;1mValidate[0m -> [defaultchannel] Validated block [8] in 0ms
+2026-09-21T19:54:31.811557565Z [34m2026-09-21 19:54:31.811 UTC 009f INFO[0m [kvledger] [34;1mcommit[0m -> [defaultchannel] Committed block [8] with 1 transaction(s) in 106ms (state_validation=2ms block_and_pvtdata_commit=36ms state_commit=55ms) commitHash=[7d1591a84c8ae172f00594dff8ef8a68c4d1fcf6c524d2fc7f605ae95c305fcf]
+2026-09-21T19:54:34.371560162Z [34m2026-09-21 19:54:34.371 UTC 00a0 INFO[0m [gossip.privdata] [34;1mStoreBlock[0m -> Received block [9] from buffer channel=defaultchannel
+2026-09-21T19:54:34.372151714Z [34m2026-09-21 19:54:34.372 UTC 00a1 INFO[0m [committer.txvalidator] [34;1mValidate[0m -> [defaultchannel] Validated block [9] in 0ms
+2026-09-21T19:54:34.477273324Z [34m2026-09-21 19:54:34.477 UTC 00a2 INFO[0m [kvledger] [34;1mcommit[0m -> [defaultchannel] Committed block [9] with 1 transaction(s) in 104ms (state_validation=2ms block_and_pvtdata_commit=37ms state_commit=54ms) commitHash=[abec0167298cf8e52e97a3ac03d11aabd19819dbac70cb70e1ea65b07dba2714]
+2026-09-21T19:54:34.857613863Z [34m2026-09-21 19:54:34.857 UTC 00a3 INFO[0m [lifecycle] [34;1mCheckCommitReadiness[0m -> Successfully checked commit readiness of chaincode name 'Asset' on channel 'defaultchannel' with definition {sequence: 1, endorsement info: (version: '1.0', plugin: 'escc', init required: false), validation info: (plugin: 'vscc', policy: '12202f4368616e6e656c2f4170706c69636174696f6e2f456e646f7273656d656e74'), collections: (<nil>)}
+2026-09-21T19:54:34.858252514Z [34m2026-09-21 19:54:34.858 UTC 00a4 INFO[0m [lifecycle] [34;1mCommitChaincodeDefinition[0m -> Successfully endorsed commit for chaincode name 'Asset' on channel 'defaultchannel' with definition {sequence: 1, endorsement info: (version: '1.0', plugin: 'escc', init required: false), validation info: (plugin: 'vscc', policy: '12202f4368616e6e656c2f4170706c69636174696f6e2f456e646f7273656d656e74'), collections: (<nil>)}
+2026-09-21T19:54:34.858288954Z [34m2026-09-21 19:54:34.858 UTC 00a5 INFO[0m [endorser] [34;1mcallChaincode[0m -> finished chaincode: _lifecycle duration: 12ms channel=defaultchannel txID=3e7db0a8
+2026-09-21T19:54:34.858491785Z [34m2026-09-21 19:54:34.858 UTC 00a6 INFO[0m [comm.grpc.server] [34;1m1[0m -> unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=172.22.0.5:34346 grpc.code=OK grpc.call_duration=13.280124ms
+2026-09-21T19:54:36.894713617Z [34m2026-09-21 19:54:36.894 UTC 00a7 INFO[0m [gossip.privdata] [34;1mStoreBlock[0m -> Received block [10] from buffer channel=defaultchannel
+2026-09-21T19:54:36.895326137Z [34m2026-09-21 19:54:36.895 UTC 00a8 INFO[0m [committer.txvalidator] [34;1mValidate[0m -> [defaultchannel] Validated block [10] in 0ms
+2026-09-21T19:54:36.897397953Z [34m2026-09-21 19:54:36.896 UTC 00a9 INFO[0m [lifecycle] [34;1mupdate[0m -> Updating cached definition for chaincode 'Asset' on channel 'defaultchannel'
+2026-09-21T19:54:36.899654240Z [34m2026-09-21 19:54:36.899 UTC 00aa INFO[0m [lifecycle] [34;1mupdate[0m -> Chaincode with package ID 'Asset_1.0:e42eab27569206576831580717efa5e5725b52f044d63d02299e6d97dbffe3d4' now available on channel defaultchannel for chaincode definition Asset:1.0
+2026-09-21T19:54:36.900170563Z [34m2026-09-21 19:54:36.900 UTC 00ab INFO[0m [cceventmgmt] [34;1mHandleStateUpdates[0m -> Channel [defaultchannel]: Handling deploy or update of chaincode [Asset]
+2026-09-21T19:54:37.100065430Z [34m2026-09-21 19:54:37.099 UTC 00ac INFO[0m [kvledger] [34;1mcommit[0m -> [defaultchannel] Committed block [10] with 1 transaction(s) in 204ms (state_validation=7ms block_and_pvtdata_commit=54ms state_commit=108ms) commitHash=[5e3ade5f4c71d6a6ca27efd70904e451ed6712f546b225433b15604612385245]
+2026-09-21T19:54:37.101991694Z [34m2026-09-21 19:54:37.101 UTC 00ad INFO[0m [comm.grpc.server] [34;1m1[0m -> streaming call completed grpc.service=protos.Deliver grpc.method=DeliverFiltered grpc.request_deadline=2026-09-21T19:55:04.872Z grpc.peer_address=172.22.0.5:34356 error="context finished before block retrieved: context canceled" grpc.code=Unknown grpc.call_duration=2.228980752s
+2026-09-21T19:54:37.538708295Z [34m2026-09-21 19:54:37.538 UTC 00ae INFO[0m [lifecycle] [34;1mCheckCommitReadiness[0m -> Successfully checked commit readiness of chaincode name 'Product' on channel 'defaultchannel' with definition {sequence: 1, endorsement info: (version: '1.0', plugin: 'escc', init required: false), validation info: (plugin: 'vscc', policy: '0a3f1210120e08031202080012020801120208021a0d120b0a074f7267314d535010031a0d120b0a074f7267324d535010031a0d120b0a074f7267334d53501003'), collections: (<nil>)}
+2026-09-21T19:54:37.539569661Z [34m2026-09-21 19:54:37.539 UTC 00af INFO[0m [lifecycle] [34;1mCommitChaincodeDefinition[0m -> Successfully endorsed commit for chaincode name 'Product' on channel 'defaultchannel' with definition {sequence: 1, endorsement info: (version: '1.0', plugin: 'escc', init required: false), validation info: (plugin: 'vscc', policy: '0a3f1210120e08031202080012020801120208021a0d120b0a074f7267314d535010031a0d120b0a074f7267324d535010031a0d120b0a074f7267334d53501003'), collections: (<nil>)}
+2026-09-21T19:54:37.539616927Z [34m2026-09-21 19:54:37.539 UTC 00b0 INFO[0m [endorser] [34;1mcallChaincode[0m -> finished chaincode: _lifecycle duration: 23ms channel=defaultchannel txID=0e3c94f8
+2026-09-21T19:54:37.539811905Z [34m2026-09-21 19:54:37.539 UTC 00b1 INFO[0m [comm.grpc.server] [34;1m1[0m -> unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=172.22.0.5:34370 grpc.code=OK grpc.call_duration=23.925409ms
+2026-09-21T19:54:39.579996527Z [34m2026-09-21 19:54:39.579 UTC 00b2 INFO[0m [gossip.privdata] [34;1mStoreBlock[0m -> Received block [11] from buffer channel=defaultchannel
+2026-09-21T19:54:39.580648829Z [34m2026-09-21 19:54:39.580 UTC 00b3 INFO[0m [committer.txvalidator] [34;1mValidate[0m -> [defaultchannel] Validated block [11] in 0ms
+2026-09-21T19:54:39.582971790Z [34m2026-09-21 19:54:39.582 UTC 00b4 INFO[0m [lifecycle] [34;1mupdate[0m -> Updating cached definition for chaincode 'Product' on channel 'defaultchannel'
+2026-09-21T19:54:39.585824358Z [34m2026-09-21 19:54:39.585 UTC 00b5 INFO[0m [lifecycle] [34;1mupdate[0m -> Chaincode with package ID 'Product_1.0:5bff15b134683d008675688809dafbeb21e3e291eb3aaf599596c25d42c5c5fa' now available on channel defaultchannel for chaincode definition Product:1.0
+2026-09-21T19:54:39.586351846Z [34m2026-09-21 19:54:39.586 UTC 00b6 INFO[0m [cceventmgmt] [34;1mHandleStateUpdates[0m -> Channel [defaultchannel]: Handling deploy or update of chaincode [Product]
+2026-09-21T19:54:39.791012535Z [34m2026-09-21 19:54:39.790 UTC 00b7 INFO[0m [kvledger] [34;1mcommit[0m -> [defaultchannel] Committed block [11] with 1 transaction(s) in 210ms (state_validation=7ms block_and_pvtdata_commit=48ms state_commit=111ms) commitHash=[c993c909c0554af096a187d6a1d0434f15124f5dd8eb46f98a1ae4cdcc99034c]
+2026-09-21T19:54:39.792816749Z [34m2026-09-21 19:54:39.792 UTC 00b8 INFO[0m [comm.grpc.server] [34;1m1[0m -> streaming call completed grpc.service=protos.Deliver grpc.method=DeliverFiltered grpc.request_deadline=2026-09-21T19:55:07.56Z grpc.peer_address=172.22.0.5:34372 error="context finished before block retrieved: context canceled" grpc.code=Unknown grpc.call_duration=2.232460122s
+2026-09-21T19:54:40.251899519Z [34m2026-09-21 19:54:40.251 UTC 00b9 INFO[0m [lifecycle] [34;1mCheckCommitReadiness[0m -> Successfully checked commit readiness of chaincode name 'PrivateAgreement' on channel 'defaultchannel' with definition {sequence: 1, endorsement info: (version: '2.0', plugin: 'escc', init required: false), validation info: (plugin: 'vscc', policy: '121f4368616e6e656c2f4170706c69636174696f6e2f456e646f7273656d656e74'), collections: (config:<static_collection_config:<name:"collectionAgreements" member_orgs_policy:<signature_policy:<rule:<n_out_of:<n:1 rules:<signed_by:0 > rules:<signed_by:1 > rules:<signed_by:2 > > > identities:<principal:"\n\007Org1MSP" > identities:<principal:"\n\007Org2MSP" > identities:<principal:"\n\007Org3MSP" > > > required_peer_count:1 maximum_peer_count:2 member_only_read:true > > )}
+2026-09-21T19:54:40.252776997Z [34m2026-09-21 19:54:40.252 UTC 00ba INFO[0m [lifecycle] [34;1mCommitChaincodeDefinition[0m -> Successfully endorsed commit for chaincode name 'PrivateAgreement' on channel 'defaultchannel' with definition {sequence: 1, endorsement info: (version: '2.0', plugin: 'escc', init required: false), validation info: (plugin: 'vscc', policy: '121f4368616e6e656c2f4170706c69636174696f6e2f456e646f7273656d656e74'), collections: (config:<static_collection_config:<name:"collectionAgreements" member_orgs_policy:<signature_policy:<rule:<n_out_of:<n:1 rules:<signed_by:0 > rules:<signed_by:1 > rules:<signed_by:2 > > > identities:<principal:"\n\007Org1MSP" > identities:<principal:"\n\007Org2MSP" > identities:<principal:"\n\007Org3MSP" > > > required_peer_count:1 maximum_peer_count:2 member_only_read:true > > )}
+2026-09-21T19:54:40.252816095Z [34m2026-09-21 19:54:40.252 UTC 00bb INFO[0m [endorser] [34;1mcallChaincode[0m -> finished chaincode: _lifecycle duration: 18ms channel=defaultchannel txID=3c9ba562
+2026-09-21T19:54:40.252980991Z [34m2026-09-21 19:54:40.252 UTC 00bc INFO[0m [comm.grpc.server] [34;1m1[0m -> unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=172.22.0.5:34374 grpc.code=OK grpc.call_duration=18.882105ms
+2026-09-21T19:54:42.290400210Z [34m2026-09-21 19:54:42.290 UTC 00bd INFO[0m [gossip.privdata] [34;1mStoreBlock[0m -> Received block [12] from buffer channel=defaultchannel
+2026-09-21T19:54:42.291139844Z [34m2026-09-21 19:54:42.291 UTC 00be INFO[0m [committer.txvalidator] [34;1mValidate[0m -> [defaultchannel] Validated block [12] in 0ms
+2026-09-21T19:54:42.293292857Z [34m2026-09-21 19:54:42.293 UTC 00bf INFO[0m [lifecycle] [34;1mupdate[0m -> Updating cached definition for chaincode 'PrivateAgreement' on channel 'defaultchannel'
+2026-09-21T19:54:42.296584640Z [34m2026-09-21 19:54:42.296 UTC 00c0 INFO[0m [lifecycle] [34;1mupdate[0m -> Chaincode with package ID 'PrivateAgreement_2.0:17ee324770730da89de75f2b5b1f61ed8d2ce4a1400dfcbcb933cea0cfbb5a9a' now available on channel defaultchannel for chaincode definition PrivateAgreement:2.0
+2026-09-21T19:54:42.297001958Z [34m2026-09-21 19:54:42.296 UTC 00c1 INFO[0m [cceventmgmt] [34;1mHandleStateUpdates[0m -> Channel [defaultchannel]: Handling deploy or update of chaincode [PrivateAgreement]
+2026-09-21T19:54:42.535346883Z [34m2026-09-21 19:54:42.535 UTC 00c2 INFO[0m [kvledger] [34;1mcommit[0m -> [defaultchannel] Committed block [12] with 1 transaction(s) in 243ms (state_validation=18ms block_and_pvtdata_commit=49ms state_commit=158ms) commitHash=[523bf0f7d0ac176b365a62d4bccfc9e0c96eb69f8cd09d2c4936a3f90a1b16cb]
+2026-09-21T19:54:42.537497853Z [34m2026-09-21 19:54:42.537 UTC 00c3 INFO[0m [comm.grpc.server] [34;1m1[0m -> streaming call completed grpc.service=protos.Deliver grpc.method=DeliverFiltered grpc.request_deadline=2026-09-21T19:55:10.269Z grpc.peer_address=172.22.0.5:34390 error="context finished before block retrieved: context canceled" grpc.code=Unknown grpc.call_duration=2.26783211s

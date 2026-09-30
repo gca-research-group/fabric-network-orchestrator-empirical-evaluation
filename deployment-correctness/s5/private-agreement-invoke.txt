@@ -1,0 +1,19 @@
+========== Command ==========
+peer chaincode invoke \
+  -o orderer.org1.fno-s5.com:7050 \
+  --tls \
+  --cafile /opt/gopath/src/github.com/hyperledger/fabric/org1.fno-s5.com/ordererOrganizations/org1.fno-s5.com/orderers/orderer.org1.fno-s5.com/tls/ca.crt \
+  --ordererTLSHostnameOverride orderer.org1.fno-s5.com \
+  -C defaultchannel \
+  -n PrivateAgreement \
+  -c '{"Args":["CreatePrivateAgreement","agreement1"]}' \
+  --transient "{\"agreement\":\"${AGREEMENT}\"}" \
+  --peerAddresses peer0.org1.fno-s5.com:7051 \
+  --tlsRootCertFiles /opt/gopath/src/github.com/hyperledger/fabric/org1.fno-s5.com/peerOrganizations/org1.fno-s5.com/peers/peer0.org1.fno-s5.com/tls/ca.crt \
+  --peerAddresses peer0.org2.fno-s5.com:7051 \
+  --tlsRootCertFiles /opt/gopath/src/github.com/hyperledger/fabric/org2.fno-s5.com/peerOrganizations/org2.fno-s5.com/peers/peer0.org2.fno-s5.com/tls/ca.crt \
+  --peerAddresses peer0.org3.fno-s5.com:7051 \
+  --tlsRootCertFiles /opt/gopath/src/github.com/hyperledger/fabric/org3.fno-s5.com/peerOrganizations/org3.fno-s5.com/peers/peer0.org3.fno-s5.com/tls/ca.crt
+
+========== Output ==========
+2026-09-21 20:16:23.980 UTC 0001 INFO [chaincodeCmd] chaincodeInvokeOrQuery -> Chaincode invoke successful. result: status:200 

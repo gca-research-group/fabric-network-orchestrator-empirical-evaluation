@@ -1,0 +1,299 @@
+2026-09-21T18:53:05.264424403Z [34m2026-09-21 18:53:05.264 UTC 0001 INFO[0m [nodeCmd] [34;1mserve[0m -> Starting peer:
+2026-09-21T18:53:05.264451676Z  Version: v2.5.15
+2026-09-21T18:53:05.264453583Z  Commit SHA: 83c7930
+2026-09-21T18:53:05.264454755Z  Go version: go1.26.0
+2026-09-21T18:53:05.264455904Z  OS/Arch: linux/amd64
+2026-09-21T18:53:05.264456993Z  Chaincode:
+2026-09-21T18:53:05.264458090Z   Base Docker Label: org.hyperledger.fabric
+2026-09-21T18:53:05.264459327Z   Docker Namespace: hyperledger
+2026-09-21T18:53:05.265944439Z [34m2026-09-21 18:53:05.265 UTC 0002 INFO[0m [nodeCmd] [34;1mserve[0m -> Peer config with combined core.yaml settings and environment variable overrides:
+2026-09-21T18:53:05.265961490Z chaincode:
+2026-09-21T18:53:05.265963236Z   builder: $(DOCKER_NS)/fabric-ccenv:$(TWO_DIGIT_VERSION)
+2026-09-21T18:53:05.265964467Z   executetimeout: 30s
+2026-09-21T18:53:05.265965615Z   externalbuilders:
+2026-09-21T18:53:05.265966713Z   - name: ccaas_builder
+2026-09-21T18:53:05.265967824Z     path: /opt/hyperledger/ccaas_builder
+2026-09-21T18:53:05.265968934Z     propagateEnvironment:
+2026-09-21T18:53:05.265970027Z     - CHAINCODE_AS_A_SERVICE_BUILDER_CONFIG
+2026-09-21T18:53:05.265971287Z   golang:
+2026-09-21T18:53:05.265972381Z     dynamiclink: false
+2026-09-21T18:53:05.265973489Z     runtime: $(DOCKER_NS)/fabric-baseos:$(TWO_DIGIT_VERSION)
+2026-09-21T18:53:05.265974682Z   installtimeout: 300s
+2026-09-21T18:53:05.265975786Z   java:
+2026-09-21T18:53:05.265976881Z     runtime: $(DOCKER_NS)/fabric-javaenv:$(TWO_DIGIT_VERSION)
+2026-09-21T18:53:05.265978053Z   keepalive: 0
+2026-09-21T18:53:05.265979141Z   logging:
+2026-09-21T18:53:05.265980258Z     format: '%{color}%{time:2006-01-02 15:04:05.000 MST} [%{module}] %{shortfunc}
+2026-09-21T18:53:05.265981473Z       -> %{level:.4s} %{id:03x}%{color:reset} %{message}'
+2026-09-21T18:53:05.265982672Z     level: info
+2026-09-21T18:53:05.265983762Z     shim: warning
+2026-09-21T18:53:05.265984828Z   mode: net
+2026-09-21T18:53:05.265985923Z   node:
+2026-09-21T18:53:05.265986988Z     runtime: $(DOCKER_NS)/fabric-nodeenv:$(TWO_DIGIT_VERSION)
+2026-09-21T18:53:05.265988161Z   pull: false
+2026-09-21T18:53:05.265990350Z   startuptimeout: 300s
+2026-09-21T18:53:05.265992256Z   system:
+2026-09-21T18:53:05.265994128Z     _lifecycle: enable
+2026-09-21T18:53:05.265996007Z     cscc: enable
+2026-09-21T18:53:05.265997893Z     lscc: enable
+2026-09-21T18:53:05.265999849Z     qscc: enable
+2026-09-21T18:53:05.266001809Z ledger:
+2026-09-21T18:53:05.266020095Z   history:
+2026-09-21T18:53:05.266023110Z     enablehistorydatabase: true
+2026-09-21T18:53:05.266024339Z   pvtdatastore:
+2026-09-21T18:53:05.266025483Z     collelgprocdbbatchesinterval: 1000
+2026-09-21T18:53:05.266026661Z     collelgprocmaxdbbatchsize: 5000
+2026-09-21T18:53:05.266027801Z     deprioritizeddatareconcilerinterval: 60m
+2026-09-21T18:53:05.266028935Z     purgedkeyauditlogging: true
+2026-09-21T18:53:05.266030039Z     purgeinterval: 100
+2026-09-21T18:53:05.266031141Z   snapshots:
+2026-09-21T18:53:05.266032250Z     rootdir: /var/hyperledger/production/snapshots
+2026-09-21T18:53:05.266033400Z   state:
+2026-09-21T18:53:05.266034543Z     couchdbconfig:
+2026-09-21T18:53:05.266035644Z       cachesize: 64
+2026-09-21T18:53:05.266036746Z       couchdbaddress: couchdb.peer0.org1.fno-s1.com:5984
+2026-09-21T18:53:05.266037899Z       createglobalchangesdb: false
+2026-09-21T18:53:05.266039025Z       internalquerylimit: 1000
+2026-09-21T18:53:05.266040143Z       maxbatchupdatesize: 1000
+2026-09-21T18:53:05.266041259Z       maxretries: 3
+2026-09-21T18:53:05.266042358Z       maxretriesonstartup: 10
+2026-09-21T18:53:05.266043461Z       password: adminpw
+2026-09-21T18:53:05.266044563Z       requesttimeout: 35s
+2026-09-21T18:53:05.266045666Z       username: admin
+2026-09-21T18:53:05.266046757Z     statedatabase: CouchDB
+2026-09-21T18:53:05.266047869Z     totalquerylimit: 100000
+2026-09-21T18:53:05.266048988Z logging_level: ""
+2026-09-21T18:53:05.266050197Z metrics:
+2026-09-21T18:53:05.266051262Z   provider: disabled
+2026-09-21T18:53:05.266052369Z   statsd:
+2026-09-21T18:53:05.266053450Z     address: 127.0.0.1:8125
+2026-09-21T18:53:05.266054569Z     network: udp
+2026-09-21T18:53:05.266055683Z     writeinterval: 10s
+2026-09-21T18:53:05.266056796Z operations:
+2026-09-21T18:53:05.266057867Z   listenaddress: 127.0.0.1:9443
+2026-09-21T18:53:05.266058991Z   tls:
+2026-09-21T18:53:05.266060079Z     clientauthrequired: false
+2026-09-21T18:53:05.266061190Z     clientrootcas:
+2026-09-21T18:53:05.266062305Z       files: []
+2026-09-21T18:53:05.266063406Z     enabled: false
+2026-09-21T18:53:05.266064497Z peer:
+2026-09-21T18:53:05.266065581Z   address: peer0.org1.fno-s1.com:7051
+2026-09-21T18:53:05.266066718Z   addressautodetect: false
+2026-09-21T18:53:05.266067809Z   authentication:
+2026-09-21T18:53:05.266069623Z     timewindow: 15m
+2026-09-21T18:53:05.266070834Z   bccsp:
+2026-09-21T18:53:05.266073690Z     default: SW
+2026-09-21T18:53:05.266074897Z     sw:
+2026-09-21T18:53:05.266076002Z       hash: SHA2
+2026-09-21T18:53:05.266077105Z       security: 256
+2026-09-21T18:53:05.266078206Z   client:
+2026-09-21T18:53:05.266079295Z     conntimeout: 3s
+2026-09-21T18:53:05.266080387Z   deliveryclient:
+2026-09-21T18:53:05.266081470Z     blockgossipenabled: true
+2026-09-21T18:53:05.266082588Z     conntimeout: 3s
+2026-09-21T18:53:05.266083699Z     reconnectbackoffthreshold: 3600s
+2026-09-21T18:53:05.266084828Z     reconnecttotaltimethreshold: 3600s
+2026-09-21T18:53:05.266085942Z   discovery:
+2026-09-21T18:53:05.266087020Z     authcacheenabled: true
+2026-09-21T18:53:05.266088116Z     authcachemaxsize: 1000
+2026-09-21T18:53:05.266089220Z     authcachepurgeretentionratio: 0.75
+2026-09-21T18:53:05.266090346Z     enabled: true
+2026-09-21T18:53:05.266091432Z     orgmembersallowedaccess: false
+2026-09-21T18:53:05.266092552Z   filesystempath: /var/hyperledger/production
+2026-09-21T18:53:05.266093689Z   gateway:
+2026-09-21T18:53:05.266094769Z     broadcasttimeout: 30s
+2026-09-21T18:53:05.266095852Z     dialtimeout: 2m
+2026-09-21T18:53:05.266096926Z     enabled: true
+2026-09-21T18:53:05.266098047Z     endorsementtimeout: 30s
+2026-09-21T18:53:05.266099152Z   gossip:
+2026-09-21T18:53:05.266100232Z     aliveexpirationtimeout: 25s
+2026-09-21T18:53:05.266101325Z     alivetimeinterval: 5s
+2026-09-21T18:53:05.266102432Z     bootstrap: peer0.org1.fno-s1.com:7051
+2026-09-21T18:53:05.266103558Z     conntimeout: 2s
+2026-09-21T18:53:05.266104634Z     dialtimeout: 3s
+2026-09-21T18:53:05.266105725Z     digestwaittime: 1s
+2026-09-21T18:53:05.266106842Z     election:
+2026-09-21T18:53:05.266107920Z       leaderalivethreshold: 10s
+2026-09-21T18:53:05.266109063Z       leaderelectionduration: 5s
+2026-09-21T18:53:05.266110187Z       membershipsampleinterval: 1s
+2026-09-21T18:53:05.266111295Z       startupgraceperiod: 15s
+2026-09-21T18:53:05.266112415Z     externalendpoint: peer0.org1.fno-s1.com:7051
+2026-09-21T18:53:05.266113541Z     maxblockcounttostore: 10
+2026-09-21T18:53:05.266114640Z     maxconnectionattempts: 120
+2026-09-21T18:53:05.266115769Z     maxpropagationburstlatency: 10ms
+2026-09-21T18:53:05.266116873Z     maxpropagationburstsize: 10
+2026-09-21T18:53:05.266117982Z     membershiptrackerinterval: 5s
+2026-09-21T18:53:05.266119104Z     msgexpirationfactor: 20
+2026-09-21T18:53:05.266120218Z     orgleader: "false"
+2026-09-21T18:53:05.266127293Z     propagateiterations: 1
+2026-09-21T18:53:05.266128475Z     propagatepeernum: 3
+2026-09-21T18:53:05.266129589Z     publishcertperiod: 10s
+2026-09-21T18:53:05.266130724Z     publishstateinfointerval: 4s
+2026-09-21T18:53:05.266131821Z     pullinterval: 4s
+2026-09-21T18:53:05.266132912Z     pullpeernum: 3
+2026-09-21T18:53:05.266134026Z     pvtdata:
+2026-09-21T18:53:05.266135115Z       btlpullmargin: 10
+2026-09-21T18:53:05.266136218Z       implicitcollectiondisseminationpolicy:
+2026-09-21T18:53:05.266137338Z         maxpeercount: 1
+2026-09-21T18:53:05.266138415Z         requiredpeercount: 0
+2026-09-21T18:53:05.266139531Z       pullretrythreshold: 60s
+2026-09-21T18:53:05.266140645Z       pushacktimeout: 3s
+2026-09-21T18:53:05.266141755Z       reconcilebatchsize: 10
+2026-09-21T18:53:05.266142931Z       reconcilesleepinterval: 1m
+2026-09-21T18:53:05.266144083Z       reconciliationenabled: true
+2026-09-21T18:53:05.266145223Z       skippullinginvalidtransactionsduringcommit: false
+2026-09-21T18:53:05.266147380Z       transientstoremaxblockretention: 1000
+2026-09-21T18:53:05.266148569Z     reconnectinterval: 25s
+2026-09-21T18:53:05.266149696Z     recvbuffsize: 20
+2026-09-21T18:53:05.266150816Z     requeststateinfointerval: 4s
+2026-09-21T18:53:05.266151949Z     requestwaittime: 1500ms
+2026-09-21T18:53:05.266153040Z     responsewaittime: 2s
+2026-09-21T18:53:05.266154152Z     sendbuffsize: 200
+2026-09-21T18:53:05.266155263Z     skipblockverification: false
+2026-09-21T18:53:05.266156364Z     state:
+2026-09-21T18:53:05.266157435Z       batchsize: 10
+2026-09-21T18:53:05.266158523Z       blockbuffersize: 20
+2026-09-21T18:53:05.266159640Z       checkinterval: 10s
+2026-09-21T18:53:05.266160735Z       enabled: "true"
+2026-09-21T18:53:05.266161897Z       maxretries: 3
+2026-09-21T18:53:05.266162989Z       responsetimeout: 3s
+2026-09-21T18:53:05.266164076Z     useleaderelection: "true"
+2026-09-21T18:53:05.266165501Z   handlers:
+2026-09-21T18:53:05.266166642Z     authfilters:
+2026-09-21T18:53:05.266167726Z     - name: DefaultAuth
+2026-09-21T18:53:05.266168833Z     - name: ExpirationCheck
+2026-09-21T18:53:05.266169950Z     decorators:
+2026-09-21T18:53:05.266171044Z     - name: DefaultDecorator
+2026-09-21T18:53:05.266172145Z     endorsers:
+2026-09-21T18:53:05.266173221Z       escc:
+2026-09-21T18:53:05.266174315Z         name: DefaultEndorsement
+2026-09-21T18:53:05.266176724Z     validators:
+2026-09-21T18:53:05.266177880Z       vscc:
+2026-09-21T18:53:05.266178997Z         name: DefaultValidation
+2026-09-21T18:53:05.266180101Z   id: peer0.org1.fno-s1.com
+2026-09-21T18:53:05.266181206Z   keepalive:
+2026-09-21T18:53:05.266182282Z     client:
+2026-09-21T18:53:05.266183356Z       interval: 60s
+2026-09-21T18:53:05.266184434Z       timeout: 20s
+2026-09-21T18:53:05.266185506Z     deliveryclient:
+2026-09-21T18:53:05.266186578Z       interval: 60s
+2026-09-21T18:53:05.266187682Z       timeout: 20s
+2026-09-21T18:53:05.266188786Z     interval: 7200s
+2026-09-21T18:53:05.266189869Z     mininterval: 60s
+2026-09-21T18:53:05.266190960Z     timeout: 20s
+2026-09-21T18:53:05.266192050Z   limits:
+2026-09-21T18:53:05.266193126Z     concurrency:
+2026-09-21T18:53:05.266194325Z       deliverservice: 2500
+2026-09-21T18:53:05.266195428Z       endorserservice: 2500
+2026-09-21T18:53:05.266196522Z       gatewayservice: 500
+2026-09-21T18:53:05.266197604Z   listenaddress: 0.0.0.0:7051
+2026-09-21T18:53:05.266198709Z   localmspid: Org1MSP
+2026-09-21T18:53:05.266199783Z   localmsptype: bccsp
+2026-09-21T18:53:05.266200861Z   maxrecvmsgsize: 104857600
+2026-09-21T18:53:05.266201965Z   maxsendmsgsize: 104857600
+2026-09-21T18:53:05.266203081Z   mspconfigpath: /etc/hyperledger/fabric/msp
+2026-09-21T18:53:05.266204245Z   networkid: dev
+2026-09-21T18:53:05.266205325Z   profile:
+2026-09-21T18:53:05.266206403Z     enabled: "true"
+2026-09-21T18:53:05.266207519Z     listenaddress: 0.0.0.0:6060
+2026-09-21T18:53:05.266208647Z   tls:
+2026-09-21T18:53:05.266209711Z     cert:
+2026-09-21T18:53:05.266210796Z       file: /etc/hyperledger/fabric/tls/server.crt
+2026-09-21T18:53:05.266211976Z     clientauthrequired: "false"
+2026-09-21T18:53:05.266213158Z     clientcert:
+2026-09-21T18:53:05.266214265Z       file: /etc/hyperledger/fabric/tls/server.crt
+2026-09-21T18:53:05.266215430Z     clientkey:
+2026-09-21T18:53:05.266216566Z       file: /etc/hyperledger/fabric/tls/server.key
+2026-09-21T18:53:05.266217706Z     clientrootcas:
+2026-09-21T18:53:05.266218779Z       files:
+2026-09-21T18:53:05.266219854Z       - tls/ca.crt
+2026-09-21T18:53:05.266220925Z     enabled: "true"
+2026-09-21T18:53:05.266222061Z     key:
+2026-09-21T18:53:05.266223127Z       file: /etc/hyperledger/fabric/tls/server.key
+2026-09-21T18:53:05.266224260Z     rootcert:
+2026-09-21T18:53:05.266226595Z       file: /etc/hyperledger/fabric/tls/ca.crt
+2026-09-21T18:53:05.266227803Z vm:
+2026-09-21T18:53:05.266228918Z   docker:
+2026-09-21T18:53:05.266230003Z     attachstdout: false
+2026-09-21T18:53:05.266231116Z     hostconfig:
+2026-09-21T18:53:05.266232201Z       logconfig:
+2026-09-21T18:53:05.266233306Z         config:
+2026-09-21T18:53:05.266234474Z           max-file: "5"
+2026-09-21T18:53:05.266235626Z           max-size: 50m
+2026-09-21T18:53:05.266236721Z         type: json-file
+2026-09-21T18:53:05.266237800Z       memory: 2147483648
+2026-09-21T18:53:05.266238910Z       networkmode: fno-s1
+2026-09-21T18:53:05.266240024Z     tls:
+2026-09-21T18:53:05.266241102Z       ca:
+2026-09-21T18:53:05.266242180Z         file: docker/ca.crt
+2026-09-21T18:53:05.266243288Z       cert:
+2026-09-21T18:53:05.266244382Z         file: docker/tls.crt
+2026-09-21T18:53:05.266245481Z       enabled: false
+2026-09-21T18:53:05.266246702Z       key:
+2026-09-21T18:53:05.266247780Z         file: docker/tls.key
+2026-09-21T18:53:05.266248909Z   endpoint: unix:///host/var/run/docker.sock
+2026-09-21T18:53:05.266250089Z [34m2026-09-21 18:53:05.265 UTC 0003 INFO[0m [peer] [34;1mgetLocalAddress[0m -> Auto-detected peer address: 172.18.0.8:7051
+2026-09-21T18:53:05.266251582Z [34m2026-09-21 18:53:05.265 UTC 0004 INFO[0m [peer] [34;1mgetLocalAddress[0m -> Returning peer0.org1.fno-s1.com:7051
+2026-09-21T18:53:05.266648461Z [34m2026-09-21 18:53:05.266 UTC 0005 INFO[0m [nodeCmd] [34;1minitGrpcSemaphores[0m -> concurrency limit for endorser service is 2500
+2026-09-21T18:53:05.266656248Z [34m2026-09-21 18:53:05.266 UTC 0006 INFO[0m [nodeCmd] [34;1minitGrpcSemaphores[0m -> concurrency limit for deliver service is 2500
+2026-09-21T18:53:05.266659058Z [34m2026-09-21 18:53:05.266 UTC 0007 INFO[0m [nodeCmd] [34;1minitGrpcSemaphores[0m -> concurrency limit for gateway service is 500
+2026-09-21T18:53:05.266661626Z [34m2026-09-21 18:53:05.266 UTC 0008 INFO[0m [nodeCmd] [34;1mserve[0m -> Starting peer with TLS enabled
+2026-09-21T18:53:05.322305530Z [34m2026-09-21 18:53:05.322 UTC 0009 INFO[0m [certmonitor] [34;1mtrackCertExpiration[0m -> The enrollment certificate will expire on 2027-09-21 18:53:00 +0000 UTC
+2026-09-21T18:53:05.322327062Z [34m2026-09-21 18:53:05.322 UTC 000a INFO[0m [certmonitor] [34;1mtrackCertExpiration[0m -> The server TLS certificate will expire on 2027-09-21 18:53:00 +0000 UTC
+2026-09-21T18:53:05.322736773Z [34m2026-09-21 18:53:05.322 UTC 000b INFO[0m [ledgermgmt] [34;1mNewLedgerMgr[0m -> Initializing LedgerMgr
+2026-09-21T18:53:05.551854992Z [34m2026-09-21 18:53:05.551 UTC 000c INFO[0m [leveldbhelper] [34;1mopenDBAndCheckFormat[0m -> DB is empty Setting db format as 2.0
+2026-09-21T18:53:05.562694465Z [34m2026-09-21 18:53:05.562 UTC 000d INFO[0m [blkstorage] [34;1mNewProvider[0m -> Creating new file ledger directory at /var/hyperledger/production/ledgersData/chains/chains
+2026-09-21T18:53:05.719397877Z [34m2026-09-21 18:53:05.719 UTC 000e INFO[0m [leveldbhelper] [34;1mopenDBAndCheckFormat[0m -> DB is empty Setting db format as 2.5
+2026-09-21T18:53:05.781133542Z [34m2026-09-21 18:53:05.781 UTC 000f INFO[0m [leveldbhelper] [34;1mopenDBAndCheckFormat[0m -> DB is empty Setting db format as 2.0
+2026-09-21T18:53:05.925581894Z [34m2026-09-21 18:53:05.925 UTC 0010 INFO[0m [couchdb] [34;1mcreateDatabaseIfNotExist[0m -> Created state database _users
+2026-09-21T18:53:05.969632281Z [34m2026-09-21 18:53:05.969 UTC 0011 INFO[0m [couchdb] [34;1mcreateDatabaseIfNotExist[0m -> Created state database _replicator
+2026-09-21T18:53:06.024636442Z [34m2026-09-21 18:53:06.024 UTC 0012 INFO[0m [couchdb] [34;1mcreateDatabaseIfNotExist[0m -> Created state database fabric__internal
+2026-09-21T18:53:06.087776016Z [34m2026-09-21 18:53:06.087 UTC 0013 INFO[0m [ledgermgmt] [34;1mNewLedgerMgr[0m -> Initialized LedgerMgr
+2026-09-21T18:53:06.088234844Z [34m2026-09-21 18:53:06.088 UTC 0014 INFO[0m [gossip.service] [34;1mNew[0m -> Initialize gossip with endpoint peer0.org1.fno-s1.com:7051
+2026-09-21T18:53:06.088933111Z [34m2026-09-21 18:53:06.088 UTC 0015 INFO[0m [gossip.gossip] [34;1mNew[0m -> Creating gossip service with self membership of Endpoint: peer0.org1.fno-s1.com:7051, InternalEndpoint: peer0.org1.fno-s1.com:7051, PKI-ID: 42f6ee4a7c6f25f05795facd2fc5aecd8653877df4ea757399ad81d0bcc73af2, Metadata: 
+2026-09-21T18:53:06.089186596Z [34m2026-09-21 18:53:06.089 UTC 0016 INFO[0m [lifecycle] [34;1mInitializeLocalChaincodes[0m -> Initialized lifecycle cache with 0 already installed chaincodes
+2026-09-21T18:53:06.089203226Z [34m2026-09-21 18:53:06.089 UTC 0017 INFO[0m [gossip.gossip] [34;1mstart[0m -> Gossip instance peer0.org1.fno-s1.com:7051 started
+2026-09-21T18:53:06.089426913Z [34m2026-09-21 18:53:06.089 UTC 0018 INFO[0m [nodeCmd] [34;1mcomputeChaincodeEndpoint[0m -> Entering computeChaincodeEndpoint with peerHostname: peer0.org1.fno-s1.com
+2026-09-21T18:53:06.089441976Z [34m2026-09-21 18:53:06.089 UTC 0019 INFO[0m [nodeCmd] [34;1mcomputeChaincodeEndpoint[0m -> Exit with ccEndpoint: peer0.org1.fno-s1.com:7052
+2026-09-21T18:53:06.089449504Z [33m2026-09-21 18:53:06.089 UTC 001a WARN[0m [nodeCmd] [33;1mcreateChaincodeServer[0m -> peer.chaincodeListenAddress is not set, using peer0.org1.fno-s1.com:7052
+2026-09-21T18:53:06.090518558Z [34m2026-09-21 18:53:06.090 UTC 001b INFO[0m [sccapi] [34;1mDeploySysCC[0m -> deploying system chaincode 'lscc'
+2026-09-21T18:53:06.090624118Z [34m2026-09-21 18:53:06.090 UTC 001c INFO[0m [sccapi] [34;1mDeploySysCC[0m -> deploying system chaincode 'cscc'
+2026-09-21T18:53:06.090655701Z [34m2026-09-21 18:53:06.090 UTC 001d INFO[0m [sccapi] [34;1mDeploySysCC[0m -> deploying system chaincode 'qscc'
+2026-09-21T18:53:06.090726290Z [34m2026-09-21 18:53:06.090 UTC 001e INFO[0m [sccapi] [34;1mDeploySysCC[0m -> deploying system chaincode '_lifecycle'
+2026-09-21T18:53:06.090777902Z [34m2026-09-21 18:53:06.090 UTC 001f INFO[0m [nodeCmd] [34;1mserve[0m -> Deployed system chaincodes
+2026-09-21T18:53:06.090878272Z [34m2026-09-21 18:53:06.090 UTC 0020 INFO[0m [discovery] [34;1mNewService[0m -> Created with config TLS: true, authCacheMaxSize: 1000, authCachePurgeRatio: 0.750000
+2026-09-21T18:53:06.090897575Z [34m2026-09-21 18:53:06.090 UTC 0021 INFO[0m [nodeCmd] [34;1mserve[0m -> Discovery service activated
+2026-09-21T18:53:06.090920285Z [34m2026-09-21 18:53:06.090 UTC 0022 INFO[0m [nodeCmd] [34;1mserve[0m -> Starting peer with Gateway enabled
+2026-09-21T18:53:06.090963671Z [34m2026-09-21 18:53:06.090 UTC 0023 INFO[0m [nodeCmd] [34;1mserve[0m -> Starting peer with ID=[peer0.org1.fno-s1.com], network ID=[dev], address=[peer0.org1.fno-s1.com:7051]
+2026-09-21T18:53:06.091001394Z [34m2026-09-21 18:53:06.090 UTC 0024 INFO[0m [nodeCmd] [34;1mfunc7[0m -> Starting profiling server with listenAddress = 0.0.0.0:6060
+2026-09-21T18:53:06.091084401Z [34m2026-09-21 18:53:06.091 UTC 0025 INFO[0m [nodeCmd] [34;1mserve[0m -> Started peer with ID=[peer0.org1.fno-s1.com], network ID=[dev], address=[peer0.org1.fno-s1.com:7051]
+2026-09-21T18:53:06.091121746Z [34m2026-09-21 18:53:06.091 UTC 0026 INFO[0m [kvledger] [34;1mLoadPreResetHeight[0m -> Loading prereset height from path [/var/hyperledger/production/ledgersData/chains]
+2026-09-21T18:53:06.091129295Z [34m2026-09-21 18:53:06.091 UTC 0027 INFO[0m [blkstorage] [34;1mpreResetHtFiles[0m -> No active channels passed
+2026-09-21T18:53:17.081875303Z [34m2026-09-21 18:53:17.081 UTC 0028 INFO[0m [endorser] [34;1mcallChaincode[0m -> finished chaincode: cscc duration: 0ms channel= txID=901ba3b5
+2026-09-21T18:53:17.081910698Z [34m2026-09-21 18:53:17.081 UTC 0029 INFO[0m [comm.grpc.server] [34;1m1[0m -> unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=172.18.0.4:34670 grpc.code=OK grpc.call_duration=984.342µs
+2026-09-21T18:53:17.166938755Z [34m2026-09-21 18:53:17.166 UTC 002a INFO[0m [ledgermgmt] [34;1mCreateLedger[0m -> Creating ledger [defaultchannel] with genesis block
+2026-09-21T18:53:17.179999057Z [34m2026-09-21 18:53:17.179 UTC 002b INFO[0m [blkstorage] [34;1mnewBlockfileMgr[0m -> Getting block information from block storage
+2026-09-21T18:53:17.224940636Z [34m2026-09-21 18:53:17.224 UTC 002c INFO[0m [couchdb] [34;1mcreateDatabaseIfNotExist[0m -> Created state database defaultchannel_
+2026-09-21T18:53:17.306328279Z [34m2026-09-21 18:53:17.306 UTC 002d INFO[0m [couchdb] [34;1mcreateDatabaseIfNotExist[0m -> Created state database defaultchannel__lifecycle
+2026-09-21T18:53:17.414784582Z [34m2026-09-21 18:53:17.414 UTC 002e INFO[0m [kvledger] [34;1mcommit[0m -> [defaultchannel] Committed block [0] with 1 transaction(s) in 85ms (state_validation=0ms block_and_pvtdata_commit=18ms state_commit=61ms) commitHash=[]
+2026-09-21T18:53:17.414808448Z [34m2026-09-21 18:53:17.414 UTC 002f INFO[0m [kvledger] [34;1mupdateLedgerStatus[0m -> Updating ledger [defaultchannel] status to [ACTIVE]
+2026-09-21T18:53:17.420117089Z [34m2026-09-21 18:53:17.419 UTC 0030 INFO[0m [ledgermgmt] [34;1mCreateLedger[0m -> Created ledger [defaultchannel] with genesis block
+2026-09-21T18:53:17.424877745Z [33m2026-09-21 18:53:17.424 UTC 0031 WARN[0m [peer.orderers] [33;1mUpdate[0m -> Config defines both orderer org specific endpoints and global endpoints, global endpoints will be ignored channel=defaultchannel
+2026-09-21T18:53:17.425000216Z [34m2026-09-21 18:53:17.424 UTC 0032 INFO[0m [gossip.gossip] [34;1mJoinChan[0m -> Joining gossip network of channel defaultchannel with 2 organizations
+2026-09-21T18:53:17.425007781Z [34m2026-09-21 18:53:17.424 UTC 0033 INFO[0m [gossip.gossip] [34;1mlearnAnchorPeers[0m -> Learning about the configured anchor peers of Org1MSP for channel defaultchannel: [{peer0.org1.fno-s1.com 7051}]
+2026-09-21T18:53:17.425038889Z [34m2026-09-21 18:53:17.425 UTC 0034 INFO[0m [gossip.gossip] [34;1mlearnAnchorPeers[0m -> Anchor peer for channel defaultchannel with same endpoint, skipping connecting to myself
+2026-09-21T18:53:17.425043837Z [34m2026-09-21 18:53:17.425 UTC 0035 INFO[0m [gossip.gossip] [34;1mlearnAnchorPeers[0m -> Learning about the configured anchor peers of Org2MSP for channel defaultchannel: [{peer0.org2.fno-s1.com 7051}]
+2026-09-21T18:53:17.425168760Z [34m2026-09-21 18:53:17.425 UTC 0036 INFO[0m [gateway] [34;1mconfigUpdate[0m -> Updating orderer config channel=defaultchannel
+2026-09-21T18:53:17.425368997Z [34m2026-09-21 18:53:17.425 UTC 0037 INFO[0m [gossip.state] [34;1mNewGossipStateProvider[0m -> Updating metadata information for channel defaultchannel, current ledger sequence is at = 0, next expected block is = 1
+2026-09-21T18:53:17.425526806Z [34m2026-09-21 18:53:17.425 UTC 0038 INFO[0m [endorser] [34;1mcallChaincode[0m -> finished chaincode: cscc duration: 261ms channel= txID=e817c684
+2026-09-21T18:53:17.425552095Z [34m2026-09-21 18:53:17.425 UTC 0039 INFO[0m [comm.grpc.server] [34;1m1[0m -> unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=172.18.0.4:34682 grpc.code=OK grpc.call_duration=261.435032ms
+2026-09-21T18:53:17.432448484Z [33m2026-09-21 18:53:17.432 UTC 003a WARN[0m [gossip.comm] [33;1mfunc1[0m -> peer0.org2.fno-s1.com:7051, PKIid:48873888d88e9ddea564e92b9b6f1f1b8cd9ddbd0225ddc23f7e4288f01083ae isn't responsive: EOF
+2026-09-21T18:53:17.867202837Z [34m2026-09-21 18:53:17.867 UTC 003b INFO[0m [comm.grpc.server] [34;1m1[0m -> unary call completed grpc.service=gossip.Gossip grpc.method=Ping grpc.request_deadline=2026-09-21T18:53:19.867Z grpc.peer_address=172.18.0.10:45888 grpc.peer_subject="CN=peer0,OU=peer,O=Hyperledger,ST=North Carolina,C=US" grpc.code=OK grpc.call_duration=44.231µs
+2026-09-21T18:53:17.868070526Z [34m2026-09-21 18:53:17.868 UTC 003c INFO[0m [gossip.comm] [34;1mGossipStream[0m -> Peer 48873888d88e9ddea564e92b9b6f1f1b8cd9ddbd0225ddc23f7e4288f01083ae (172.18.0.10:45888) probed us
+2026-09-21T18:53:17.868096113Z [34m2026-09-21 18:53:17.868 UTC 003d INFO[0m [comm.grpc.server] [34;1m1[0m -> streaming call completed grpc.service=gossip.Gossip grpc.method=GossipStream grpc.request_deadline=2026-09-21T18:53:27.867Z grpc.peer_address=172.18.0.10:45888 grpc.peer_subject="CN=peer0,OU=peer,O=Hyperledger,ST=North Carolina,C=US" grpc.code=OK grpc.call_duration=666.905µs
+2026-09-21T18:53:17.871344844Z [34m2026-09-21 18:53:17.871 UTC 003e INFO[0m [comm.grpc.server] [34;1m1[0m -> unary call completed grpc.service=gossip.Gossip grpc.method=Ping grpc.request_deadline=2026-09-21T18:53:19.871Z grpc.peer_address=172.18.0.10:45904 grpc.peer_subject="CN=peer0,OU=peer,O=Hyperledger,ST=North Carolina,C=US" grpc.code=OK grpc.call_duration=47.746µs
+2026-09-21T18:53:22.425336452Z [34m2026-09-21 18:53:22.425 UTC 003f INFO[0m [gossip.channel] [34;1mreportMembershipChanges[0m -> [[defaultchannel] Membership view has changed. peers went online:  [[peer0.org2.fno-s1.com:7051 ]] , current view:  [[peer0.org2.fno-s1.com:7051 ]]]
+2026-09-21T18:53:23.427130532Z [34m2026-09-21 18:53:23.426 UTC 0040 INFO[0m [gossip.election] [34;1mbeLeader[0m -> 42f6ee4a7c6f25f05795facd2fc5aecd8653877df4ea757399ad81d0bcc73af2 : Becoming a leader
+2026-09-21T18:53:23.427151336Z [34m2026-09-21 18:53:23.426 UTC 0041 INFO[0m [gossip.service] [34;1mfunc2[0m -> Elected as a leader, starting delivery service for channel defaultchannel
+2026-09-21T18:53:23.427153828Z [34m2026-09-21 18:53:23.426 UTC 0042 INFO[0m [deliveryClient] [34;1mStartDeliverForChannel[0m -> This peer will retrieve blocks from ordering service and disseminate to other peers in the organization channel=defaultchannel
+2026-09-21T18:53:23.429557323Z [34m2026-09-21 18:53:23.429 UTC 0043 INFO[0m [peer.blocksprovider] [34;1mDeliverBlocks[0m -> Pulling next blocks from ordering service channel=defaultchannel orderer-address=orderer.org1.fno-s1.com:7050 nextBlock=1

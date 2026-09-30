@@ -1,0 +1,10 @@
+========== Command ==========
+peer chaincode query \
+  -C defaultchannel \
+  -n Product \
+  -c '{"Args":["QueryProductByID","product1"]}' \
+  --peerAddresses peer0.org1.fno-s5.com:7051 \
+  --tlsRootCertFiles /opt/gopath/src/github.com/hyperledger/fabric/org1.fno-s5.com/peerOrganizations/org1.fno-s5.com/peers/peer0.org1.fno-s5.com/tls/ca.crt
+
+========== Output ==========
+{"id":"product1","name":"Notebook","description":"14-inch notebook","price":1299.9}

@@ -1,0 +1,30 @@
+{
+  "generation": {
+    "parameters": {
+      "seed": ".\\output\\mutation-tests\\seed.yaml",
+      "mutationCount": 5,
+      "output": ".\\output\\mutation-tests\\mc5",
+      "progressInterval": 25000
+    },
+    "startedAt": "2026-09-09T18:15:09.7201056Z",
+    "finishedAt": "2026-09-09T18:15:13.1361143Z",
+    "durationSeconds": 3.4160176,
+    "status": "succeeded",
+    "total": 2645033,
+    "mutationOperatorsUsed": 13225165
+  },
+  "validation": {
+    "parameters": {
+      "output": ".\\output\\mutation-tests\\mc5",
+      "progressInterval": 25000
+    },
+    "startedAt": "2026-09-09T18:15:21.2203033Z",
+    "finishedAt": "2026-09-09T18:26:57.6533158Z",
+    "durationSeconds": 696.4348232,
+    "status": "succeeded",
+    "total": 2645033,
+    "passed": 2645033,
+    "partial": 0,
+    "failed": 0
+  }
+}

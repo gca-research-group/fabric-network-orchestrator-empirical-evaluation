@@ -1,0 +1,71 @@
+2026-09-21T19:44:49.330623538Z [34m2026-09-21 19:44:49.330 UTC [nodeCmd] serve -> INFO 001[0m Starting peer:
+2026-09-21T19:44:49.330651421Z  Version: 2.3.3
+2026-09-21T19:44:49.330653526Z  Commit SHA: 9955302
+2026-09-21T19:44:49.330654704Z  Go version: go1.16.7
+2026-09-21T19:44:49.330655828Z  OS/Arch: linux/amd64
+2026-09-21T19:44:49.330657315Z  Chaincode:
+2026-09-21T19:44:49.330658440Z   Base Docker Label: org.hyperledger.fabric
+2026-09-21T19:44:49.330659691Z   Docker Namespace: hyperledger
+2026-09-21T19:44:49.330888731Z [34m2026-09-21 19:44:49.330 UTC [peer] getLocalAddress -> INFO 002[0m Auto-detected peer address: 172.21.0.10:7051
+2026-09-21T19:44:49.330892617Z [34m2026-09-21 19:44:49.330 UTC [peer] getLocalAddress -> INFO 003[0m Returning peer0.org2.fno-s4.com:7051
+2026-09-21T19:44:49.331481521Z [34m2026-09-21 19:44:49.331 UTC [nodeCmd] initGrpcSemaphores -> INFO 004[0m concurrency limit for endorser service is 2500
+2026-09-21T19:44:49.331493191Z [34m2026-09-21 19:44:49.331 UTC [nodeCmd] initGrpcSemaphores -> INFO 005[0m concurrency limit for deliver service is 2500
+2026-09-21T19:44:49.331534044Z [34m2026-09-21 19:44:49.331 UTC [nodeCmd] serve -> INFO 006[0m Starting peer with TLS enabled
+2026-09-21T19:44:49.357739570Z [34m2026-09-21 19:44:49.357 UTC [certmonitor] trackCertExpiration -> INFO 007[0m The enrollment certificate will expire on 2027-09-21 19:45:00 +0000 UTC
+2026-09-21T19:44:49.357755690Z [34m2026-09-21 19:44:49.357 UTC [certmonitor] trackCertExpiration -> INFO 008[0m The server TLS certificate will expire on 2027-09-21 19:45:00 +0000 UTC
+2026-09-21T19:44:49.358055299Z [34m2026-09-21 19:44:49.358 UTC [ledgermgmt] NewLedgerMgr -> INFO 009[0m Initializing LedgerMgr
+2026-09-21T19:44:49.508748153Z [34m2026-09-21 19:44:49.508 UTC [leveldbhelper] openDBAndCheckFormat -> INFO 00a[0m DB is empty Setting db format as 2.0
+2026-09-21T19:44:49.513961610Z [34m2026-09-21 19:44:49.513 UTC [blkstorage] NewProvider -> INFO 00b[0m Creating new file ledger directory at /var/hyperledger/production/ledgersData/chains/chains
+2026-09-21T19:44:49.577162821Z [34m2026-09-21 19:44:49.577 UTC [leveldbhelper] openDBAndCheckFormat -> INFO 00c[0m DB is empty Setting db format as 2.0
+2026-09-21T19:44:49.682323641Z [34m2026-09-21 19:44:49.682 UTC [couchdb] createDatabaseIfNotExist -> INFO 00d[0m Created state database _users
+2026-09-21T19:44:49.716622159Z [34m2026-09-21 19:44:49.716 UTC [couchdb] createDatabaseIfNotExist -> INFO 00e[0m Created state database _replicator
+2026-09-21T19:44:49.771118096Z [34m2026-09-21 19:44:49.770 UTC [couchdb] createDatabaseIfNotExist -> INFO 00f[0m Created state database fabric__internal
+2026-09-21T19:44:49.839354372Z [34m2026-09-21 19:44:49.839 UTC [ledgermgmt] NewLedgerMgr -> INFO 010[0m Initialized LedgerMgr
+2026-09-21T19:44:49.839900702Z [34m2026-09-21 19:44:49.839 UTC [gossip.service] New -> INFO 011[0m Initialize gossip with endpoint peer0.org2.fno-s4.com:7051
+2026-09-21T19:44:49.840491501Z [34m2026-09-21 19:44:49.840 UTC [gossip.gossip] New -> INFO 012[0m Creating gossip service with self membership of Endpoint: peer0.org2.fno-s4.com:7051, InternalEndpoint: peer0.org2.fno-s4.com:7051, PKI-ID: 51843c9252f7950cde2f021f82a765ed933f410f1432c4473f4a058666754008, Metadata: 
+2026-09-21T19:44:49.840699762Z [34m2026-09-21 19:44:49.840 UTC [gossip.gossip] start -> INFO 013[0m Gossip instance peer0.org2.fno-s4.com:7051 started
+2026-09-21T19:44:49.840705998Z [34m2026-09-21 19:44:49.840 UTC [lifecycle] InitializeLocalChaincodes -> INFO 014[0m Initialized lifecycle cache with 0 already installed chaincodes
+2026-09-21T19:44:49.840955844Z [34m2026-09-21 19:44:49.840 UTC [nodeCmd] computeChaincodeEndpoint -> INFO 015[0m Entering computeChaincodeEndpoint with peerHostname: peer0.org2.fno-s4.com
+2026-09-21T19:44:49.840959727Z [34m2026-09-21 19:44:49.840 UTC [nodeCmd] computeChaincodeEndpoint -> INFO 016[0m Exit with ccEndpoint: peer0.org2.fno-s4.com:7052
+2026-09-21T19:44:49.840972326Z [33m2026-09-21 19:44:49.840 UTC [nodeCmd] createChaincodeServer -> WARN 017[0m peer.chaincodeListenAddress is not set, using peer0.org2.fno-s4.com:7052
+2026-09-21T19:44:49.842048947Z [34m2026-09-21 19:44:49.842 UTC [sccapi] DeploySysCC -> INFO 018[0m deploying system chaincode 'lscc'
+2026-09-21T19:44:49.842135677Z [34m2026-09-21 19:44:49.842 UTC [sccapi] DeploySysCC -> INFO 019[0m deploying system chaincode 'cscc'
+2026-09-21T19:44:49.842224203Z [34m2026-09-21 19:44:49.842 UTC [sccapi] DeploySysCC -> INFO 01a[0m deploying system chaincode 'qscc'
+2026-09-21T19:44:49.842247708Z [34m2026-09-21 19:44:49.842 UTC [sccapi] DeploySysCC -> INFO 01b[0m deploying system chaincode '_lifecycle'
+2026-09-21T19:44:49.842297368Z [34m2026-09-21 19:44:49.842 UTC [nodeCmd] serve -> INFO 01c[0m Deployed system chaincodes
+2026-09-21T19:44:49.842365726Z [34m2026-09-21 19:44:49.842 UTC [discovery] NewService -> INFO 01d[0m Created with config TLS: true, authCacheMaxSize: 1000, authCachePurgeRatio: 0.750000
+2026-09-21T19:44:49.842372072Z [34m2026-09-21 19:44:49.842 UTC [nodeCmd] registerDiscoveryService -> INFO 01e[0m Discovery service activated
+2026-09-21T19:44:49.842398104Z [34m2026-09-21 19:44:49.842 UTC [nodeCmd] serve -> INFO 01f[0m Starting peer with ID=[peer0.org2.fno-s4.com], network ID=[dev], address=[peer0.org2.fno-s4.com:7051]
+2026-09-21T19:44:49.842433503Z [34m2026-09-21 19:44:49.842 UTC [nodeCmd] func6 -> INFO 020[0m Starting profiling server with listenAddress = 0.0.0.0:6060
+2026-09-21T19:44:49.842497119Z [34m2026-09-21 19:44:49.842 UTC [nodeCmd] serve -> INFO 021[0m Started peer with ID=[peer0.org2.fno-s4.com], network ID=[dev], address=[peer0.org2.fno-s4.com:7051]
+2026-09-21T19:44:49.842521655Z [34m2026-09-21 19:44:49.842 UTC [kvledger] LoadPreResetHeight -> INFO 022[0m Loading prereset height from path [/var/hyperledger/production/ledgersData/chains]
+2026-09-21T19:44:49.842530405Z [34m2026-09-21 19:44:49.842 UTC [blkstorage] preResetHtFiles -> INFO 023[0m No active channels passed
+2026-09-21T19:44:55.085664711Z [34m2026-09-21 19:44:55.085 UTC [comm.grpc.server] 1 -> INFO 024[0m unary call completed grpc.service=gossip.Gossip grpc.method=Ping grpc.request_deadline=2026-09-21T19:44:57.085Z grpc.peer_address=172.21.0.8:40512 grpc.peer_subject="CN=peer0,OU=peer,O=Hyperledger,ST=North Carolina,C=US" grpc.code=OK grpc.call_duration=62.814µs
+2026-09-21T19:44:55.086555936Z [33m2026-09-21 19:44:55.086 UTC [gossip.comm] authenticateRemotePeer -> WARN 025[0m Identity store rejected 172.21.0.8:40512 : failed classifying identity: Unable to extract msp.Identity from peer Identity: Peer Identity {"CN":"peer0","Issuer-CN":"ca.org1.fno-s4.com","Issuer-L-ST-C":"[]-[]-[US]","Issuer-OU":["Fabric"],"L-ST-C":"[]-[]-[US]","MSP":"Org1MSP","OU":["peer"]} cannot be validated. No MSP found able to do that.
+2026-09-21T19:44:55.086599657Z [31m2026-09-21 19:44:55.086 UTC [gossip.comm] GossipStream -> ERRO 026[0m Authentication failed: failed classifying identity: Unable to extract msp.Identity from peer Identity: Peer Identity {"CN":"peer0","Issuer-CN":"ca.org1.fno-s4.com","Issuer-L-ST-C":"[]-[]-[US]","Issuer-OU":["Fabric"],"L-ST-C":"[]-[]-[US]","MSP":"Org1MSP","OU":["peer"]} cannot be validated. No MSP found able to do that.
+2026-09-21T19:44:55.086619608Z [34m2026-09-21 19:44:55.086 UTC [comm.grpc.server] 1 -> INFO 027[0m streaming call completed grpc.service=gossip.Gossip grpc.method=GossipStream grpc.request_deadline=2026-09-21T19:45:05.085Z grpc.peer_address=172.21.0.8:40512 grpc.peer_subject="CN=peer0,OU=peer,O=Hyperledger,ST=North Carolina,C=US" error="failed classifying identity: Unable to extract msp.Identity from peer Identity: Peer Identity {\"CN\":\"peer0\",\"Issuer-CN\":\"ca.org1.fno-s4.com\",\"Issuer-L-ST-C\":\"[]-[]-[US]\",\"Issuer-OU\":[\"Fabric\"],\"L-ST-C\":\"[]-[]-[US]\",\"MSP\":\"Org1MSP\",\"OU\":[\"peer\"]} cannot be validated. No MSP found able to do that." grpc.code=Unknown grpc.call_duration=681.242µs
+2026-09-21T19:44:55.089979369Z [34m2026-09-21 19:44:55.089 UTC [comm.grpc.server] 1 -> INFO 028[0m unary call completed grpc.service=gossip.Gossip grpc.method=Ping grpc.request_deadline=2026-09-21T19:44:57.089Z grpc.peer_address=172.21.0.8:40516 grpc.peer_subject="CN=peer0,OU=peer,O=Hyperledger,ST=North Carolina,C=US" grpc.code=OK grpc.call_duration=65.232µs
+2026-09-21T19:44:55.090735021Z [33m2026-09-21 19:44:55.090 UTC [gossip.comm] authenticateRemotePeer -> WARN 029[0m Identity store rejected 172.21.0.8:40516 : failed classifying identity: Unable to extract msp.Identity from peer Identity: Peer Identity {"CN":"peer0","Issuer-CN":"ca.org1.fno-s4.com","Issuer-L-ST-C":"[]-[]-[US]","Issuer-OU":["Fabric"],"L-ST-C":"[]-[]-[US]","MSP":"Org1MSP","OU":["peer"]} cannot be validated. No MSP found able to do that.
+2026-09-21T19:44:55.090767949Z [31m2026-09-21 19:44:55.090 UTC [gossip.comm] GossipStream -> ERRO 02a[0m Authentication failed: failed classifying identity: Unable to extract msp.Identity from peer Identity: Peer Identity {"CN":"peer0","Issuer-CN":"ca.org1.fno-s4.com","Issuer-L-ST-C":"[]-[]-[US]","Issuer-OU":["Fabric"],"L-ST-C":"[]-[]-[US]","MSP":"Org1MSP","OU":["peer"]} cannot be validated. No MSP found able to do that.
+2026-09-21T19:44:55.090880037Z [34m2026-09-21 19:44:55.090 UTC [comm.grpc.server] 1 -> INFO 02b[0m streaming call completed grpc.service=gossip.Gossip grpc.method=GossipStream grpc.peer_address=172.21.0.8:40516 grpc.peer_subject="CN=peer0,OU=peer,O=Hyperledger,ST=North Carolina,C=US" error="failed classifying identity: Unable to extract msp.Identity from peer Identity: Peer Identity {\"CN\":\"peer0\",\"Issuer-CN\":\"ca.org1.fno-s4.com\",\"Issuer-L-ST-C\":\"[]-[]-[US]\",\"Issuer-OU\":[\"Fabric\"],\"L-ST-C\":\"[]-[]-[US]\",\"MSP\":\"Org1MSP\",\"OU\":[\"peer\"]} cannot be validated. No MSP found able to do that." grpc.code=Unknown grpc.call_duration=566.104µs
+2026-09-21T19:44:55.169408832Z [34m2026-09-21 19:44:55.169 UTC [endorser] callChaincode -> INFO 02c[0m finished chaincode: cscc duration: 0ms channel= txID=292b5944
+2026-09-21T19:44:55.169426792Z [34m2026-09-21 19:44:55.169 UTC [comm.grpc.server] 1 -> INFO 02d[0m unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=172.21.0.5:43014 grpc.code=OK grpc.call_duration=957.934µs
+2026-09-21T19:44:55.254253445Z [34m2026-09-21 19:44:55.254 UTC [ledgermgmt] CreateLedger -> INFO 02e[0m Creating ledger [defaultchannel] with genesis block
+2026-09-21T19:44:55.267988864Z [34m2026-09-21 19:44:55.267 UTC [blkstorage] newBlockfileMgr -> INFO 02f[0m Getting block information from block storage
+2026-09-21T19:44:55.315206879Z [34m2026-09-21 19:44:55.315 UTC [couchdb] createDatabaseIfNotExist -> INFO 030[0m Created state database defaultchannel_
+2026-09-21T19:44:55.392174821Z [34m2026-09-21 19:44:55.392 UTC [couchdb] createDatabaseIfNotExist -> INFO 031[0m Created state database defaultchannel__lifecycle
+2026-09-21T19:44:55.506045980Z [34m2026-09-21 19:44:55.505 UTC [kvledger] commit -> INFO 032[0m [defaultchannel] Committed block [0] with 1 transaction(s) in 91ms (state_validation=0ms block_and_pvtdata_commit=18ms state_commit=67ms) commitHash=[]
+2026-09-21T19:44:55.506057455Z [34m2026-09-21 19:44:55.506 UTC [kvledger] updateLedgerStatus -> INFO 033[0m Updating ledger [defaultchannel] status to [ACTIVE]
+2026-09-21T19:44:55.511562246Z [34m2026-09-21 19:44:55.511 UTC [ledgermgmt] CreateLedger -> INFO 034[0m Created ledger [defaultchannel] with genesis block
+2026-09-21T19:44:55.515499266Z [33m2026-09-21 19:44:55.515 UTC [peer.orderers] Update -> WARN 035[0m Config defines both orderer org specific endpoints and global endpoints, global endpoints will be ignored channel=defaultchannel
+2026-09-21T19:44:55.515601581Z [34m2026-09-21 19:44:55.515 UTC [gossip.gossip] JoinChan -> INFO 036[0m Joining gossip network of channel defaultchannel with 2 organizations
+2026-09-21T19:44:55.515610167Z [34m2026-09-21 19:44:55.515 UTC [gossip.gossip] learnAnchorPeers -> INFO 037[0m Learning about the configured anchor peers of Org1MSP for channel defaultchannel: [{peer0.org1.fno-s4.com 7051}]
+2026-09-21T19:44:55.515625953Z [34m2026-09-21 19:44:55.515 UTC [gossip.gossip] learnAnchorPeers -> INFO 038[0m Learning about the configured anchor peers of Org2MSP for channel defaultchannel: [{peer0.org2.fno-s4.com 7051}]
+2026-09-21T19:44:55.515642298Z [34m2026-09-21 19:44:55.515 UTC [gossip.gossip] learnAnchorPeers -> INFO 039[0m Anchor peer for channel defaultchannel with same endpoint, skipping connecting to myself
+2026-09-21T19:44:55.516102048Z [34m2026-09-21 19:44:55.516 UTC [gossip.state] NewGossipStateProvider -> INFO 03a[0m Updating metadata information for channel defaultchannel, current ledger sequence is at = 0, next expected block is = 1
+2026-09-21T19:44:55.516236649Z [34m2026-09-21 19:44:55.516 UTC [endorser] callChaincode -> INFO 03b[0m finished chaincode: cscc duration: 263ms channel= txID=d062a235
+2026-09-21T19:44:55.516259480Z [34m2026-09-21 19:44:55.516 UTC [comm.grpc.server] 1 -> INFO 03c[0m unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=172.21.0.5:43018 grpc.code=OK grpc.call_duration=263.885316ms
+2026-09-21T19:45:00.515838980Z [34m2026-09-21 19:45:00.515 UTC [gossip.channel] reportMembershipChanges -> INFO 03d[0m [[defaultchannel] Membership view has changed. peers went online:  [[peer0.org1.fno-s4.com:7051 ]] , current view:  [[peer0.org1.fno-s4.com:7051 ]]]
+2026-09-21T19:45:01.517820351Z [34m2026-09-21 19:45:01.517 UTC [gossip.election] beLeader -> INFO 03e[0m 51843c9252f7950cde2f021f82a765ed933f410f1432c4473f4a058666754008 : Becoming a leader
+2026-09-21T19:45:01.517837565Z [34m2026-09-21 19:45:01.517 UTC [gossip.service] func1 -> INFO 03f[0m Elected as a leader, starting delivery service for channel defaultchannel
+2026-09-21T19:45:01.517839819Z [34m2026-09-21 19:45:01.517 UTC [deliveryClient] StartDeliverForChannel -> INFO 040[0m This peer will retrieve blocks from ordering service and disseminate to other peers in the organization for channel defaultchannel

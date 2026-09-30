@@ -1,0 +1,240 @@
+2026-09-21T18:55:13.341890745Z 2026/09/21 18:55:13 [INFO] Created default configuration file at /etc/hyperledger/fabric-ca-server/fabric-ca-server-config.yaml
+2026-09-21T18:55:13.363273662Z 2026/09/21 18:55:13 [INFO] CA config with combined yaml file and environment variable overrides (sensitive lines excluded):
+2026-09-21T18:55:13.363301984Z address: 0.0.0.0
+2026-09-21T18:55:13.363304869Z affiliations:
+2026-09-21T18:55:13.363306937Z     org1:
+2026-09-21T18:55:13.363308950Z         - department1
+2026-09-21T18:55:13.363310215Z         - department2
+2026-09-21T18:55:13.363311361Z     org2:
+2026-09-21T18:55:13.363312436Z         - department1
+2026-09-21T18:55:13.363313544Z bccsp:
+2026-09-21T18:55:13.363314642Z     default: SW
+2026-09-21T18:55:13.363315759Z     sw:
+2026-09-21T18:55:13.363317585Z         filekeystore:
+2026-09-21T18:55:13.363319744Z             keystore: msp/keystore
+2026-09-21T18:55:13.363323151Z         hash: SHA2
+2026-09-21T18:55:13.363325195Z         security: 256
+2026-09-21T18:55:13.363327226Z ca:
+2026-09-21T18:55:13.363328388Z     certfile: ca-cert.pem
+2026-09-21T18:55:13.363329520Z     chainfile: ca-chain.pem
+2026-09-21T18:55:13.363330634Z     keyfile: ""
+2026-09-21T18:55:13.363332040Z     name: ca.org1.fno-s3.com
+2026-09-21T18:55:13.363333244Z     reenrollignorecertexpiry: false
+2026-09-21T18:55:13.363334410Z cacount: 0
+2026-09-21T18:55:13.363335495Z cafiles: []
+2026-09-21T18:55:13.363336586Z cfg:
+2026-09-21T18:55:13.363337632Z     affiliations:
+2026-09-21T18:55:13.363338734Z         allowremove: false
+2026-09-21T18:55:13.363339825Z     identities:
+2026-09-21T18:55:13.363340909Z         allowremove: false
+2026-09-21T18:55:13.363342002Z cors:
+2026-09-21T18:55:13.363343060Z     enabled: false
+2026-09-21T18:55:13.363344152Z     origins:
+2026-09-21T18:55:13.363345292Z         - '*'
+2026-09-21T18:55:13.363346359Z crl:
+2026-09-21T18:55:13.363347435Z     expiry: 24h
+2026-09-21T18:55:13.363348497Z crlsizelimit: 512000
+2026-09-21T18:55:13.363349584Z csp:
+2026-09-21T18:55:13.363350621Z     default: ""
+2026-09-21T18:55:13.363351732Z     pkcs11:
+2026-09-21T18:55:13.363352784Z         altid: ""
+2026-09-21T18:55:13.363353875Z         hash: ""
+2026-09-21T18:55:13.363354938Z         immutable: false
+2026-09-21T18:55:13.363356016Z         label: ""
+2026-09-21T18:55:13.363357082Z         library: ""
+2026-09-21T18:55:13.363369273Z         pin: ""
+2026-09-21T18:55:13.363370525Z         security: 0
+2026-09-21T18:55:13.363371683Z         softwareverify: false
+2026-09-21T18:55:13.363372806Z     sw:
+2026-09-21T18:55:13.363373874Z         filekeystore:
+2026-09-21T18:55:13.363374976Z             keystorepath: ""
+2026-09-21T18:55:13.363376109Z         hash: ""
+2026-09-21T18:55:13.363377200Z         security: 0
+2026-09-21T18:55:13.363378349Z csr:
+2026-09-21T18:55:13.363379415Z     ca:
+2026-09-21T18:55:13.363380461Z         backdate: ""
+2026-09-21T18:55:13.363381577Z         expiry: 131400h
+2026-09-21T18:55:13.363382662Z         pathlength: 1
+2026-09-21T18:55:13.363383734Z         pathlenzero: false
+2026-09-21T18:55:13.363384809Z     cn: ca.org1.fno-s3.com
+2026-09-21T18:55:13.363385903Z     hosts: localhost,ca.org1.fno-s3.com
+2026-09-21T18:55:13.363387038Z     keyrequest:
+2026-09-21T18:55:13.363388113Z         algo: ecdsa
+2026-09-21T18:55:13.363389188Z         reusekey: false
+2026-09-21T18:55:13.363390269Z         size: 256
+2026-09-21T18:55:13.363391356Z     names:
+2026-09-21T18:55:13.363392431Z         - C: US
+2026-09-21T18:55:13.363393883Z           L: null
+2026-09-21T18:55:13.363395784Z           O: Hyperledger
+2026-09-21T18:55:13.363397575Z           OU: Fabric
+2026-09-21T18:55:13.363399456Z           ST: North Carolina
+2026-09-21T18:55:13.363401629Z     serialnumber: ""
+2026-09-21T18:55:13.363402829Z db:
+2026-09-21T18:55:13.363403925Z     datasource: fabric-ca-server.db
+2026-09-21T18:55:13.363405060Z     tls:
+2026-09-21T18:55:13.363406145Z         certfiles: []
+2026-09-21T18:55:13.363407263Z         client:
+2026-09-21T18:55:13.363408335Z             certfile: ""
+2026-09-21T18:55:13.363409448Z             keyfile: ""
+2026-09-21T18:55:13.363410585Z         enabled: false
+2026-09-21T18:55:13.363411680Z     type: sqlite3
+2026-09-21T18:55:13.363412759Z debug: false
+2026-09-21T18:55:13.363413823Z idemix:
+2026-09-21T18:55:13.363414893Z     curve: amcl.Fp256bn
+2026-09-21T18:55:13.363415974Z     nonceexpiration: 15s
+2026-09-21T18:55:13.363417035Z     noncesweepinterval: 15m
+2026-09-21T18:55:13.363418120Z     rhpoolsize: 1000
+2026-09-21T18:55:13.363419206Z intermediate:
+2026-09-21T18:55:13.363420286Z     enrollment:
+2026-09-21T18:55:13.363423061Z         label: ""
+2026-09-21T18:55:13.363424253Z         profile: ""
+2026-09-21T18:55:13.363425390Z         type: x509
+2026-09-21T18:55:13.363426503Z     parentserver:
+2026-09-21T18:55:13.363427614Z         caname: ""
+2026-09-21T18:55:13.363428732Z         url: ""
+2026-09-21T18:55:13.363429840Z     tls:
+2026-09-21T18:55:13.363430911Z         certfiles: []
+2026-09-21T18:55:13.363432024Z         client:
+2026-09-21T18:55:13.363433087Z             certfile: ""
+2026-09-21T18:55:13.363434210Z             keyfile: ""
+2026-09-21T18:55:13.363435992Z     attribute:
+2026-09-21T18:55:13.363437100Z         converters:
+2026-09-21T18:55:13.363438238Z             - name: null
+2026-09-21T18:55:13.363439365Z               value: null
+2026-09-21T18:55:13.363440476Z         maps:
+2026-09-21T18:55:13.363441568Z             groups:
+2026-09-21T18:55:13.363442675Z                 - name: null
+2026-09-21T18:55:13.363443787Z                   value: null
+2026-09-21T18:55:13.363444893Z         names:
+2026-09-21T18:55:13.363445988Z             - uid
+2026-09-21T18:55:13.363447086Z             - member
+2026-09-21T18:55:13.363448178Z     enabled: false
+2026-09-21T18:55:13.363449278Z     groupfilter: (memberUid=%s)
+2026-09-21T18:55:13.363450447Z     tls:
+2026-09-21T18:55:13.363451506Z         certfiles: []
+2026-09-21T18:55:13.363452598Z         client:
+2026-09-21T18:55:13.363453688Z             certfile: ""
+2026-09-21T18:55:13.363454800Z             keyfile: ""
+2026-09-21T18:55:13.363455903Z     userfilter: (uid=%s)
+2026-09-21T18:55:13.363457024Z loglevel: ""
+2026-09-21T18:55:13.363458131Z metrics:
+2026-09-21T18:55:13.363459206Z     provider: disabled
+2026-09-21T18:55:13.363460304Z     statsd:
+2026-09-21T18:55:13.363461395Z         address: 127.0.0.1:8125
+2026-09-21T18:55:13.363462529Z         network: udp
+2026-09-21T18:55:13.363463620Z         prefix: server
+2026-09-21T18:55:13.363464720Z         writeinterval: 10s
+2026-09-21T18:55:13.363465828Z operations:
+2026-09-21T18:55:13.363466903Z     listenaddress: 127.0.0.1:9443
+2026-09-21T18:55:13.363468008Z     metrics:
+2026-09-21T18:55:13.363469922Z         provider: ""
+2026-09-21T18:55:13.363472016Z         statsd:
+2026-09-21T18:55:13.363473923Z             address: ""
+2026-09-21T18:55:13.363475566Z             network: ""
+2026-09-21T18:55:13.363478071Z             prefix: ""
+2026-09-21T18:55:13.363479253Z             writeinterval: 0s
+2026-09-21T18:55:13.363480439Z     tls:
+2026-09-21T18:55:13.363481516Z         certfile: ""
+2026-09-21T18:55:13.363482634Z         clientauthrequired: false
+2026-09-21T18:55:13.363483757Z         clientcacertfiles: []
+2026-09-21T18:55:13.363484871Z         clientcertrequired: false
+2026-09-21T18:55:13.363485982Z         clientrootcas:
+2026-09-21T18:55:13.363487067Z             files: []
+2026-09-21T18:55:13.363488203Z         enabled: false
+2026-09-21T18:55:13.363489292Z         keyfile: ""
+2026-09-21T18:55:13.363490403Z port: "7054"
+2026-09-21T18:55:13.363491616Z registry:
+2026-09-21T18:55:13.363492702Z     identities:
+2026-09-21T18:55:13.363493780Z         - affiliation: ""
+2026-09-21T18:55:13.363494919Z           attrs:
+2026-09-21T18:55:13.363496037Z             hf.AffiliationMgr: true
+2026-09-21T18:55:13.363497135Z             hf.GenCRL: true
+2026-09-21T18:55:13.363498233Z             hf.IntermediateCA: true
+2026-09-21T18:55:13.363499340Z             hf.Registrar.Attributes: '*'
+2026-09-21T18:55:13.363500469Z             hf.Registrar.DelegateRoles: '*'
+2026-09-21T18:55:13.363501596Z             hf.Registrar.Roles: '*'
+2026-09-21T18:55:13.363502720Z             hf.Revoker: true
+2026-09-21T18:55:13.363503805Z           name: admin
+2026-09-21T18:55:13.363504886Z           type: client
+2026-09-21T18:55:13.363505974Z     maxenrollments: -1
+2026-09-21T18:55:13.363507054Z signing:
+2026-09-21T18:55:13.363508119Z     default:
+2026-09-21T18:55:13.363509180Z         expiry: 8760h
+2026-09-21T18:55:13.363510268Z         usage:
+2026-09-21T18:55:13.363511348Z             - digital signature
+2026-09-21T18:55:13.363512480Z     profiles:
+2026-09-21T18:55:13.363513568Z         ca:
+2026-09-21T18:55:13.363514641Z             caconstraint:
+2026-09-21T18:55:13.363515734Z                 isca: true
+2026-09-21T18:55:13.363516819Z                 maxpathlen: 0
+2026-09-21T18:55:13.363517907Z             expiry: 43800h
+2026-09-21T18:55:13.363519003Z             usage:
+2026-09-21T18:55:13.363520097Z                 - cert sign
+2026-09-21T18:55:13.363521205Z                 - crl sign
+2026-09-21T18:55:13.363522299Z         tls:
+2026-09-21T18:55:13.363523364Z             expiry: 8760h
+2026-09-21T18:55:13.363528946Z             usage:
+2026-09-21T18:55:13.363530132Z                 - signing
+2026-09-21T18:55:13.363531290Z                 - key encipherment
+2026-09-21T18:55:13.363532428Z                 - server auth
+2026-09-21T18:55:13.363533539Z                 - client auth
+2026-09-21T18:55:13.363534652Z                 - key agreement
+2026-09-21T18:55:13.363535765Z tls:
+2026-09-21T18:55:13.363536812Z     certfile: tls-cert.pem
+2026-09-21T18:55:13.363537907Z     clientauth:
+2026-09-21T18:55:13.363538956Z         certfiles: []
+2026-09-21T18:55:13.363540315Z         type: noclientcert
+2026-09-21T18:55:13.363541437Z     enabled: "true"
+2026-09-21T18:55:13.363543447Z     keyfile: ""
+2026-09-21T18:55:13.363545529Z version: v1.5.22
+2026-09-21T18:55:13.363547544Z 2026/09/21 18:55:13 [INFO] Starting server in home directory: /etc/hyperledger/fabric-ca-server
+2026-09-21T18:55:13.363640685Z 2026/09/21 18:55:13 [INFO] Server Version: v1.5.22
+2026-09-21T18:55:13.363648984Z 2026/09/21 18:55:13 [INFO] Server Levels: &{Identity:2 Affiliation:1 Certificate:1 Credential:1 RAInfo:1 Nonce:1}
+2026-09-21T18:55:13.363651949Z 2026/09/21 18:55:13 [INFO] FABRIC_CA_SERVER_COMPATIBILITY_MODE_V1_3 not set, defaulting to false
+2026-09-21T18:55:13.363904541Z 2026/09/21 18:55:13 [WARNING] &{69 The specified CA certificate file /etc/hyperledger/fabric-ca-server/ca-cert.pem does not exist}
+2026-09-21T18:55:13.364094873Z 2026/09/21 18:55:13 [INFO] generating key: &{A:ecdsa S:256}
+2026-09-21T18:55:13.364300581Z 2026/09/21 18:55:13 [INFO] encoded CSR
+2026-09-21T18:55:13.364667137Z 2026/09/21 18:55:13 [INFO] signed certificate with serial number 671066004580756435432604739404334710711212761671
+2026-09-21T18:55:13.364708715Z 2026/09/21 18:55:13 [INFO] The CA key and certificate were generated for CA ca.org1.fno-s3.com
+2026-09-21T18:55:13.364711082Z 2026/09/21 18:55:13 [INFO] The key was stored by BCCSP provider 'SW'
+2026-09-21T18:55:13.364712358Z 2026/09/21 18:55:13 [INFO] The certificate is at: /etc/hyperledger/fabric-ca-server/ca-cert.pem
+2026-09-21T18:55:13.648102247Z 2026/09/21 18:55:13 [INFO] Initialized sqlite3 database at /etc/hyperledger/fabric-ca-server/fabric-ca-server.db
+2026-09-21T18:55:13.662073998Z 2026/09/21 18:55:13 [INFO] The issuer key was successfully stored. The public key is at: /etc/hyperledger/fabric-ca-server/IssuerPublicKey, secret key is at: /etc/hyperledger/fabric-ca-server/msp/keystore/IssuerSecretKey
+2026-09-21T18:55:13.664194895Z 2026/09/21 18:55:13 [INFO] Idemix issuer revocation public and secret keys were generated for CA 'ca.org1.fno-s3.com'
+2026-09-21T18:55:13.664263792Z 2026/09/21 18:55:13 [INFO] The revocation key was successfully stored. The public key is at: /etc/hyperledger/fabric-ca-server/IssuerRevocationPublicKey, private key is at: /etc/hyperledger/fabric-ca-server/msp/keystore/IssuerRevocationPrivateKey
+2026-09-21T18:55:13.675447274Z 2026/09/21 18:55:13 [INFO] Home directory for default CA: /etc/hyperledger/fabric-ca-server
+2026-09-21T18:55:13.675780731Z 2026/09/21 18:55:13 [INFO] Operation Server Listening on 127.0.0.1:9443
+2026-09-21T18:55:13.675986925Z 2026/09/21 18:55:13 [INFO] generating key: &{A:ecdsa S:256}
+2026-09-21T18:55:13.676268561Z 2026/09/21 18:55:13 [INFO] encoded CSR
+2026-09-21T18:55:13.676620603Z 2026/09/21 18:55:13 [INFO] signed certificate with serial number 33826568496234488785939091410788846787132460947
+2026-09-21T18:55:13.694334936Z 2026/09/21 18:55:13 [INFO] Listening on https://0.0.0.0:7054
+2026-09-21T18:55:14.408308580Z 2026/09/21 18:55:14 [INFO] signed certificate with serial number 105757278057367571048751695337142914870779414467
+2026-09-21T18:55:14.453344764Z 2026/09/21 18:55:14 [INFO] [::1]:36392 POST /enroll 201 0 "OK"
+2026-09-21T18:55:15.391488490Z 2026/09/21 18:55:15 [INFO] [::1]:36406 GET /identities?ca=ca.org1.fno-s3.com 200 0 "OK"
+2026-09-21T18:55:15.543863349Z 2026/09/21 18:55:15 [INFO] [::1]:36408 POST /register 201 0 "OK"
+2026-09-21T18:55:15.619250645Z 2026/09/21 18:55:15 [INFO] [::1]:36410 GET /identities?ca=ca.org1.fno-s3.com 200 0 "OK"
+2026-09-21T18:55:15.783715832Z 2026/09/21 18:55:15 [INFO] [::1]:36416 POST /register 201 0 "OK"
+2026-09-21T18:55:15.863306740Z 2026/09/21 18:55:15 [INFO] [::1]:36420 GET /identities?ca=ca.org1.fno-s3.com 200 0 "OK"
+2026-09-21T18:55:16.017951134Z 2026/09/21 18:55:16 [INFO] [::1]:36432 POST /register 201 0 "OK"
+2026-09-21T18:55:16.099141730Z 2026/09/21 18:55:16 [INFO] [::1]:36436 GET /identities?ca=ca.org1.fno-s3.com 200 0 "OK"
+2026-09-21T18:55:16.249604348Z 2026/09/21 18:55:16 [INFO] [::1]:36438 POST /register 201 0 "OK"
+2026-09-21T18:55:16.483619882Z 2026/09/21 18:55:16 [INFO] signed certificate with serial number 422386298437291768955625272801891079139828171644
+2026-09-21T18:55:16.507216966Z 2026/09/21 18:55:16 [INFO] [::1]:36440 POST /enroll 201 0 "OK"
+2026-09-21T18:55:17.166829145Z 2026/09/21 18:55:17 [INFO] signed certificate with serial number 654469488931600014654401442082907806302728081693
+2026-09-21T18:55:17.192929233Z 2026/09/21 18:55:17 [INFO] [::1]:36446 POST /enroll 201 0 "OK"
+2026-09-21T18:55:17.892988885Z 2026/09/21 18:55:17 [INFO] signed certificate with serial number 485921538898353929205097701216872132176375244796
+2026-09-21T18:55:17.918890417Z 2026/09/21 18:55:17 [INFO] [::1]:36454 POST /enroll 201 0 "OK"
+2026-09-21T18:55:18.593591097Z 2026/09/21 18:55:18 [INFO] signed certificate with serial number 479346017662429800133323222064379097740595610799
+2026-09-21T18:55:18.618196906Z 2026/09/21 18:55:18 [INFO] [::1]:36464 POST /enroll 201 0 "OK"
+2026-09-21T18:55:19.306013153Z 2026/09/21 18:55:19 [INFO] signed certificate with serial number 522585012340555391775336648548487898424571138140
+2026-09-21T18:55:19.329441652Z 2026/09/21 18:55:19 [INFO] [::1]:36472 POST /enroll 201 0 "OK"
+2026-09-21T18:55:20.025131028Z 2026/09/21 18:55:20 [INFO] signed certificate with serial number 398194387152011888621195999582131881398988989078
+2026-09-21T18:55:20.051730201Z 2026/09/21 18:55:20 [INFO] [::1]:36486 POST /enroll 201 0 "OK"
+2026-09-21T18:55:20.739973851Z 2026/09/21 18:55:20 [INFO] signed certificate with serial number 614478181294510401082920242309359154755907511712
+2026-09-21T18:55:20.765336883Z 2026/09/21 18:55:20 [INFO] [::1]:36502 POST /enroll 201 0 "OK"
+2026-09-21T18:55:21.188021584Z 2026/09/21 18:55:21 [INFO] signed certificate with serial number 38170178716313607411098036069249715594993172200
+2026-09-21T18:55:21.211497049Z 2026/09/21 18:55:21 [INFO] [::1]:36508 POST /enroll 201 0 "OK"
+2026-09-21T18:55:21.649925762Z 2026/09/21 18:55:21 [INFO] signed certificate with serial number 706027984103287264999001964160990756199692022193
+2026-09-21T18:55:21.676188098Z 2026/09/21 18:55:21 [INFO] [::1]:36514 POST /enroll 201 0 "OK"
+2026-09-21T18:55:22.092890762Z 2026/09/21 18:55:22 [INFO] signed certificate with serial number 592451617881491344207732275504762782052585785161
+2026-09-21T18:55:22.122957168Z 2026/09/21 18:55:22 [INFO] [::1]:36522 POST /enroll 201 0 "OK"
